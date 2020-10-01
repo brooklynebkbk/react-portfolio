@@ -203,7 +203,10 @@ span.char9 {
 }
 @media (max-width: 640px) {
   div#ThreeOhPreview {
-    top: 124vw;
+    top: 126vw;
+    position: relative;
+    width: 80%;
+    left: 6%;
   }
 }
 @media (max-width: 640px) {
@@ -213,7 +216,10 @@ span.char9 {
 }
 @media (max-width: 640px) {
   div#BaziniPreview {
-    top: 124vw;
+    top: 126vw;
+    position: relative;
+    width: 80%;
+    left: 6%;
   }
 }
 @media (max-width: 640px) {
@@ -223,7 +229,10 @@ span.char9 {
 }
 @media (max-width: 640px) {
   div#FLShotsPreview {
-    top: 124vw;
+    top: 126vw;
+    position: relative;
+    width: 80%;
+    left: 6%;
   }
 }
 @media (max-width: 640px) {
@@ -233,7 +242,10 @@ span.char9 {
 }
 @media (max-width: 640px) {
   div#HebronPreview {
-    top: 124vw;
+    top: 126vw;
+    position: relative;
+    width: 80%;
+    left: 6%;
   }
 }
 @media (max-width: 640px) {
@@ -243,7 +255,10 @@ span.char9 {
 }
 @media (max-width: 640px) {
   div#WatchPreview {
-    top: 124vw;
+    top: 126vw;
+    position: relative;
+    width: 80%;
+    left: 6%;
   }
 }
 @media (min-width: 641px) and (max-width: 869px) {
