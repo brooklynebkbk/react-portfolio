@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+div.FLShotUsers {
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+div.ThePreviews {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.FLShotContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  opacity: 0;
+}
+div#FLShotsCopy {
+  /*bottom: 41.5vh;
+  right: 18vw;*/
+}
+div#FLShotsMobileCopy {
+  /*right: 13vw;*/
+}
+
+div.FLShotContent > div.projectTitle {
+  position: absolute;
+  width: 80vw;
+  height: 16vh;
+  top: -8vh;
+}
+div.FLShotContent > div.projectTitle > p.theTitle {
+  font-family: 'Khand', sans-serif;
+  font-weight: 600;
+  color: #084D67;
+  font-size: 3.2em;
+  text-align: left;
+  margin-left: 9vw;
+  margin-top: -4vh;
+}
+div.FLShotContent > div.projectTitle > p.projectContributor {
+  font-family: 'Oswald', sans-serif;
+  color: #084D67;
+  font-size: 1.4em;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 1vh;
+  margin-left: 9.2vw;
+}
+@media (min-width: 1021px) {
+ div.FLShotContent > div.About {
+  position: relative;
+  width: 32%;
+  height: 30%;
+  top: 10.5vw;
+  left: 9vw;
+ }
+}
+@media (max-width: 1020px) {
+    div.About{
+      top: 82vw;
+      width: 80%;
+      position: relative;
+      margin: 0 auto;
+      left: 0%;
+      zoom: .8;
+    }
+}
+div.FLShotContent > div.About > h4 {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  margin-top: 2em;
+  margin-bottom: 0;
+  color: #084D67;
+  font-size: 2.3em;
+}
+div.FLShotContent > div.About > p {
+  margin-top: 1vh;
+  font-family: 'Oswald', sans-serif;
+  color: #084D67;
+  font-size: 1.3em;
+}
+div.FLShotContent div.Contribution {
+  position: relative;
+  height: 10vw;
+  width: 46vw;
+  top: 20vw;
+  margin: 0 auto;
+}
+@media (max-width: 1020px) {
+    div.FLShotContent div.Contribution{
+      top: 86vw;
+      position: relative;
+      margin: 0 auto;
+      zoom: .8;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1080px){
+    div.FLShotContent div.Contribution{
+      top: 79vw;
+      width: 54%;
+      position: relative;
+      margin-left: 25%;
+    }
+}
+div.FLShotContent div.Contribution > p {
+  position: relative;
+  color: #084D67;
+}
+div.FLShotContent p.theStack {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  margin: 0 auto;
+  top: 2.6vw;
+}
+div.FLShotContent p.aboutStack {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  top: 1.8vw;
+}
+div.FLShotContent div.Stack{
+  position: relative;
+  height: 16vw;
+  width: 46vw;
+  top: 25vw;
+  margin: 0 auto;
+}
+@media (max-width: 1020px) {
+    div.FLShotContent div.Stack{
+      top: 112vw;
+      position: relative;
+      margin: 0 auto;
+      zoom: .8;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1080px){
+    div.FLShotContent div.Stack{
+      top: 79vw;
+      width: 54%;
+      position: relative;
+      margin-left: 25%;
+    }
+}
+div.FLShotContent div.Stack > p {
+  position: relative;
+  color: #084D67;
+}
+div.FLShotContent p.theStack {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  margin: 0 auto;
+  top: 2.6vw;
+}
+div.FLShotContent p.aboutStack {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  top: 1.8vw;
+}
+div.FLShotContent div.FinalHome {
+  display: flex;
+  flex-direction: row;
+  width: 94%;
+  margin-left: 8vw;
+  position: relative;
+  top: 34vw;
+  height: 140vw;
+}
+@media (max-width: 1020px) {
+    div.FLShotContent div.FinalHome{
+      top: 118vw;
+      width: 90%;
+      position: relative;
+      margin-left: 8%;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1080px){
+    div.FLShotContent div.FinalHome{
+      top: 87vw;
+      width: 90%;
+      position: relative;
+      margin-left: 9%;
+    }
+}
+div.FLShotContent div.FinalHome > p {
+  color: #084D67;
+  position: absolute;
+}
+div.FLShotContent p.finalText {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  top: -7vw;
+  left: 4vw;
+}
+@media (max-width: 1020px) {
+    div.FLShotContent div.FinalHome > p:nth-child(1){
+      top: -14vw;
+      position: relative;
+      left: 5vw;
+      zoom: .8;
+    }
+}
+div.FLShotContent p.finalDesktop {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  left: 4vw;
+  top: -1vw;
+}
+@media (max-width: 1020px) {
+    div.FLShotContent div.FinalHome > p:nth-child(2){
+      top: -4vw;
+      position: absolute;
+      zoom: .8;
+      left: 5vw;
+    }
+}
+div.FLShotContent p.finalMobile {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  left: 64.6vw;
+  top: -6.1vw;
+}
+@media (max-width: 1020px) {
+    div.FLShotContent div.FinalHome > p:nth-child(3){
+      top: -10vw;
+      position: absolute;
+      zoom: .8;
+      right: 2vw;
+    }
+}
+div.FLShotContent div.desktopFinal {
+  position: absolute;
+  top: 5.5vw;
+  width: 56vw;
+  height: 73.5vw;
+  left: 4vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 12px 2px rgba(0,0,0,0.4);
+}
+img.home2 {
+  top: -1.2vw;
+}
+img.home3 {
+  top: -17vw;
+}
+
+div.FLShotContent div.desktopFinal > img, div.mobileFinal > img {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+div.FLShotContent div.mobileFinal {
+  position: absolute;
+  top: .3vw;
+  height: 124.4vw;
+  width: 19vw;
+  left: 64vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 12px 2px rgba(0,0,0,0.4);
+}
+img.FLMobile1 {
+  top: 0vw;
+}
+img.FLMobile2 {
+  top: -.3vw;
+}
+img.FLMobile3 {
+  top: -2vw;
+}
+img.FLMobile4 {
+  top: -20.16vw;
+}
+@media (min-width: 1021px) {
+  div.FLShotContent div.connectSection {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: -16vw;
+    left: -11vw;
+  }
+}
+@media (max-width: 1020px) {
+  div.FLShotContent div.connectSection {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: 68vw;
+    left: -11vw;
+  }
+}
+div.FLShotContent div.connectIcons {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  top: 0vw;
+  width: 100%;
+  justify-content: center;
+}
+div.FLShotContent div.connectIcons > div > a {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.FLShotContent div.toSite {
+  height: 2.8em;
+  width: 2.8em;
+  background-color: #084D67;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 50%;
+}
+div.FLShotContent div.toSite:hover {
+  /*animation: shine 1s alternate infinite;*/
+  background-color: #52DCF4;
+  transition: .3s;
+}
+img.web {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.FLShotContent div.toDribbble {
+  height: 2.8em;
+  width: 2.8em;
+  background-color: #084D67;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 50%;
+}
+div.FLShotContent div.toDribbble:hover {
+  background-color: #52DCF4;
+  transition: .3s;
+}
+img.drib {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.FLShotContent div.toGithub {
+  height: 2.8em;
+  width: 2.8em;
+  background-color: #084D67;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 50%;
+}
+div.FLShotContent div.toGithub:hover {
+  background-color: #52DCF4;
+  transition: .3s;
+}
+img.git {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+@media (min-width: 1021px) {
+  div.FLShotContent div.iconDo {
+    color: #084D67;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 1020px) {
+  div.FLShotContent div.iconDo {
+    display: none;
+  }
+}
+div.FLShotContent div.iconDo > p.visitSite {
+  top: 1vw;
+  position: relative;
+  opacity: 0;
+}
+div.FLShotContent div.iconDo > p.viewSS {
+  top: -2.5vw;
+  position: relative;
+  opacity: 0;
+}
+div.FLShotContent div.iconDo > p.viewDesigns {
+  top: -6vw;
+  position: relative;
+  opacity: 0;
+}

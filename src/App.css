@@ -1,4 +1,16 @@
+
 .App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #DEF2F8;
+  position: absolute;
+  overflow-y: scroll;
+}
+
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +47,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/

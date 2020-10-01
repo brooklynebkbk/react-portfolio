@@ -1,0 +1,988 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+div.ThreeOhThree {
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+div.ThePreviews {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.ThreeOhThreeContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  opacity: 0;
+}
+@media (max-width: 1020px) {
+    div.ThreeOhThreeContent {
+      display: flex;
+      flex-direction: column;
+    }
+}
+div.ThreeOhThreeContent > div.projectTitle {
+  position: absolute;
+  width: 80vw;
+  height: 16vw;
+  top: -4.2vw;
+}
+@media (min-width: 1021px) and (max-width: 1199px) {
+  div.ThreeOhThreeContent > div.projectTitle {
+  position: absolute;
+  width: 90vw;
+  height: 16vw;
+  top: -5.2vw;
+  zoom: .8;
+}
+}
+div.ThreeOhThreeContent > div.projectTitle > p.theTitle {
+  font-family: 'Khand', sans-serif;
+  font-weight: 600;
+  color: #061A1E;
+  font-size: 3.2em;
+  text-align: left;
+  margin-left: 9vw;
+  margin-top: -2.2vw;
+}
+@media (max-width: 1020px) {
+    p.theTitle {
+      padding-top: 1vw;
+      zoom: .8;
+    }
+}
+div.ThreeOhThreeContent > div.projectTitle > p.projectContributor {
+  font-family: 'Oswald', sans-serif;
+  color: #061A1E;
+  font-size: 1.4em;
+  font-weight: 300;
+  text-align: left;
+  margin-top: .5vw;
+  margin-left: 9.2vw;
+}
+@media (max-width: 1020px) {
+    p.projectContributor{
+      padding-top: 6vw;
+      zoom: .8;
+    }
+}
+div.ThreeOhThreeMedia {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+div.ThreeOhThreeMedia > img{
+  width: 30em;
+  opacity: 1;
+}
+@media (min-width: 1021px) {
+ div.ThreeOhThreeContent > div.About {
+  position: relative;
+  width: 32%;
+  height: 30%;
+  top: 10.5vw;
+  left: 9vw;
+ }
+}
+@media (max-width: 1020px) {
+    div.About{
+      top: 82vw;
+      width: 90%;
+      position: relative;
+      margin: 0 auto;
+      left: 0%;
+      zoom: .8;
+    }
+}
+div.ThreeOhThreeContent > div.About > h4 {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  margin-top: 2em;
+  margin-bottom: 0;
+  color: #061A1E;
+  font-size: 2.3em;
+}
+div.ThreeOhThreeContent > div.About > p {
+  margin-top: 1vh;
+  font-family: 'Oswald', sans-serif;
+  color: #061A1E;
+  font-size: 1.3em;
+}
+div.Layout {
+  width: 86%;
+  position: relative;
+  height: 102vw;
+  top: 40%;
+  margin-left: 9%;
+}
+@media (max-width: 1020px) {
+    div.Layout{
+      top: 80vw;
+      width: 96%;
+      position: relative;
+      margin: 0 auto;
+      zoom: 1;
+    }
+}
+div.Layout > p {
+  color: #061A1E;
+}
+@media (max-width: 1020px) {
+    div.Layout > p {
+      margin-left: 3%;
+      top: 1vw;
+    }
+}
+div.Layout > p.wireFrameText {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  text-align: left;
+  position: absolute;
+  top: -9vw;
+  left: 6.5vw;
+}
+div.Layout > p.secondaryWFText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  position: absolute;
+  top: -5vw;
+  text-align: left;
+  left: 6.5vw;
+}
+p.intuitiveText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  position: absolute;
+  top: -3.1vw;
+  text-align: left;
+  left: 6.6vw;
+}
+p.responsiveText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  position: absolute;
+  top: 3.4vw;
+  left: 62.6vw;
+}
+@media (max-width: 1020px) {
+    div.Layout > p:nth-child(3) {
+      margin-left: 7%;
+      top: 5vw;
+    }
+}
+div.desktopWireframes {
+  width: 66%;
+  position: absolute;
+  height: 110vw;
+  left: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (max-width: 1020px) {
+    div.desktopWireframes {
+      margin-top: 6%;
+    }
+}
+div.desktopWireframes > div {
+  position: relative;
+  width: 51vw;
+  height: 30vw;
+  margin: 0 auto;
+  margin-top: 6%;
+  border: solid  1px #2C4849;
+}
+div.desktopWireframes > div > img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.mobileWireframes {
+  width: 32%;
+  top: 12vh;
+  position: absolute;
+  height: 110vw;
+  left: 71%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+div.mobileWireframes > div {
+  position: relative;
+  width: 16vw;
+  height: 31vw;
+  margin-left: 5%;
+  margin-top: 11%;
+  border: solid  1px #2C4849;
+}
+div.mobileWireframes > div > img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.Text {
+  width: 90%;
+  position: relative;
+  height: 39vw;
+  top: 20vw;
+  margin-left: 7%;
+}
+@media (max-width: 1020px) {
+    div.Text{
+      top: 192vw;
+      width: 100%;
+      position: relative;
+      margin-left: 10%;
+      margin-right: auto;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1080px) {
+    div.Text{
+      top: 34vw;
+      width: 90%;
+      position: relative;
+      margin-left: 11%;
+      margin-right: auto;
+    }
+}
+div.Text > p {
+  color: #061A1E;
+}
+@media (max-width: 1080px) {
+    div.Text > p {
+      margin-top: -1vw;
+      margin-left: 0vw;
+    }
+}
+div.Text > p.typefaceText {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  text-align: left;
+  position: absolute;
+  top: 2.4vw;
+  left: 8vw;
+}
+div.Text > p.fontsText, div.Text > p.copyText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  position: absolute;
+}
+div.Text > p.fontsText {
+  top: 8.2vw;
+  text-align: left;
+  left: 8.2vw;
+}
+div.Text > p.copyText {
+  top: 8.2vw;
+  text-align: right;
+  left: 40.6vw;
+}
+div.Copy {
+  position: absolute;
+  width: 45%;
+  left: -1vw;
+  top: 8.2vw;
+  height: 40vw;
+}
+div.Copy > img:nth-child(1) {
+  position: relative;
+  height: 35%;
+  width: 54%;
+  top: 5.5vw;
+  border: solid  1px #2C4849;
+}
+div.Copy > img:nth-child(2) {
+  position: relative;
+  height: 35%;
+  width: 54%;
+  margin-top: 3%;
+  top: 5.5vw;
+  border: solid  1px #2C4849;
+}
+div.Font {
+  position: absolute;
+  width: 55%;
+  left: 45%;
+  top: 8.2vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+div.Font > img {
+  position: relative;
+}
+img.ThreeHost {
+  left: -2vw;
+  top: 5.6vw;
+  height: 7.5vw;
+  width: 24vw;
+}
+img.ThreeCompete {
+  left: -2.2vw;
+  top: 4.5vw;
+  height: 7vw;
+  width: 33vw;
+}
+img.ThreeStream {
+  left: -2.1vw;
+  top: 3.5vw;
+  height: 7vw;
+  width: 30vw;
+}
+img.ThreeBuild {
+  left: -1.9vw;
+  top: 2.7vw;
+  height: 7vw;
+  width: 24.5vw;
+}
+div.Colors {
+  position: relative;
+  left: 5%;
+  width: 90%;
+  height: 27vw;
+  top: 34vw;
+}
+@media (max-width: 1020px){
+    div.Colors{
+      top: 255vw;
+      width: 86%;
+      position: relative;
+      margin-left: 2%;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1080px) {
+    div.Colors{
+      top: 58vw;
+      width: 80%;
+      position: relative;
+      margin-left: 4%;
+    }
+}
+div.Colors > p {
+  color: #061A1E;
+  position: absolute;
+}
+p.colorScheme {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  top: -10vw;
+  left: 10.5vw;
+}
+p.colorText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  top: -5.5vw;
+  left: 39.6vw;
+}
+@media (max-width: 1080px){
+    div.Colors > p:nth-child(1){
+      margin-top: -4vw;
+      margin-left: 0vw;
+    }
+}
+@media (max-width: 1080px){
+    div.Colors > p:nth-child(2){
+      margin-top: -1vw;
+      margin-left: -29vw;
+    }
+}
+img.official {
+  position: relative;
+  width: 11vw;
+  height: 12.5vw;
+  left: 3%;
+  top: -6.5vw;
+}
+img.ThreePalette {
+  position: relative;
+  width: 54%;
+  height: 24vw;
+  left: 15%;
+  border: solid  1px #2C4849;
+}
+div.Assets {
+  position: relative;
+  width: 90%;
+  height: 67.5vw;
+  left: 7%;
+  z-index: -2;
+  top: 45vw;
+}
+@media (max-width: 1020px) {
+    div.Assets{
+      top: 276vw;
+      width: 94%;
+      position: relative;
+      margin-left: 0%;
+      height: 200%;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1080px) {
+    div.Assets{
+      top: 76vw;
+      width: 84%;
+      position: relative;
+      margin-left: 3%;
+    }
+}
+div.Assets > p {
+  color: #061A1E;
+  position: absolute;
+}
+@media (max-width: 1080px) {
+    div.Assets > p:nth-child(1){
+      margin-left: 0vw;
+      margin-top: -2vw;
+    }
+}
+@media (max-width: 1080px) {
+    div.Assets > p:nth-child(2), div.Assets > p:nth-child(3){
+      margin-left: -2vw;
+      margin-top: -1vw;
+    }
+}
+p.theAssets {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  top: -12.7vw;
+  left: 9vw;
+}
+p.stillAssets {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  top: -6vw;
+  left: 15vw;
+}
+p.animatedAssets {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  top: -6vw;
+  left: 47vw;
+}
+div.shards {
+  width: 70%;
+  margin: 0 auto;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+}
+div.shards > div {
+  height: 96%;
+  width: 42%;
+  justify-content: space-around;
+  background-color: #061A1E;
+  margin-left: 1.3vw;
+  margin-right: 1vw;
+}
+div.shards > div.shardsStill > img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.shardsScroll {
+  background-image: url("ThreeBGAnimation.png");
+  position: relative;
+  height: 176%;
+  width: 40%;
+  left: 3.3vw;
+  background-size: 48.2%;
+  background-repeat: repeat-y;
+  animation: floatUp 20s infinite linear;
+  overflow: hidden;
+}
+@keyframes floatUp {
+  0% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+p.footerAsset {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  top: 48vw;
+  left: 14vw;
+}
+@media (max-width: 1020px){
+    div.Assets > p.footerAsset{
+      margin-left: 0vw;
+      margin-top: -4vw;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1080px) {
+    div.Assets > p.footerAsset{
+      margin-left: 0vw;
+      margin-top: 1vw;
+    }
+}
+div.illustration {
+  position: relative;
+  width: 67%;
+  left: 14vw;
+  height: 11vw;
+  top: 7vw;
+}
+div.illustration > img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: solid  1px #2C4849;
+}
+.ThreeOhThreeContent div.Stack {
+  position: relative;
+  height: 18vw;
+  width: 46vw;
+  top: 45vw;
+  margin: 0 auto;
+}
+@media (max-width: 1020px) {
+    .ThreeOhThreeContent div.Stack{
+      top: 280vw;
+      margin-left: 30%;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1080px){
+    .ThreeOhThreeContent div.Stack{
+      top: 79vw;
+      width: 54%;
+      position: relative;
+      margin-left: 25%;
+    }
+}
+.ThreeOhThreeContent div.Stack > p {
+  position: relative;
+  color: #061A1E;
+}
+.ThreeOhThreeContent p.theStack {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  margin: 0 auto;
+  top: 2.6vw;
+}
+.ThreeOhThreeContent p.aboutStack {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  top: 1.8vw;
+}
+.ThreeOhThreeContent div.FinalHome {
+  display: flex;
+  flex-direction: row;
+  width: 94%;
+  margin-left: 8vw;
+  position: relative;
+  top: 49vw;
+  height: 170vw;
+}
+@media (max-width: 1020px) {
+    .ThreeOhThreeContent div.FinalHome{
+      top: 300vw;
+      width: 90%;
+      position: relative;
+      margin-left: 8%;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1080px){
+    .ThreeOhThreeContent div.FinalHome{
+      top: 87vw;
+      width: 90%;
+      position: relative;
+      margin-left: 9%;
+    }
+}
+.ThreeOhThreeContent div.FinalHome > p {
+  color: #061A1E;
+  position: absolute;
+}
+.ThreeOhThreeContent p.finalText {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  top: -7vw;
+  left: 4vw;
+}
+@media (max-width: 1020px) {
+    .ThreeOhThreeContent div.FinalHome > p:nth-child(1){
+      top: -12vw;
+      position: relative;
+    }
+}
+.ThreeOhThreeContent p.finalDesktop {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  left: 4vw;
+  top: -1vw;
+}
+@media (max-width: 1019px) {
+    .ThreeOhThreeContent div.FinalHome > p:nth-child(2){
+      top: -3vw;
+    }
+}
+.ThreeOhThreeContent p.finalMobile {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  left: 64.6vw;
+  top: -6.1vw;
+}
+@media (max-width: 1020px) {
+    .ThreeOhThreeContent div.FinalHome > p:nth-child(3){
+      top: -8vw;
+    }
+}
+.ThreeOhThreeContent div.desktopFinal {
+  position: absolute;
+  top: 5.5vw;
+  width: 59vw;
+  left: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+img.HomeTwo {
+  top: -3.2vw;
+}
+img.HomeThree {
+  top: -9vw;
+}
+img.HomeFour {
+  top: -10.8vw;
+}
+img.HomeFive {
+  top: -14.2vw;
+}
+img.HomeSix {
+  top: -16vw;
+}
+img.HomeSeven {
+  top: -16.1vw;
+}
+img.HomeEight {
+  top: -16.7vw;
+}
+.ThreeOhThreeContent div.desktopFinal > img, div.mobileFinal > img {
+  position: relative;
+  width: 94%;
+  margin: 0 auto;
+}
+.ThreeOhThreeContent div.mobileFinal {
+  position: absolute;
+  top: -2.3vw;
+  width: 19vw;
+  left: 64vw;
+  display: flex;
+  flex-direction: column;
+}
+img.MH2 {
+  top: -6vw;
+}
+img.MH3 {
+  top: -6.8vw;
+}
+img.MH4 {
+  top: -7.76vw;
+}
+img.MH5 {
+  top: -8.62vw;
+}
+img.MH6 {
+  top: -8.6vw;
+}
+img.MH7 {
+  top: -14vw;
+}
+
+div.ThreeOhThreeContent div.connectSection {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  top: 54vw;
+  left: -12vw;
+}
+div.ThreeOhThreeContent div.connectIcons {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  top: 0vw;
+  width: 100%;
+  justify-content: center;
+}
+div.ThreeOhThreeContent div.connectIcons > div > a {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.ThreeOhThreeContent div.toSite {
+  height: 2.8em;
+  width: 2.8em;
+  background-color: #061A1E;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 50%;
+}
+div.ThreeOhThreeContent div.toSite:hover {
+  /*animation: shine 1s alternate infinite;*/
+  background-color: #F29121;
+  transition: .3s;
+}
+img.web {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.ThreeOhThreeContent div.toDribbble {
+  height: 2.8em;
+  width: 2.8em;
+  background-color: #061A1E;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 50%;
+}
+div.ThreeOhThreeContent div.toDribbble:hover {
+  background-color: #F29121;
+  transition: .3s;
+}
+img.drib {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.ThreeOhThreeContent div.toGithub {
+  height: 2.8em;
+  width: 2.8em;
+  background-color: #061A1E;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 50%;
+}
+div.ThreeOhThreeContent div.toGithub:hover {
+  background-color: #F29121;
+  transition: .3s;
+}
+img.git {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.ThreeOhThreeContent div.iconDo {
+  color: #061A1E;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1em;
+}
+div.ThreeOhThreeContent div.iconDo > p.visitSite {
+  top: 1vw;
+  position: relative;
+  opacity: 0;
+}
+div.ThreeOhThreeContent div.iconDo > p.viewSS {
+  top: -2.5vw;
+  position: relative;
+  opacity: 0;
+}
+div.ThreeOhThreeContent div.iconDo > p.viewDesigns {
+  top: -6vw;
+  position: relative;
+  opacity: 0;
+}
+/*div.Connect {
+  position: relative;
+  width: 40%;
+  left: 18%;
+  bottom: 0vw;
+  height: 24vw;
+  top: 46vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 1019px) {
+    div.Connect{
+      top: 294vw;
+      position: relative;
+      margin-left: -5%;
+      width: 50%;
+    }
+}
+@media (min-width: 1020px) and (max-width: 1080px){
+    div.Connect{
+      top: 86vw;
+      position: relative;
+      margin-left: 2%;
+    }
+}
+div.Connect > div {
+  position: relative;
+  width: 14vw;
+  height: 11vw;
+  top: 2.2vw;
+}
+div.Connect > div > a {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  text-decoration: none;
+}
+div.Connect > div > a:hover{
+  opacity: .5;
+  cursor: pointer;
+  transition: .3s;
+}
+div.Connect > div > a:hover > p {
+  opacity: .5;
+  transition: .3s;
+}
+div.Connect > div > a > p {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  color: #061A1E;
+  top: 7.5vw;
+}
+@media (max-width: 1019px) {
+    div.Connect > div > a > p{
+      top: 9vw;
+    }
+}
+img.globeBlack {
+  position: relative;
+  margin: 0 auto;
+  height: 35%;
+  width: 30%;
+  top: 20%;
+}
+img.githubBlack {
+  position: relative;
+  margin: 0 auto;
+  height: 33%;
+  width: 28%;
+  top: 20%;
+}
+img.dribbbleBlack {
+  position: relative;
+  margin: 0 auto;
+  height: 29%;
+  width: 25%;
+  top: 20%;
+}*/
+
+/*div.ThreeOhThreeMedia > img, div.ThreeOhThreeMedia > video {
+  transform: rotateX(55deg) rotateZ(10deg)rotateY(-4deg)translateY(-20em) rotate(15deg);
+  transform-style: preserve-3d;
+  transform-origin: 10em;
+}*/
+/*div.ThreeBGAnimation {
+  background-image: url("ThreeBGAnimation.png");
+  position: fixed;
+  transform: rotate(-10deg);
+  height: 176%;
+  width: 40%;
+  top: -8%;
+  left: 25vw;
+  background-size: 70%;
+  background-repeat: repeat-y;
+  animation: floatUp 60s infinite linear;
+  opacity: .6;
+}*//*
+div.ThreeBGAnimation {
+  position: relative;
+  height: 60vh;
+  width: 40vw;
+  margin-top: -80vh;
+  left: 0vw;
+  opacity: 1;
+}
+video.ThreeOhScrollDown {
+  position: relative;
+  height: 80vh;
+  width: 40vw;
+  margin-top: 6vh;
+  left: 30vw;
+}
+img.ThreePalette {
+  position: relative;
+  height: 30vh;
+  width: 30vw;
+  margin-top: -5.5vw;
+  left: 30vw;
+}
+img.ThreeBuild {
+  position: relative;
+  height: 20vh;
+  width: 26vw;
+  margin-top: 2vh;
+  left: 30vw;
+}
+img.ThreeStream {
+  position: relative;
+  height: 20vh;
+  width: 30vw;
+  margin-top: 2vh;
+  left: 30vw;
+}
+img.ThreeCompete {
+  position: relative;
+  height: 20vh;
+  width: 34vw;
+  margin-top: 2vh;
+  left: 30vw;
+}
+img.ThreeHost {
+  position: relative;
+  height: 18vh;
+  width: 22vw;
+  margin-top: 2vh;
+  left: 30vw;
+}
+img.ThreeRoster {
+  position: relative;
+  height: 40vh;
+  width: 40vw;
+  margin-top: 2vh;
+  left: 24vw;
+}
+img.MountainRange {
+  position: relative;
+  height: 12vh;
+  width: 70vw;
+  margin-top: 2vh;
+  left: 12vw;
+}
+img.ThreeHeader {
+  position: relative;
+  height: 26vh;
+  width: 52vw;
+  margin-top: 5.5vw;
+  left: 18vw;
+}
+video.ThreeNewsMov {
+  position: relative;
+  height: 80vh;
+  width: 40vw;
+  margin-top: -8vh;
+  left: 24vw;
+}*/
+/*
+@keyframes floatUp {
+  0% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}*/

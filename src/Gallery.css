@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+div.Gallery {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+div#GalleryPreviewCopy {
+  /*bottom: 39.8vh;
+  right: 18vw;*/
+}
+
+div.ThePreviews {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.GalleryContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  opacity: 0;
+}
+
+div.GalleryContent > div.projectTitle {
+  position: absolute;
+  width: 80vw;
+  height: 30vh;
+  top: 2vh;
+}
+div.GalleryContent > div.projectTitle > p.theTitle {
+  font-family: 'Khand', sans-serif;
+  font-weight: 600;
+  color: #0408DC;
+  font-size: 3.6em;
+  text-align: left;
+  margin-left: 9vw;
+  margin-top: -1vh;
+}

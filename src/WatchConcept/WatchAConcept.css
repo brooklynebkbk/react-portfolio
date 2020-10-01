@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+div.WatchAConcept {
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+div#WatchPreviewCopy {
+  /*bottom: 39.8vh;
+  right: 18vw;*/
+}
+div.ThePreviews {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.WatchContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  opacity: 0;
+}
+
+div.WatchContent > div.projectTitle {
+  position: absolute;
+  width: 80vw;
+  height: 16vh;
+  top: -8vh;
+}
+div.WatchContent > div.projectTitle > p.theTitle {
+  font-family: 'Khand', sans-serif;
+  font-weight: 600;
+  color: #264B48;
+  font-size: 3.2em;
+  text-align: left;
+  margin-left: 9vw;
+  margin-top: -4vh;
+}
+div.WatchContent > div.projectTitle > p.projectContributor {
+  font-family: 'Oswald', sans-serif;
+  color: #264B48;
+  font-size: 1.4em;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 1vh;
+  margin-left: 9.2vw;
+}
+@media (min-width: 1021px) {
+ div.WatchContent > div.About {
+  position: relative;
+  width: 32%;
+  height: 30%;
+  top: 10.5vw;
+  left: 9vw;
+ }
+}
+@media (max-width: 1020px) {
+    div.About{
+      top: 82vw;
+      width: 90%;
+      position: relative;
+      margin: 0 auto;
+      left: 0%;
+      zoom: .8;
+    }
+}
+div.WatchContent > div.About > h4 {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  margin-top: 2em;
+  margin-bottom: 0;
+  color: #264B48;
+  font-size: 2.3em;
+}
+div.WatchContent > div.About > p {
+  margin-top: 1vh;
+  font-family: 'Oswald', sans-serif;
+  color: #264B48;
+  font-size: 1.3em;
+}
+/*<div className="palette">
+          <p className="colorSwatch">THE COLORSCHEME</p>
+          <p className="colorSwatchText">An experimental Palette</p>
+          <img className="handy" src={handy} alt="handy" />
+          <img className="WatchPalette" src={WatchPalette} alt="WatchPalette" />
+        </div>*/
+
+@media (min-width: 1021px) {
+  div.palette {
+    position: relative;
+    height: 44vw;
+    width: 90%;
+    top: 11vw;
+    left: 6vw;
+  }
+}
+@media (max-width: 1020px) {
+  div.palette {
+    position: relative;
+    height: 44vw;
+    width: 90%;
+    top: 72vw;
+    left: 6vw;
+  }
+}
+@media (min-width: 1021px) {
+  div.palette > p:nth-child(1) {
+    font-family: 'Khand', sans-serif;
+    font-weight: 800;
+    margin-top: 2em;
+    margin-bottom: 0;
+    color: #264B48;
+    font-size: 2.3em;
+    position: absolute;
+    left: 6vw;
+  }
+}
+@media (max-width: 1020px) {
+  div.palette > p:nth-child(1) {
+    font-family: 'Khand', sans-serif;
+    font-weight: 800;
+    margin-top: .4em;
+    color: #264B48;
+    font-size: 2.3em;
+    position: absolute;
+    left: 7.6vw;
+    zoom: .8;
+  }
+}
+@media (min-width: 1021px) {
+  div.palette > p:nth-child(2) {
+    margin-top: 1vh;
+    font-family: 'Oswald', sans-serif;
+    color: #264B48;
+    font-size: 1.3em;
+    position: absolute;
+    left: 6vw;
+    top: 10vw;
+  }
+}
+@media (max-width: 1020px) {
+  div.palette > p:nth-child(2) {
+    margin-top: 1vh;
+    font-family: 'Oswald', sans-serif;
+    color: #264B48;
+    font-size: 1.3em;
+    position: absolute;
+    left: 7.6vw;
+    top: 9vw;
+    zoom: .8;
+  }
+}
+div.palette > img:nth-child(3) {
+  position: absolute;
+  height: 24vw;
+  width: 50vw;
+  left: 6vw;
+  top: 15vw;
+  border: solid  1px #2C4849;
+}
+div.palette > img:nth-child(4) {
+  position: absolute;
+  height: 24vw;
+  width: 24vw;
+  left: 62vw;
+  top: 24vw;
+  border: solid  1px #2C4849;
+}
+@media (min-width: 1021px) {
+  div.WatchContent div.Stack{
+    position: relative;
+    height: 36vw;
+    width: 46vw;
+    top: 15vw;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1020px) {
+    div.WatchContent div.Stack{
+      top: 96vw;
+      position: relative;
+      margin: 0 auto;
+      zoom: .8;
+      width: 80%;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1080px){
+    div.WatchContent div.Stack{
+      top: 79vw;
+      width: 54%;
+      position: relative;
+      margin-left: 25%;
+    }
+}
+div.WatchContent div.Stack > p {
+  position: relative;
+  color: #264B48;
+}
+div.WatchContent p.theStack {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  margin: 0 auto;
+  top: 2.6vw;
+}
+div.WatchContent p.aboutStack {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  top: 1.8vw;
+}
+@media (min-width: 1021px) {
+  div.WatchContent div.connectSection {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: 10vw;
+  }
+}
+@media (max-width: 1020px) {
+  div.WatchContent div.connectSection {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: 96vw;
+  }
+}
+div.WatchContent div.connectIcons {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  top: -8vw;
+  width: 100%;
+  justify-content: center;
+}
+div.WatchContent div.connectIcons > div > a {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.WatchContent div.toSite {
+  height: 2.8em;
+  width: 2.8em;
+  background-color: #264B48;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 50%;
+}
+div.WatchContent div.toSite:hover {
+  /*animation: shine 1s alternate infinite;*/
+  background-color: #8DD69D;
+  transition: .3s;
+}
+img.web {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.WatchContent div.toDribbble {
+  height: 2.8em;
+  width: 2.8em;
+  background-color: #264B48;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 50%;
+}
+div.WatchContent div.toDribbble:hover {
+  background-color: #8DD69D;
+  transition: .3s;
+}
+img.drib {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.WatchContent div.toGithub {
+  height: 2.8em;
+  width: 2.8em;
+  background-color: #264B48;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-radius: 50%;
+}
+div.WatchContent div.toGithub:hover {
+  background-color: #8DD69D;
+  transition: .3s;
+}
+img.git {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+@media (min-width: 1021px) {
+  div.WatchContent div.iconDo {
+    color: #264B48;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 1020px) {
+  div.WatchContent div.iconDo {
+    display: none;
+  }
+}
+div.WatchContent div.iconDo > p.visitSite {
+  top: -7vw;
+  position: relative;
+  opacity: 0;
+}
+div.WatchContent div.iconDo > p.viewSS {
+  top: -10.5vw;
+  position: relative;
+  opacity: 0;
+}
+div.WatchContent div.iconDo > p.viewDesigns {
+  top: -14vw;
+  position: relative;
+  opacity: 0;
+}

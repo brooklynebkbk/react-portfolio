@@ -1,0 +1,235 @@
+@media (max-width: 640px) {
+  div.ContactInfo {
+    display: none;
+  }
+}
+.nameHolder {
+  height: 16vh;
+  width: 15vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.nameHolder:hover {
+  cursor: pointer;
+}
+.nameHolder > h4 {
+  color: #0408DC;
+  font-family: 'Khand', sans-serif;
+  font-size: 2.6em;
+  font-weight: 800;
+  opacity: 0;
+  animation: nameFadeIn 1.8s forwards 6.8s ease-in-out;
+  /*text-shadow:
+   -1px -1px 0 #DEF2F8,
+    1px -1px 0 #DEF2F8,
+    -1px 1px 0 #DEF2F8,
+     1px 1px 0 #DEF2F8;*/
+}
+@keyframes nameFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h4.contactFirstName {
+  position: fixed;
+  right: .4em;
+  top: -1em;
+}
+h4.contactLastName {
+  position: fixed;
+  right: .4em;
+  top: -.1em;
+}
+@keyframes contactFadeIn {
+  0% {
+    top: -2.4em;
+    opacity: 0;
+  }
+  100% {
+    top: 0em;
+    opacity: 1;
+  }
+}
+div.ContactInfo {
+  position: relative;
+  height: 20vh;
+  width: 100vw;
+  top: -3em;
+  margin: 0 auto;
+  z-index: 0;
+  opacity: 0;
+}
+/*div.ContactInfo.contactFade {
+  opacity: 0;
+  animation: contactFadeIn 1s forwards 1 .7s ease;
+}
+div.ContactInfo.contactFade.contactDisappear {
+  animation: contactFadeIn 1s reverse ease;
+
+}*/
+div.landingTitle {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  top: -1em;
+  width: 100%;
+  justify-content: center;
+}
+div.designer {
+  display: flex;
+  position: relative;
+}
+div.developer {
+  display: flex;
+  position: relative;
+}
+div.learner {
+  display: flex;
+  position: relative;
+}
+p.letterTitle {
+  color: #1317FA;
+  font-family: 'Khand', sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  padding-left: .025em;
+}
+div.contactIcons {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  top: -4em;
+  width: 100%;
+  justify-content: center;
+}
+
+/*@keyframes shine {
+  10% {
+    background: linear-gradient(#1317FA, #CCFA4C);
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, background;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  100% {
+    background: linear-gradient(#CCFA4C, #1317FA);
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, background;
+  }
+}*/
+
+div.contactIcons > div > a {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+div.email {
+  height: 2.4em;
+  width: 2.4em;
+  background-color: #1317FA;
+  margin: 2em;
+  border-radius: 50%;
+}
+div.email:hover {
+  /*animation: shine 1s alternate infinite;*/
+  background-color: #CCFA4C;
+  transition: .3s;
+}
+img.mail {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.dribbble {
+  height: 2.4em;
+  width: 2.4em;
+  background-color: #1317FA;
+  margin: 2em;
+  border-radius: 50%;
+}
+div.dribbble:hover {
+  background-color: #CCFA4C;
+  transition: .3s;
+}
+img.drib {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.github {
+  height: 2.4em;
+  width: 2.4em;
+  background-color: #1317FA;
+  margin: 2em;
+  border-radius: 50%;
+}
+div.github:hover {
+  background-color: #CCFA4C;
+  transition: .3s;
+}
+img.git {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.instagram {
+  height: 2.4em;
+  width: 2.4em;
+  background-color: #1317FA;
+  margin: 2em;
+  border-radius: 50%;
+}
+div.instagram:hover {
+  background-color: #CCFA4C;
+  transition: .3s;
+}
+img.insta {
+  height: 56%;
+  width: 56%;
+  position: relative;
+  margin: 0 auto;
+  top: 20%;
+}
+div.linkedIn {
+  height: 2.2em;
+  width: 2.2em;
+  background-color: #1317FA;
+  margin: 2em;
+  border-radius: 50%;
+}
+div.linkedIn:hover {
+  background-color: #CCFA4C;
+  transition: .3s;
+}
+img.linked {
+  height: 52%;
+  width: 52%;
+  position: relative;
+  margin: 0 auto;
+  top: 24%;
+}
+
+
+
+
+
+
+
+
+
+
+
