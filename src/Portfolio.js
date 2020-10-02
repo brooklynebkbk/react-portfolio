@@ -1030,10 +1030,10 @@ export default class Portfolio extends React.Component  {
     menu.style.transition = "1.2s ease-in-out";
     document.querySelector("div.portfolioTab").addEventListener("mouseenter", this.Navigation.showNavigation);
     if(window.innerWidth< 640){
-      for (let i = 3; i < 13; i++) {
+      for (let i = 1; i < 14; i++) {
         var previews = document.querySelector("div.Portfolio > div:nth-of-type("+i+")");
           previews.style.opacity = "1";
-          previews.style.transition = "1.1s ease";
+          previews.style.transition = "1.6s .1s ease";
       }
       } else {
         return;
@@ -1086,7 +1086,7 @@ componentDidMount() {
   var activatePortfolioHover = this.portfolioHover;
   setTimeout(function() {
     activatePortfolioHover();
-  }, 8000);
+  }, 7000);
   this.nameClicked();
   /*document.querySelector("div.Portfolio").addEventListener('scroll', this.Navigation.toNextPiece, false);
   document.querySelector("div#nextPiece303").addEventListener('mouseenter', this.Navigation.viewNextEnter, false);

@@ -3,13 +3,26 @@
     display: none;
   }
 }
-.nameHolder {
-  height: 16vh;
-  width: 15vw;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 10;
+@media (max-width: 640px) {
+  .nameHolder {
+    height: 16vh;
+    width: 15vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    pointer-events: none;
+  }
+}
+@media (min-width: 641px) {
+  .nameHolder {
+    height: 16vh;
+    width: 15vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+  }
 }
 .nameHolder:hover {
   cursor: pointer;

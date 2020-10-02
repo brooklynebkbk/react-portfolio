@@ -187,15 +187,12 @@ span.char8 {
 span.char9 {
   transform: rotate(60deg);
 }
+*/
 @media (max-width: 640px) {
   div.previewDesktop {
-    position: relative;
-    margin: 0 auto;
-    width: 76%;
-    left: -7vw;
     opacity: 0;
   }
-}*/
+}
 @media (max-width: 640px) {
   div#GalleryPreview {
     display: none;
