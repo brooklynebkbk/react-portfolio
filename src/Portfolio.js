@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Portfolio.css';
 import ThreeOhThree from './ThreeOhThree/ThreeOhThree.js';
 import BaziniHopp from './BaziniHopp/BaziniHopp.js';
+import AnimatedStructure from './AnimatedStructure/AnimatedStructure.js';
 import FLShotUsers from './FLShotUsers/FLShotUsers.js';
 import HebronHarvest from './HebronHarvest/HebronHarvest.js';
 import WatchAConcept from './WatchConcept/WatchAConcept.js';
@@ -12,6 +13,8 @@ import ThreeHome from './ThreeOhThree/ThreeHome.png';
 import mobile303Home from './ThreeOhThree/mobile303Home.PNG';
 import BaziniHoppHome from './BaziniHopp/BaziniHopp.mov';
 import baziniHoppMobile from './BaziniHopp/baziniHoppMobile.PNG';
+import StructureAnimation from './AnimatedStructure/architectureAnimation.mov';
+import structureMobile from './AnimatedStructure/structureMobile.png';
 import FLSFooter from './FLShotUsers/FLSFooter.png';
 import footerMobile from './FLShotUsers/footerMobile.PNG';
 /*import HHHome from './HebronHarvest/harvestVideo.mov';*/
@@ -61,8 +64,8 @@ export default class Portfolio extends React.Component  {
       firstName: "var name1 = document.querySelector('.nameHolder > h4:nth-child(1)');name1.style.transition = '.5s ease';name1.style.color = ",
       lastName: "var name2 = document.querySelector('.nameHolder > h4:nth-child(2)');name2.style.transition = '.5s ease';name1.style.color = ",
       portfolioBar: "var portfolioTab = document.querySelector('div.portfolioTab');portfolioTab.style.transition = '.5s ease';portfolioTab.style.backgroundColor = ",
-      portfolioNumber: "for (let i = 1; i < 6; i++) {var theNumber = document.querySelector('div.panel > div:nth-child('+i+') > p.portfolioNumber');theNumber.style.transition = '.5s ease';theNumber.style.color = ",
-      portfolioPiece: "for (let i = 1; i < 6; i++) {var thePiece = document.querySelector('div.panel > div:nth-child('+i+') > p.portfolioPiece');thePiece.style.transition = '.5s ease';thePiece.style.color = ",
+      portfolioNumber: "for (let i = 1; i < 7; i++) {var theNumber = document.querySelector('div.panel > div:nth-child('+i+') > p.portfolioNumber');theNumber.style.transition = '.5s ease';theNumber.style.color = ",
+      portfolioPiece: "for (let i = 1; i < 7; i++) {var thePiece = document.querySelector('div.panel > div:nth-child('+i+') > p.portfolioPiece');thePiece.style.transition = '.5s ease';thePiece.style.color = ",
       portfolioPanel: "var panel = document.querySelector('div.panel');panel.style.transition = '.5s ease';panel.style.backgroundColor = "
     };
     this.Navigation = {
@@ -150,6 +153,10 @@ export default class Portfolio extends React.Component  {
         previewFLS.style.display = "block";
         var previewFLSMobile = document.querySelector("div#FLPreviewMobile");
         previewFLSMobile.style.display = "block";
+        var previewStructure = document.querySelector("div#StructurePreview");
+        previewStructure.style.display = "block";
+        var previewStructureMobile = document.querySelector("div#StructurePreviewMobile");
+        previewStructureMobile.style.display = "block";
         var previewBazini = document.querySelector("div#BaziniPreview");
         previewBazini.style.display = "block";
         var previewBaziniMobile = document.querySelector("div#BaziniPreviewMobile");
@@ -190,6 +197,10 @@ export default class Portfolio extends React.Component  {
           previewFLS.style.display = "none";
           var previewFLSMobile = document.querySelector("div#FLPreviewMobile");
           previewFLSMobile.style.display = "none";
+          var previewStructure = document.querySelector("div#StructurePreview");
+          previewStructure.style.display = "none";
+          var previewStructureMobile = document.querySelector("div#StructurePreviewMobile");
+          previewStructureMobile.style.display = "none";
           var previewBazini = document.querySelector("div#BaziniPreview");
           previewBazini.style.display = "none";
           var previewBaziniMobile = document.querySelector("div#BaziniPreviewMobile");
@@ -227,26 +238,34 @@ export default class Portfolio extends React.Component  {
             previewP2Mobile.style.top = "-20vw";
             previewP2Mobile.style.opacity = "0";
             previewP2Mobile.style.transition = "1s ease";
-          var previewP3 = document.querySelector("div#FLShotsPreview");
+          var previewP3 = document.querySelector("div#StructurePreview");
             previewP3.style.bottom = "-10vw";
             previewP3.style.opacity = "0";
             previewP3.style.transition = "1s ease";
-          var previewP3Mobile = document.querySelector("div#FLPreviewMobile");
+          var previewP3Mobile = document.querySelector("div#StructurePreviewMobile");
             previewP3Mobile.style.top = "-20vw";
             previewP3Mobile.style.opacity = "0";
             previewP3Mobile.style.transition = "1s ease";
-          var previewP4 = document.querySelector("div#HebronPreview");
+          var previewP4 = document.querySelector("div#FLShotsPreview");
             previewP4.style.bottom = "-10vw";
             previewP4.style.opacity = "0";
             previewP4.style.transition = "1s ease";
-          var previewP4Mobile = document.querySelector("div#HebronPreviewMobile");
+          var previewP4Mobile = document.querySelector("div#FLPreviewMobile");
             previewP4Mobile.style.top = "-20vw";
             previewP4Mobile.style.opacity = "0";
             previewP4Mobile.style.transition = "1s ease";
-          var previewP5 = document.querySelector("div#WatchPreview");
+          var previewP5 = document.querySelector("div#HebronPreview");
             previewP5.style.bottom = "-10vw";
             previewP5.style.opacity = "0";
             previewP5.style.transition = "1s ease";
+          var previewP5Mobile = document.querySelector("div#HebronPreviewMobile");
+            previewP5Mobile.style.top = "-20vw";
+            previewP5Mobile.style.opacity = "0";
+            previewP5Mobile.style.transition = "1s ease";
+          var previewP6 = document.querySelector("div#WatchPreview");
+            previewP6.style.bottom = "-10vw";
+            previewP6.style.opacity = "0";
+            previewP6.style.transition = "1s ease";
       },
       mobileScroll: function(event) {
         if(window.innerWidth< 640){
@@ -324,12 +343,12 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.transition = ".5s ease";
             portfolioTab.style.backgroundColor = "#061A1E";
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.transition = ".5s ease";
               theNumber.style.color = "#F29121";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.transition = ".5s ease";
               thePiece.style.color = "#ADBDB6";
@@ -372,12 +391,12 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.backgroundColor = "#414C62";
             portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#EC7A6F";
               theNumber.style.transition = ".5s ease";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#E8ECED";
               thePiece.style.transition = ".5s ease";
@@ -394,6 +413,54 @@ export default class Portfolio extends React.Component  {
         },
         function() {
           me.setState({menuItem: 3});
+          var preview = document.querySelector("div#StructurePreview");
+            preview.style.display = "block";
+            preview.style.bottom = "36%";
+            preview.style.opacity = "1";
+            preview.style.transition = "1.2s ease";
+          var plant = document.querySelector("div.floatingPlant");
+            plant.style.marginTop = "46vh";
+            plant.style.opacity = "0";
+            plant.style.transition = "1s ease-in-out";
+          var previewMobile = document.querySelector("div#StructurePreviewMobile");
+            previewMobile.style.display = "block";
+            previewMobile.style.top = "46%";
+            previewMobile.style.opacity = "1";
+            previewMobile.style.transition = "1.2s ease";
+          var app = document.querySelector(".App");
+            app.style.backgroundColor = "#E5EBEA";
+            app.style.transition = ".5s ease";
+          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
+            name1.style.color = "#0B191F";
+            name1.style.transition = ".5s ease";
+          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
+            name2.style.color = "#0B191F";
+            name2.style.transition = ".5s ease";
+          var portfolioTab = document.querySelector("div.portfolioTab");
+            portfolioTab.style.backgroundColor = "#0B191F";
+            portfolioTab.style.transition = ".5s ease";
+          for (let i = 1; i < 7; i++) {
+            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
+              theNumber.style.color = "#4C5E5C";
+              theNumber.style.transition = ".5s ease";
+          }
+          for (let i = 1; i < 7; i++) {
+            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
+              thePiece.style.color = "#E5EBEA";
+              thePiece.style.transition = ".5s ease";
+          }
+          var panel = document.querySelector("div.panel");
+            panel.style.backgroundColor = "#0B191F";
+            panel.style.transition = ".5s ease";
+          var theNumber = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
+            if(window.innerWidth > 1200 || window.innerWidth < 420) {
+              theNumber.style.right = "-4%";
+            } else {
+              theNumber.style.right = "2%";
+            }
+        },
+        function() {
+          me.setState({menuItem: 4});
           var preview = document.querySelector("div#FLShotsPreview");
             preview.style.bottom = "36%";
             preview.style.opacity = "1";
@@ -418,12 +485,12 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.backgroundColor = "#084D67";
             portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#52DCF4";
               theNumber.style.transition = ".5s ease";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#DAF6FB";
               thePiece.style.transition = ".5s ease";
@@ -431,7 +498,7 @@ export default class Portfolio extends React.Component  {
           var panel = document.querySelector("div.panel");
             panel.style.backgroundColor = "#084D67";
             panel.style.transition = ".5s ease";
-          var theNumber = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
+          var theNumber = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
             if(window.innerWidth > 1200 || window.innerWidth < 420) {
               theNumber.style.right = "-4%";
             } else {
@@ -439,7 +506,7 @@ export default class Portfolio extends React.Component  {
             }
         },
         function() {
-          me.setState({menuItem: 4});
+          me.setState({menuItem: 5});
           var previewHebron = document.querySelector("div#HebronPreview");
             previewHebron.style.display = "block";
           var previewHebronMobile = document.querySelector("div#HebronPreviewMobile");
@@ -468,12 +535,12 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.backgroundColor = "#39140E";
             portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#304A44";
               theNumber.style.transition = ".5s ease";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#F9F2DC";
               thePiece.style.transition = ".5s ease";
@@ -481,7 +548,7 @@ export default class Portfolio extends React.Component  {
           var panel = document.querySelector("div.panel");
             panel.style.backgroundColor = "#39140E";
             panel.style.transition = ".5s ease";
-          var theNumber = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
+          var theNumber = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
             if(window.innerWidth > 1200 || window.innerWidth < 420) {
               theNumber.style.right = "-4%";
             } else {
@@ -489,7 +556,7 @@ export default class Portfolio extends React.Component  {
             }
         },
         function() {
-          me.setState({menuItem: 5});
+          me.setState({menuItem: 6});
           var preview = document.querySelector("div#WatchPreview");
             preview.style.bottom = "36%";
             preview.style.opacity = "1";
@@ -510,12 +577,12 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.backgroundColor = "#264B48";
             portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#8DD69D";
               theNumber.style.transition = ".5s ease";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#E8E7E0";
               thePiece.style.transition = ".5s ease";
@@ -523,7 +590,7 @@ export default class Portfolio extends React.Component  {
             var panel = document.querySelector("div.panel");
               panel.style.backgroundColor = "#264B48";
               panel.style.transition = ".5s ease";
-            var theNumber = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
+            var theNumber = document.querySelector("div.panel > div:nth-child(6) > p.portfolioNumber");
               if(window.innerWidth > 1200 || window.innerWidth < 420) {
                 theNumber.style.right = "-4%";
               } else {
@@ -531,7 +598,7 @@ export default class Portfolio extends React.Component  {
               }
         },
         function() {
-          me.setState({menuItem: 6});
+          me.setState({menuItem: 7});
           /*var preview = document.querySelector("div#GalleryPreview");
             preview.style.bottom = "36%";
             preview.style.opacity = "1";
@@ -554,12 +621,12 @@ export default class Portfolio extends React.Component  {
           /*var gallery = document.querySelector("#toGallery > p");
             gallery.style.color = "#99FF00";
             gallery.style.transition = ".5s ease";*/
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#008DD5";
               theNumber.style.transition = ".5s ease";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#99FF00";
               thePiece.style.transition = ".5s ease";
@@ -589,12 +656,12 @@ export default class Portfolio extends React.Component  {
           /*var gallery = document.querySelector("#toGallery > p");
             gallery.style.color = "#99FF00";
             gallery.style.transition = ".5s ease";*/
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#008DD5";
               theNumber.style.transition = ".5s ease";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#99FF00";
               thePiece.style.transition = ".5s ease";
@@ -604,6 +671,45 @@ export default class Portfolio extends React.Component  {
             panel.style.transition = ".5s ease";
         }],
         nextProject: [function() {
+          var preview = document.querySelector("div#ThreeOhPreview");
+            preview.style.display = "block";
+            preview.style.bottom = "30%";
+            preview.style.opacity = "1";
+            preview.style.transition = "1.2s ease";
+          var previewMobile = document.querySelector("div#ThreeOhPreviewMobile");
+            previewMobile.style.display = "block";
+            previewMobile.style.top = "40%";
+            previewMobile.style.opacity = "1";
+            previewMobile.style.transition = "1.2s ease";
+          var app = document.querySelector(".App");
+            app.style.transition = ".5s ease";
+            app.style.backgroundColor = "#DBE6E3";
+          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
+            name1.style.transition = ".5s ease";
+            name1.style.color = "#061A1E";
+          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
+            name2.style.transition = ".5s ease";
+            name2.style.color = "#061A1E";
+          var portfolioTab = document.querySelector("div.portfolioTab");
+            portfolioTab.style.transition = ".5s ease";
+            portfolioTab.style.backgroundColor = "#061A1E";
+          for (let i = 1; i < 7; i++) {
+            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
+              theNumber.style.transition = ".5s ease";
+              theNumber.style.color = "#F29121";
+          }
+          for (let i = 1; i < 7; i++) {
+            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
+              thePiece.style.transition = ".5s ease";
+              thePiece.style.color = "#ADBDB6";
+          }
+          var panel = document.querySelector("div.panel");
+            panel.style.transition = ".5s ease";
+            panel.style.backgroundColor = "#061A1E";
+          var theNumber = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
+            theNumber.style.right = "49%";
+        },
+        function() {
           var preview = document.querySelector("div#BaziniPreview");
             preview.style.display = "block";
             preview.style.bottom = "36%";
@@ -626,12 +732,12 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.backgroundColor = "#414C62";
             portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#ec7a6f";
               theNumber.style.transition = ".5s ease";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#E8ECED";
               thePiece.style.transition = ".5s ease";
@@ -641,6 +747,46 @@ export default class Portfolio extends React.Component  {
             panel.style.transition = ".5s ease";
           var theNumberThree = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
             theNumberThree.style.right = "49%";
+        },
+        function() {
+          var preview = document.querySelector("div#StructurePreview");
+            preview.style.display = "block";
+            preview.style.bottom = "36%";
+            preview.style.opacity = "1";
+            preview.style.transition = "1.2s ease";
+          var previewMobile = document.querySelector("div#StructurePreviewMobile");
+            previewMobile.style.display = "block";
+            previewMobile.style.top = "46%";
+            previewMobile.style.opacity = "1";
+            previewMobile.style.transition = "1.2s ease";
+          var app = document.querySelector(".App");
+            app.style.backgroundColor = "#E5EBEA";
+            app.style.transition = ".5s ease";
+          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
+            name1.style.color = "#0B191F";
+            name1.style.transition = ".5s ease";
+          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
+            name2.style.color = "#0B191F";
+            name2.style.transition = ".5s ease";
+          var portfolioTab = document.querySelector("div.portfolioTab");
+            portfolioTab.style.backgroundColor = "#0B191F";
+            portfolioTab.style.transition = ".5s ease";
+          for (let i = 1; i < 7; i++) {
+            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
+              theNumber.style.color = "#4C5E5C";
+              theNumber.style.transition = ".5s ease";
+          }
+          for (let i = 1; i < 7; i++) {
+            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
+              thePiece.style.color = "#E5EBEA";
+              thePiece.style.transition = ".5s ease";
+          }
+          var panel = document.querySelector("div.panel");
+            panel.style.backgroundColor = "#0B191F";
+            panel.style.transition = ".5s ease";
+          var theNumberBazini = document.querySelector("div.panel > div:nth-child(2) > p.portfolioNumber");
+            theNumberBazini.style.right = "49%";
+
         },
         function() {
           var preview = document.querySelector("div#FLShotsPreview");
@@ -665,12 +811,12 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.backgroundColor = "#084D67";
             portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#52DCF4";
               theNumber.style.transition = ".5s ease";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#DAF6FB";
               thePiece.style.transition = ".5s ease";
@@ -678,7 +824,7 @@ export default class Portfolio extends React.Component  {
           var panel = document.querySelector("div.panel");
             panel.style.backgroundColor = "#084D67";
             panel.style.transition = ".5s ease";
-          var theNumber = document.querySelector("div.panel > div:nth-child(2) > p.portfolioNumber");
+          var theNumber = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
             theNumber.style.right = "49%";
         },
         function() {
@@ -704,12 +850,12 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.backgroundColor = "#39140E";
             portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#304A44";
               theNumber.style.transition = ".5s ease";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#F9F2DC";
               thePiece.style.transition = ".5s ease";
@@ -717,7 +863,7 @@ export default class Portfolio extends React.Component  {
           var panel = document.querySelector("div.panel");
             panel.style.backgroundColor = "#39140E";
             panel.style.transition = ".5s ease";
-          var theNumber = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
+          var theNumber = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
             theNumber.style.right = "49%";
         },
         function() {
@@ -738,12 +884,12 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.backgroundColor = "#264B48";
             portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#8DD69D";
               theNumber.style.transition = ".5s ease";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#E8E7E0";
               thePiece.style.transition = ".5s ease";
@@ -751,7 +897,7 @@ export default class Portfolio extends React.Component  {
             var panel = document.querySelector("div.panel");
               panel.style.backgroundColor = "#264B48";
               panel.style.transition = ".5s ease";
-            var theNumber = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
+            var theNumber = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
               theNumber.style.right = "49%";
         },
         function() {
@@ -782,13 +928,13 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.backgroundColor = "#0408DC";
             portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#008DD5";
               theNumber.style.transition = ".5s ease";
               theNumber.style.right = "49%";
           }
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.color = "#99FF00";
               thePiece.style.transition = ".5s ease";
@@ -796,52 +942,13 @@ export default class Portfolio extends React.Component  {
           var panel = document.querySelector("div.panel");
             panel.style.backgroundColor = "#0408DC";
             panel.style.transition = ".5s ease";
-        },
-        function() {
-          var preview = document.querySelector("div#ThreeOhPreview");
-            preview.style.display = "block";
-            preview.style.bottom = "30%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var previewMobile = document.querySelector("div#ThreeOhPreviewMobile");
-            previewMobile.style.display = "block";
-            previewMobile.style.top = "40%";
-            previewMobile.style.opacity = "1";
-            previewMobile.style.transition = "1.2s ease";
-          var app = document.querySelector(".App");
-            app.style.transition = ".5s ease";
-            app.style.backgroundColor = "#DBE6E3";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.transition = ".5s ease";
-            name1.style.color = "#061A1E";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.transition = ".5s ease";
-            name2.style.color = "#061A1E";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.transition = ".5s ease";
-            portfolioTab.style.backgroundColor = "#061A1E";
-          for (let i = 1; i < 6; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.transition = ".5s ease";
-              theNumber.style.color = "#F29121";
-          }
-          for (let i = 1; i < 6; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.transition = ".5s ease";
-              thePiece.style.color = "#ADBDB6";
-          }
-          var panel = document.querySelector("div.panel");
-            panel.style.transition = ".5s ease";
-            panel.style.backgroundColor = "#061A1E";
-          var theNumber = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
-            theNumber.style.right = "49%";
         }]
     };
   };
 
   renderLanding = () => {
     var displayBefore = this.state.currentDisplay;
-    for (let i = 1; i < 6; i++) {
+    for (let i = 1; i < 7; i++) {
       var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
         theNumber.style.right = "49%";
         theNumber.style.transition = ".5s ease";
@@ -880,7 +987,7 @@ export default class Portfolio extends React.Component  {
       return;
     } else {
       this.setState({currentDisplay: 2});
-      this.setState({activeColorCodes: ["#414C62", "#ec7a6f"," #E8ECED"]});
+      this.setState({activeColorCodes: ["#414C62", "#EC7A6F"," #E8ECED"]});
     }
     setTimeout(function(){
       var preview = document.querySelector("div#BaziniPreview");
@@ -891,13 +998,31 @@ export default class Portfolio extends React.Component  {
 
   };
 
-  renderFLShotUsers = () => {
+  renderStructure = () => {
     this.Navigation.hideNavigation();
     var displayBefore = this.state.currentDisplay;
     if(displayBefore === 3) {
       return;
     } else {
       this.setState({currentDisplay: 3});
+      this.setState({activeColorCodes: ["#0B191F", "#4C5E5C"," #E5EBEA"]});
+    }
+    setTimeout(function(){
+      var preview = document.querySelector("div#StructurePreview");
+          preview.style.display = "none";
+      var previewMobile = document.querySelector("div#StructurePreviewMobile");
+          previewMobile.style.display = "none";
+    }, 2500);
+
+  };
+
+  renderFLShotUsers = () => {
+    this.Navigation.hideNavigation();
+    var displayBefore = this.state.currentDisplay;
+    if(displayBefore === 4) {
+      return;
+    } else {
+      this.setState({currentDisplay: 4});
       this.setState({activeColorCodes: ["#084D67", "#52DCF4", "#DAF6FB"]});
     }
     setTimeout(function(){
@@ -912,10 +1037,10 @@ export default class Portfolio extends React.Component  {
   renderHebronHarvest = () => {
     this.Navigation.hideNavigation();
     var displayBefore = this.state.currentDisplay;
-    if(displayBefore === 4) {
+    if(displayBefore === 5) {
       return;
     } else {
-      this.setState({currentDisplay: 4});
+      this.setState({currentDisplay: 5});
       this.setState({activeColorCodes: ["#39140E", "#304A44", "#F9F2DC"]});
     }
     setTimeout(function(){
@@ -930,10 +1055,10 @@ export default class Portfolio extends React.Component  {
   renderWatchAConcept = () => {
     this.Navigation.hideNavigation();
     var displayBefore = this.state.currentDisplay;
-    if(displayBefore === 5) {
+    if(displayBefore === 6) {
       return;
     } else {
-      this.setState({currentDisplay: 5});
+      this.setState({currentDisplay: 6});
       this.setState({activeColorCodes: ["#264B48", "#8DD69D", "#E8E7E0"]});
     }
     setTimeout(function(){
@@ -992,6 +1117,18 @@ export default class Portfolio extends React.Component  {
     theNumber.style.right = "49%";
   };
   leaveP3 = () => {
+    var preview = document.querySelector("div#StructurePreview");
+    preview.style.bottom = "-10vw";
+    preview.style.opacity = "0";
+    preview.style.transition = "1s ease";
+    var previewMobile = document.querySelector("div#StructurePreviewMobile");
+    previewMobile.style.top = "-20vw";
+    previewMobile.style.opacity = "0";
+    previewMobile.style.transition = "1s ease";
+    var theNumber = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
+    theNumber.style.right = "49%";
+  };
+  leaveP4 = () => {
     var preview = document.querySelector("div#FLShotsPreview");
     preview.style.bottom = "-10vw";
     preview.style.opacity = "0";
@@ -1000,10 +1137,10 @@ export default class Portfolio extends React.Component  {
     previewMobile.style.top = "-20vw";
     previewMobile.style.opacity = "0";
     previewMobile.style.transition = "1s ease";
-    var theNumber = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
+    var theNumber = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
     theNumber.style.right = "49%";
   };
-  leaveP4 = () => {
+  leaveP5 = () => {
     var preview = document.querySelector("div#HebronPreview");
     preview.style.bottom = "-10vw";
     preview.style.opacity = "0";
@@ -1012,15 +1149,15 @@ export default class Portfolio extends React.Component  {
     previewMobile.style.top = "-20vw";
     previewMobile.style.opacity = "0";
     previewMobile.style.transition = "1s ease";
-    var theNumber = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
+    var theNumber = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
     theNumber.style.right = "49%";
   };
-  leaveP5 = () => {
+  leaveP6 = () => {
     var preview = document.querySelector("div#WatchPreview");
     preview.style.bottom = "-10vw";
     preview.style.opacity = "0";
     preview.style.transition = "1s ease";
-    var theNumber = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
+    var theNumber = document.querySelector("div.panel > div:nth-child(6) > p.portfolioNumber");
     theNumber.style.right = "49%";
   };
 
@@ -1030,7 +1167,7 @@ export default class Portfolio extends React.Component  {
     menu.style.transition = "1.2s ease-in-out";
     document.querySelector("div.portfolioTab").addEventListener("mouseenter", this.Navigation.showNavigation);
     if(window.innerWidth< 640){
-      for (let i = 1; i < 14; i++) {
+      for (let i = 1; i < 16; i++) {
         var previews = document.querySelector("div.Portfolio > div:nth-of-type("+i+")");
           previews.style.opacity = "1";
           previews.style.transition = "1.6s .1s ease";
@@ -1044,7 +1181,7 @@ export default class Portfolio extends React.Component  {
 
   nameClicked = () => {
     document.querySelector("div.Contact").addEventListener("click", this.renderLanding);
-    document.querySelector("div.Contact").addEventListener("click", this.Navigation.previewProjects[5]);
+    document.querySelector("div.Contact").addEventListener("click", this.Navigation.previewProjects[6]);
     document.querySelector("div.Contact").addEventListener("click", this.Navigation.hidePreview);
   };
 
@@ -1054,7 +1191,7 @@ export default class Portfolio extends React.Component  {
       toNext.style.opacity = "0";
       toNext.style.transition = "1s";
     if(this.state.currentDisplay === 0){
-      this.Navigation.previewProjects[6]();
+      this.Navigation.previewProjects[7]();
       this.Navigation.hideNavigation();
     }else if(this.state.currentDisplay === 1){
       this.Navigation.previewProjects[0]();
@@ -1071,8 +1208,11 @@ export default class Portfolio extends React.Component  {
     }else if(this.state.currentDisplay === 5){
       this.Navigation.previewProjects[4]();
       this.Navigation.hideNavigation();
-    } else{
+    }else if(this.state.currentDisplay === 6){
       this.Navigation.previewProjects[5]();
+      this.Navigation.hideNavigation();
+    } else{
+      this.Navigation.previewProjects[6]();
       this.Navigation.hideNavigation();
     }
   };
@@ -1091,12 +1231,13 @@ componentDidMount() {
   /*document.querySelector("div.Portfolio").addEventListener('scroll', this.Navigation.toNextPiece, false);
   document.querySelector("div#nextPiece303").addEventListener('mouseenter', this.Navigation.viewNextEnter, false);
   document.querySelector("div#nextPiece303").addEventListener('mouseleave', this.Navigation.viewNextLeave, false);*/
-  document.querySelector("div#nextPiece303").addEventListener('mouseenter', this.Navigation.nextProject[5]);
-  document.querySelector("div#nextPieceBazini").addEventListener('mouseenter', this.Navigation.nextProject[0]);
-  document.querySelector("div#nextPieceFLShotUsers").addEventListener('mouseenter', this.Navigation.nextProject[1]);
-  document.querySelector("div#nextPieceHebron").addEventListener('mouseenter', this.Navigation.nextProject[2]);
-  document.querySelector("div#nextPieceWatch").addEventListener('mouseenter', this.Navigation.nextProject[3]);
-  document.querySelector("div#nextPieceHome").addEventListener('mouseenter', this.Navigation.nextProject[4]);
+  document.querySelector("div#nextPiece303").addEventListener('mouseenter', this.Navigation.nextProject[0]);
+  document.querySelector("div#nextPieceBazini").addEventListener('mouseenter', this.Navigation.nextProject[1]);
+  document.querySelector("div#nextPieceStructure").addEventListener('mouseenter', this.Navigation.nextProject[2]);
+  document.querySelector("div#nextPieceFLShotUsers").addEventListener('mouseenter', this.Navigation.nextProject[3]);
+  document.querySelector("div#nextPieceHebron").addEventListener('mouseenter', this.Navigation.nextProject[4]);
+  document.querySelector("div#nextPieceWatch").addEventListener('mouseenter', this.Navigation.nextProject[5]);
+  document.querySelector("div#nextPieceHome").addEventListener('mouseenter', this.Navigation.nextProject[6]);
   /*if (window.innerWidth < 640) {
     document.querySelector(".Portfolio").addEventListener('scroll', this.Navigation.mobileScroll);
   } else {
@@ -1136,9 +1277,10 @@ render() {
       </div>
       { this.state.currentDisplay === 1 && <ThreeOhThree currentComp={this.state.currentDisplay}/> }
       { this.state.currentDisplay === 2 && <BaziniHopp currentComp={this.state.currentDisplay}/> }
-      { this.state.currentDisplay === 3 && <FLShotUsers currentComp={this.state.currentDisplay}/> }
-      { this.state.currentDisplay === 4 && <HebronHarvest currentComp={this.state.currentDisplay}/> }
-      { this.state.currentDisplay === 5 && <WatchAConcept currentComp={this.state.currentDisplay}/> }
+      { this.state.currentDisplay === 3 && <AnimatedStructure currentComp={this.state.currentDisplay}/> }
+      { this.state.currentDisplay === 4 && <FLShotUsers currentComp={this.state.currentDisplay}/> }
+      { this.state.currentDisplay === 5 && <HebronHarvest currentComp={this.state.currentDisplay}/> }
+      { this.state.currentDisplay === 6 && <WatchAConcept currentComp={this.state.currentDisplay}/> }
       <div className="portfolioMenu" onMouseEnter={()=>this.Navigation.hidePreview()} onMouseLeave={()=> this.setToSelected()}>
       <div className="portfolioTab">
         <p>{this.state.currentDisplay}</p>
@@ -1152,16 +1294,20 @@ render() {
         <p className="portfolioNumber">2</p><p className="portfolioPiece">BAZINIHOPP</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toFLShotUsers" onClick={()=> this.renderFLShotUsers()} onMouseEnter={()=> this.Navigation.previewProjects[2]()} onMouseLeave={()=> this.leaveP3()}>
-        <p className="portfolioNumber">3</p><p className="portfolioPiece">FL SHOT USERS</p>
+      <div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderStructure()} onMouseEnter={()=> this.Navigation.previewProjects[2]()} onMouseLeave={()=> this.leaveP3()}>
+        <p className="portfolioNumber">3</p><p className="portfolioPiece">STRUCTURE ANIMATION</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toHebronHarvest" onClick={()=> this.renderHebronHarvest()} onMouseEnter={()=> this.Navigation.previewProjects[3]()} onMouseLeave={()=> this.leaveP4()}>
-        <p className="portfolioNumber">4</p><p className="portfolioPiece">HEBRON HARVEST</p>
+      <div className="portfolioSection" id="toFLShotUsers" onClick={()=> this.renderFLShotUsers()} onMouseEnter={()=> this.Navigation.previewProjects[3]()} onMouseLeave={()=> this.leaveP4()}>
+        <p className="portfolioNumber">4</p><p className="portfolioPiece">FL SHOT USERS</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderWatchAConcept()} onMouseEnter={()=> this.Navigation.previewProjects[4]()} onMouseLeave={()=> this.leaveP5()}>
-        <p className="portfolioNumber">5</p><p className="portfolioPiece">WATCH: A CONCEPT</p>
+      <div className="portfolioSection" id="toHebronHarvest" onClick={()=> this.renderHebronHarvest()} onMouseEnter={()=> this.Navigation.previewProjects[4]()} onMouseLeave={()=> this.leaveP5()}>
+        <p className="portfolioNumber">5</p><p className="portfolioPiece">HEBRON HARVEST</p>
+        <p className="viewProject">View Project</p>
+      </div>
+      <div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderWatchAConcept()} onMouseEnter={()=> this.Navigation.previewProjects[5]()} onMouseLeave={()=> this.leaveP6()}>
+        <p className="portfolioNumber">6</p><p className="portfolioPiece">WATCH: A CONCEPT</p>
         <p className="viewProject">View Project</p>
       </div>
       </div>
@@ -1187,6 +1333,18 @@ render() {
       <div className="previewMobile" id="BaziniPreviewMobile">
         <a href="https://bazinihopp.com" target="_blank" rel="noopener noreferrer">
           <img className="baziniHoppMobile" src={baziniHoppMobile} alt="baziniHoppMobile" />
+        </a>
+      </div>
+      <div className="previewDesktop" id="StructurePreview">
+        <a href="https://thawing-depths-01252.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <video className="StructureAnimation" alt="StructureAnimation" autoPlay loop muted>
+            <source src={StructureAnimation} type="video/mp4"/>
+          </video>
+        </a>
+      </div>
+      <div className="previewMobile" id="StructurePreviewMobile">
+        <a href="https://thawing-depths-01252.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <img className="structureMobile" src={structureMobile} alt="structureMobile" />
         </a>
       </div>
       <div className="previewDesktop" id="FLShotsPreview">
@@ -1221,6 +1379,10 @@ render() {
       <div className="nextPiece" id="nextPieceBazini" onClick={()=> this.renderBaziniHopp()} onMouseLeave={()=> this.setToSelected()}>
         <p>NEXT PORTFOLIO PIECE</p>
         <p className="viewNextPiece">View BaziniHopp</p>
+      </div>
+      <div className="nextPiece" id="nextPieceStructure" onClick={()=> this.renderStructure()} onMouseLeave={()=> this.setToSelected()}>
+        <p>NEXT PORTFOLIO PIECE</p>
+        <p className="viewNextPiece">View Structure Animation</p>
       </div>
       <div className="nextPiece" id="nextPieceFLShotUsers" onClick={()=> this.renderFLShotUsers()} onMouseLeave={()=> this.setToSelected()}>
         <p>NEXT PORTFOLIO PIECE</p>
@@ -1272,6 +1434,11 @@ render() {
 
 
 };
+
+      /*<div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderWatchAConcept()} onMouseEnter={()=> this.Navigation.previewProjects[4]()} onMouseLeave={()=> this.leaveP5()}>
+        <p className="portfolioNumber">6</p><p className="portfolioPiece">GREENHOUSE ANIMATION</p>
+        <p className="viewProject">View Project</p>
+      </div>*/
 
       /*      { this.state.currentDisplay === 6 && <Gallery currentComp={this.state.currentDisplay}/> }*/
 

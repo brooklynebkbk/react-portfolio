@@ -85,7 +85,7 @@ div.portfolioSection {
   display: flex;
   position: relative;
   flex-direction: row;
-  height: 16vh;
+  height: 14vh;
   width: 100%;
   padding-top: 1vh;
   margin: 0 auto;
@@ -221,6 +221,19 @@ span.char9 {
 }
 @media (max-width: 640px) {
   div#BaziniPreviewMobile {
+    top: 106vw;
+  }
+}
+@media (max-width: 640px) {
+  div#StructurePreview {
+    top: 126vw;
+    position: relative;
+    width: 80%;
+    left: 6%;
+  }
+}
+@media (max-width: 640px) {
+  div#StructurePreviewMobile {
     top: 106vw;
   }
 }
@@ -570,8 +583,17 @@ div#nextPieceBazini:hover > p:nth-child(1) {
 div#nextPieceBazini > p:nth-child(2) {
   color: #414C62;
 }
-div#nextPieceFLShotUsers > p:nth-child(1) {
+div#nextPieceStructure > p:nth-child(1) {
   color: #414C62;
+}
+div#nextPieceStructure:hover > p:nth-child(1) {
+  color: #0B191F;
+}
+div#nextPieceStructure > p:nth-child(2) {
+  color: #0B191F;
+}
+div#nextPieceFLShotUsers > p:nth-child(1) {
+  color: #0B191F;
 }
 div#nextPieceFLShotUsers:hover > p:nth-child(1) {
   color: #084D67;

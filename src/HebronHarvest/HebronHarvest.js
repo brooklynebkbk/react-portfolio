@@ -24,7 +24,7 @@ export default class HebronHarvest extends React.Component  {
         this.contentFadeInOut = {
           contentFadeOut: function() {
             console.log(this.props.currentComponent);
-            if(this.props.currentComp === 4){
+            if(this.props.currentComp === 5){
             var HebronHarvestDiv = document.querySelector("div.HebronHarvest");
               HebronHarvestDiv.style.opacity = "0";
               HebronHarvestDiv.style.transition = "1.1s ease";
@@ -35,12 +35,12 @@ export default class HebronHarvest extends React.Component  {
             var toNext = document.querySelector("div#nextPieceWatch");
               toNext.style.opacity = "0";
               toNext.style.transition = "1.1s ease";
-            var theNumberHebron = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
+            var theNumberHebron = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
               theNumberHebron.style.right = "49%";
             };
           }.bind(this),
           contentFadeIn: function() {//bind function once
-            if(this.props.currentComp === 4){
+            if(this.props.currentComp === 5){
             var HebronHarvestDiv = document.querySelector("div.HebronHarvest");
               HebronHarvestDiv.style.opacity = "1";
             var previewDesktop = document.querySelector("div#HebronPreview");
@@ -51,7 +51,7 @@ export default class HebronHarvest extends React.Component  {
             var toNext = document.querySelector("div#nextPieceWatch");
               toNext.style.opacity = "1";
               toNext.style.transition = "1s ease";
-            var theNumberHebron = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
+            var theNumberHebron = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
               if(window.innerWidth > 1200) {
                 theNumberHebron.style.right = "-4%";
               } else {
@@ -77,15 +77,15 @@ export default class HebronHarvest extends React.Component  {
             var theContent = document.querySelector("div.HebronHarvest");
               theContent.style.opacity = "0";
               theContent.style.transition = "1s";
-            var theNumberBazini = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
-              theNumberBazini.style.right = "-4%";
+            var theNumberWatch = document.querySelector("div.panel > div:nth-child(6) > p.portfolioNumber");
+              theNumberWatch.style.right = "-4%";
           }.bind(this),
           viewNextLeave: function() {
             var theContent = document.querySelector("div.HebronHarvest");
               theContent.style.opacity = "1";
               theContent.style.transition = "1s";
-            var theNumberBazini = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
-              theNumberBazini.style.right = "49%";
+            var theNumberWatch = document.querySelector("div.panel > div:nth-child(6) > p.portfolioNumber");
+              theNumberWatch.style.right = "49%";
           },
           viewSite: function() {
             var textAppear = document.querySelector("p.visitSite");

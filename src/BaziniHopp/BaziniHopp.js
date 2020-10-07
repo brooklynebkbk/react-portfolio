@@ -35,7 +35,7 @@ export default class BaziniHopp extends React.Component  {
               previewDesktop.style.display = "block";
             var previewMobile = document.querySelector("div#BaziniPreviewMobile");
               previewMobile.style.display = "block";
-            var toNext = document.querySelector("div#nextPieceFLShotUsers");
+            var toNext = document.querySelector("div#nextPieceStructure");
               toNext.style.opacity = "0";
               toNext.style.transition = "1.1s ease";
             var theNumberBazini = document.querySelector("div.panel > div:nth-child(2) > p.portfolioNumber");
@@ -51,7 +51,7 @@ export default class BaziniHopp extends React.Component  {
             var previewMobile = document.querySelector("div#BaziniPreviewMobile");
               previewMobile.style.display = "none";
             };
-            var toNext = document.querySelector("div#nextPieceFLShotUsers");
+            var toNext = document.querySelector("div#nextPieceStructure");
               toNext.style.opacity = "1";
               toNext.style.transition = "1s ease";
             var theNumberBazini = document.querySelector("div.panel > div:nth-child(2) > p.portfolioNumber");
@@ -64,13 +64,13 @@ export default class BaziniHopp extends React.Component  {
           toNextPiece: function(event) {
             var page = event.target;
             if (page.scrollHeight - page.scrollTop <= (page.clientHeight+160)) {
-            var toNext = document.querySelector("div#nextPieceFLShotUsers");
+            var toNext = document.querySelector("div#nextPieceStructure");
               toNext.style.display = "block";
               toNext.style.bottom = "-2vh"
               toNext.style.opacity = "1";
               toNext.style.transition = "1s";
             } else {
-            var toNext = document.querySelector("div#nextPieceFLShotUsers");
+            var toNext = document.querySelector("div#nextPieceStructure");
               toNext.style.bottom = "-18vh"
               toNext.style.opacity = "0";
               toNext.style.transition = "1s";
@@ -80,15 +80,15 @@ export default class BaziniHopp extends React.Component  {
             var theContent = document.querySelector("div.BaziniHopp");
               theContent.style.opacity = "0";
               theContent.style.transition = "1s";
-            var thNumberFL = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
-              thNumberFL.style.right = "-4%";
+            var thNumberStructure = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
+              thNumberStructure.style.right = "-4%";
           }.bind(this),
           viewNextLeave: function() {
             var theContent = document.querySelector("div.BaziniHopp");
               theContent.style.opacity = "1";
               theContent.style.transition = "1s";
-            var thNumberFL = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
-              thNumberFL.style.right = "49%";
+            var thNumberStructure = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
+              thNumberStructure.style.right = "49%";
           },
           viewSite: function() {
             var textAppear = document.querySelector("p.visitSite");
@@ -141,8 +141,8 @@ componentDidMount() {
   document.querySelector("div.panel").addEventListener('mouseenter', this.contentFadeInOut.contentFadeOut, false);
   document.querySelector("div.panel").addEventListener('mouseleave', this.contentFadeInOut.contentFadeIn, false);
   document.querySelector("div.BaziniHopp").addEventListener('scroll', this.contentFadeInOut.toNextPiece, false);
-  document.querySelector("div#nextPieceFLShotUsers").addEventListener('mouseenter', this.contentFadeInOut.viewNextEnter, false);
-  document.querySelector("div#nextPieceFLShotUsers").addEventListener('mouseleave', this.contentFadeInOut.viewNextLeave, false);
+  document.querySelector("div#nextPieceStructure").addEventListener('mouseenter', this.contentFadeInOut.viewNextEnter, false);
+  document.querySelector("div#nextPieceStructure").addEventListener('mouseleave', this.contentFadeInOut.viewNextLeave, false);
   /*this.contentFadeInOut();*/
   document.querySelector("div.toSite").addEventListener('mouseenter', this.contentFadeInOut.viewSite, false);
   document.querySelector("div.toSite").addEventListener('mouseleave', this.contentFadeInOut.hideSite, false);
@@ -158,9 +158,9 @@ componentWillUnmount() {
   document.querySelector("div.panel").removeEventListener('mouseenter', this.contentFadeInOut.contentFadeOut, false);
   document.querySelector("div.panel").removeEventListener('mouseleave', this.contentFadeInOut.contentFadeIn, false);
   document.querySelector("div.BaziniHopp").removeEventListener('scroll', this.contentFadeInOut.toNextPiece, false);
-  document.querySelector("div#nextPieceFLShotUsers").removeEventListener('mouseenter', this.contentFadeInOut.viewNextEnter, false);
-  document.querySelector("div#nextPieceFLShotUsers").removeEventListener('mouseleave', this.contentFadeInOut.viewNextLeave, false);
-  var toNext = document.querySelector("div#nextPieceFLShotUsers");
+  document.querySelector("div#nextPieceStructure").removeEventListener('mouseenter', this.contentFadeInOut.viewNextEnter, false);
+  document.querySelector("div#nextPieceStructure").removeEventListener('mouseleave', this.contentFadeInOut.viewNextLeave, false);
+  var toNext = document.querySelector("div#nextPieceStructure");
     toNext.style.bottom = "-18vh"
     toNext.style.opacity = "0";
     toNext.style.transition = "1s";

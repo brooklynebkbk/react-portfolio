@@ -20,7 +20,7 @@ export default class FLShotUsers extends React.Component  {
         this.contentFadeInOut = {
           contentFadeOut: function() {
             console.log(this.props.currentComponent);
-            if(this.props.currentComp === 3){
+            if(this.props.currentComp === 4){
             var FLShotDiv = document.querySelector("div.FLShotUsers");
               FLShotDiv.style.opacity = "0";
               FLShotDiv.style.transition = "1.1s ease";
@@ -31,12 +31,12 @@ export default class FLShotUsers extends React.Component  {
             var toNext = document.querySelector("div#nextPieceHebron");
               toNext.style.opacity = "0";
               toNext.style.transition = "1.1s ease";
-            var theNumberFL = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
+            var theNumberFL = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
               theNumberFL.style.right = "49%";
             };
           }.bind(this),
           contentFadeIn: function() {//bind function once
-            if(this.props.currentComp === 3){
+            if(this.props.currentComp === 4){
             var FLShotDiv = document.querySelector("div.FLShotUsers");
               FLShotDiv.style.opacity = "1";
             var previewDesktop = document.querySelector("div#FLShotsPreview");
@@ -47,7 +47,7 @@ export default class FLShotUsers extends React.Component  {
             var toNext = document.querySelector("div#nextPieceHebron");
               toNext.style.opacity = "1";
               toNext.style.transition = "1s ease";
-            var theNumberFL = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
+            var theNumberFL = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
               if(window.innerWidth > 1200) {
                 theNumberFL.style.right = "-4%";
               } else {
@@ -73,14 +73,14 @@ export default class FLShotUsers extends React.Component  {
             var theContent = document.querySelector("div.FLShotUsers");
               theContent.style.opacity = "0";
               theContent.style.transition = "1s";
-            var theNumberHebron = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
+            var theNumberHebron = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
               theNumberHebron.style.right = "-4%";
           }.bind(this),
           viewNextLeave: function() {
             var theContent = document.querySelector("div.FLShotUsers");
               theContent.style.opacity = "1";
               theContent.style.transition = "1s";
-            var theNumberHebron = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
+            var theNumberHebron = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
               theNumberHebron.style.right = "49%";
           },
           viewSite: function() {

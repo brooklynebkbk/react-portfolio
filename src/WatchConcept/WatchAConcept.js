@@ -15,7 +15,7 @@ constructor(props){
         this.contentFadeInOut = {
           contentFadeOut: function() {
             console.log(this.props.currentComponent);
-            if(this.props.currentComp === 5){
+            if(this.props.currentComp === 6){
             var WatchDiv = document.querySelector("div.WatchAConcept");
               WatchDiv.style.opacity = "0";
               WatchDiv.style.transition = "1.1s ease";
@@ -24,18 +24,18 @@ constructor(props){
             var toNext = document.querySelector("div#nextPieceHome");
               toNext.style.opacity = "0";
               toNext.style.transition = "1.1s ease";
-            var theNumberWatch = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
+            var theNumberWatch = document.querySelector("div.panel > div:nth-child(6) > p.portfolioNumber");
               theNumberWatch.style.right = "49%";
             };
           }.bind(this),
           contentFadeIn: function() {//bind function once
-            if(this.props.currentComp === 5){
+            if(this.props.currentComp === 6){
             var WatchDiv = document.querySelector("div.WatchAConcept");
               WatchDiv.style.opacity = "1";
             var previewDesktop = document.querySelector("div#WatchPreview");
               previewDesktop.style.display = "none";
             };
-            var theNumberWatch = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
+            var theNumberWatch = document.querySelector("div.panel > div:nth-child(6) > p.portfolioNumber");
               if(window.innerWidth > 1200) {
                 theNumberWatch.style.right = "-4%";
               } else {
@@ -64,14 +64,14 @@ constructor(props){
             var theContent = document.querySelector("div.WatchAConcept");
               theContent.style.opacity = "0";
               theContent.style.transition = "1s";
-            var theNumberWatch = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
+            var theNumberWatch = document.querySelector("div.panel > div:nth-child(6) > p.portfolioNumber");
               theNumberWatch.style.right = "49%";
           }.bind(this),
           viewNextLeave: function() {
             var theContent = document.querySelector("div.WatchAConcept");
               theContent.style.opacity = "1";
               theContent.style.transition = "1s";
-            var theNumberWatch = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
+            var theNumberWatch = document.querySelector("div.panel > div:nth-child(6) > p.portfolioNumber");
               theNumberWatch.style.right = "-4%";
           },
           viewSite: function() {
