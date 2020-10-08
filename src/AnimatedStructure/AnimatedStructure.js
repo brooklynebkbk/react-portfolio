@@ -208,7 +208,7 @@ render() {
           </div>
           <div className="iconDo">
             <p className="visitSite">Visit Site</p>
-            <p className="viewSS">View Stylesheets</p>
+            <p className="viewSS">View Code</p>
             <p className="viewDesigns">View Designs</p>
           </div>
         </div>
