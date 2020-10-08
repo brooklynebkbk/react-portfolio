@@ -3,6 +3,7 @@
 @media (min-width: 1301px) {
   img {
     zoom: .8;
+    left: 10%;
   }
 }
 div.Portfolio {
