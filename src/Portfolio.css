@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@media (min-width: 1301px) {
-  img {
-    zoom: .8;
-    left: 10%;
-  }
-}
 div.Portfolio {
   width: 100vw;
   top: 0;
@@ -848,6 +842,7 @@ div#WatchPreview {
     top: 3vh;
   }
 }
+@media (max-width: 1300px) {
 div.floatingPlant{
   position: absolute;
   height: 90vh;
@@ -856,6 +851,19 @@ div.floatingPlant{
   left: 14.6vw;
   top: 6vw;
   animation: levitate 2s infinite alternate ease-in-out;
+}
+}
+@media (min-width: 1301px) {
+div.floatingPlant{
+  position: absolute;
+  height: 90vh;
+  width: 70vw;
+  opacity: 0;
+  left: 19vw;
+  top: 6vw;
+  zoom: .8;
+  animation: levitate 2s infinite alternate ease-in-out;
+}
 }
 @media only screen and (max-width: 519px)  {
   div.floatingPlant{
