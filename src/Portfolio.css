@@ -859,7 +859,7 @@ div.floatingPlant{
   height: 90vh;
   width: 70vw;
   opacity: 0;
-  left: 19vw;
+  left: 26vw;
   top: 6vw;
   zoom: .8;
   animation: levitate 2s infinite alternate ease-in-out;
