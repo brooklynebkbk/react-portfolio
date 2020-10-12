@@ -55,19 +55,7 @@ export default class Portfolio extends React.Component  {
       menuItem: 0,
       activeColorCodes: ["#0408DC", "#CCFA4C", "#DEF2F8"]
     };
-    this.domVariables = {
-      desktopVar: "var preview = document.querySelector",
-      desktopEnter: "preview.style.bottom = '20vw';preview.style.opacity = '1';preview.style.transition = '1.2s ease';",
-      mobileVar: "var previewMobile = document.querySelector",
-      mobileEnter: "previewMobile.style.top = '26vw';previewMobile.style.opacity = '1';previewMobile.style.transition = '1.2s ease';",
-      background: "var app = document.querySelector('.App');app.style.transition = '.5s ease';app.style.backgroundColor = ",
-      firstName: "var name1 = document.querySelector('.nameHolder > h4:nth-child(1)');name1.style.transition = '.5s ease';name1.style.color = ",
-      lastName: "var name2 = document.querySelector('.nameHolder > h4:nth-child(2)');name2.style.transition = '.5s ease';name1.style.color = ",
-      portfolioBar: "var portfolioTab = document.querySelector('div.portfolioTab');portfolioTab.style.transition = '.5s ease';portfolioTab.style.backgroundColor = ",
-      portfolioNumber: "for (let i = 1; i < 7; i++) {var theNumber = document.querySelector('div.panel > div:nth-child('+i+') > p.portfolioNumber');theNumber.style.transition = '.5s ease';theNumber.style.color = ",
-      portfolioPiece: "for (let i = 1; i < 7; i++) {var thePiece = document.querySelector('div.panel > div:nth-child('+i+') > p.portfolioPiece');thePiece.style.transition = '.5s ease';thePiece.style.color = ",
-      portfolioPanel: "var panel = document.querySelector('div.panel');panel.style.transition = '.5s ease';panel.style.backgroundColor = "
-    };
+
     this.Navigation = {
       contentFadeOut: function() {
             console.log(me.state.currentDisplay);
@@ -218,10 +206,6 @@ export default class Portfolio extends React.Component  {
             floatingPlant.style.marginLeft = "0vw";
             floatingPlant.style.marginTop = "0vh";
             floatingPlant.style.transition = "1.1s .2s ease-in-out";
-          /*var previewP0 = document.querySelector("div#GalleryPreview");
-            previewP0.style.bottom = "-10vw";
-            previewP0.style.opacity = "0";
-            previewP0.style.transition = "1s ease";*/
           var previewP1 = document.querySelector("div#ThreeOhPreview");
             previewP1.style.bottom = "-10vw";
             previewP1.style.opacity = "0";
@@ -317,13 +301,18 @@ export default class Portfolio extends React.Component  {
           var circle = document.querySelector("div.contactIcons > div:nth-child(5)");
           circle.style.backgroundColor = me.state.activeColorCodes[0];
       },],
-      previewProjects: [function() {
-        me.setState({menuItem: 1});
-          var preview = document.querySelector("div#ThreeOhPreview");
+      previewPieceOne: [1, 'div#ThreeOhPreview', 'div#ThreeOhPreviewMobile', '#DBE6E3', '#061A1E', '#F29121', '#ADBDB6'],
+      previewPieceTwo: [2, 'div#BaziniPreview', 'div#BaziniPreviewMobile', '#E8ECED', '#414C62', '#EC7A6F', '#E8ECED'],
+      previewPieceThree: [3, 'div#StructurePreview', 'div#StructurePreviewMobile', '#E5EBEA', '#0B191F', '#4C5E5C', '#E5EBEA'],
+      previewPieceFour: [4, 'div#FLShotsPreview', 'div#FLPreviewMobile', '#DAF6FB', '#084D67', '#52DCF4', '#DAF6FB'],
+      previewPieceFive: [5, 'div#HebronPreview', 'div#HebronPreviewMobile', '#F9F2DC', '#39140E', '#304A44', '#F9F2DC'],
+      previewProjects: [function(PortfolioPieceKeys) {
+        me.setState({menuItem: PortfolioPieceKeys[0]});
+          var preview = document.querySelector(PortfolioPieceKeys[1]);
             preview.style.bottom = "36%";
             preview.style.opacity = "1";
             preview.style.transition = "1.2s ease";
-          var previewMobile = document.querySelector("div#ThreeOhPreviewMobile");
+          var previewMobile = document.querySelector(PortfolioPieceKeys[2]);
             previewMobile.style.top = "46%";
             previewMobile.style.opacity = "1";
             previewMobile.style.transition = "1.2s ease";
@@ -333,227 +322,35 @@ export default class Portfolio extends React.Component  {
             plant.style.transition = "1s ease-in-out";
           var app = document.querySelector(".App");
             app.style.transition = ".5s ease";
-            app.style.backgroundColor = "#DBE6E3";
+            app.style.backgroundColor = PortfolioPieceKeys[3];
           var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
             name1.style.transition = ".5s ease";
-            name1.style.color = "#061A1E";
+            name1.style.color = PortfolioPieceKeys[4];
           var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
             name2.style.transition = ".5s ease";
-            name2.style.color = "#061A1E";
+            name2.style.color = PortfolioPieceKeys[4];
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.transition = ".5s ease";
-            portfolioTab.style.backgroundColor = "#061A1E";
+            portfolioTab.style.backgroundColor = PortfolioPieceKeys[4];
           for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.transition = ".5s ease";
-              theNumber.style.color = "#F29121";
+              theNumber.style.color = PortfolioPieceKeys[5];
           }
           for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.transition = ".5s ease";
-              thePiece.style.color = "#ADBDB6";
+              thePiece.style.color = PortfolioPieceKeys[6];
           }
           var panel = document.querySelector("div.panel");
             panel.style.transition = ".5s ease";
-            panel.style.backgroundColor = "#061A1E";
+            panel.style.backgroundColor = PortfolioPieceKeys[4];
           var theNumber = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
             if(window.innerWidth > 1200 || window.innerWidth < 420) {
               theNumber.style.right = "-4%";
               } else {
                 theNumber.style.right = "2%";
               }
-        },
-        function() {
-          me.setState({menuItem: 2});
-          var preview = document.querySelector("div#BaziniPreview");
-            preview.style.display = "block";
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var plant = document.querySelector("div.floatingPlant");
-            plant.style.marginTop = "46vh";
-            plant.style.opacity = "0";
-            plant.style.transition = "1s ease-in-out";
-          var previewMobile = document.querySelector("div#BaziniPreviewMobile");
-            previewMobile.style.display = "block";
-            previewMobile.style.top = "46%";
-            previewMobile.style.opacity = "1";
-            previewMobile.style.transition = "1.2s ease";
-          var app = document.querySelector(".App");
-            app.style.backgroundColor = "#E8ECED";
-            app.style.transition = ".5s ease";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.color = "#414C62";
-            name1.style.transition = ".5s ease";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.color = "#414C62";
-            name2.style.transition = ".5s ease";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.backgroundColor = "#414C62";
-            portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 7; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.color = "#EC7A6F";
-              theNumber.style.transition = ".5s ease";
-          }
-          for (let i = 1; i < 7; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.color = "#E8ECED";
-              thePiece.style.transition = ".5s ease";
-          }
-          var panel = document.querySelector("div.panel");
-            panel.style.backgroundColor = "#414C62";
-            panel.style.transition = ".5s ease";
-          var theNumber = document.querySelector("div.panel > div:nth-child(2) > p.portfolioNumber");
-            if(window.innerWidth > 1200 || window.innerWidth < 420) {
-              theNumber.style.right = "-4%";
-            } else {
-              theNumber.style.right = "2%";
-            }
-        },
-        function() {
-          me.setState({menuItem: 3});
-          var preview = document.querySelector("div#StructurePreview");
-            preview.style.display = "block";
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var plant = document.querySelector("div.floatingPlant");
-            plant.style.marginTop = "46vh";
-            plant.style.opacity = "0";
-            plant.style.transition = "1s ease-in-out";
-          var previewMobile = document.querySelector("div#StructurePreviewMobile");
-            previewMobile.style.display = "block";
-            previewMobile.style.top = "46%";
-            previewMobile.style.opacity = "1";
-            previewMobile.style.transition = "1.2s ease";
-          var app = document.querySelector(".App");
-            app.style.backgroundColor = "#E5EBEA";
-            app.style.transition = ".5s ease";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.color = "#0B191F";
-            name1.style.transition = ".5s ease";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.color = "#0B191F";
-            name2.style.transition = ".5s ease";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.backgroundColor = "#0B191F";
-            portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 7; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.color = "#4C5E5C";
-              theNumber.style.transition = ".5s ease";
-          }
-          for (let i = 1; i < 7; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.color = "#E5EBEA";
-              thePiece.style.transition = ".5s ease";
-          }
-          var panel = document.querySelector("div.panel");
-            panel.style.backgroundColor = "#0B191F";
-            panel.style.transition = ".5s ease";
-          var theNumber = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
-            if(window.innerWidth > 1200 || window.innerWidth < 420) {
-              theNumber.style.right = "-4%";
-            } else {
-              theNumber.style.right = "2%";
-            }
-        },
-        function() {
-          me.setState({menuItem: 4});
-          var preview = document.querySelector("div#FLShotsPreview");
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var plant = document.querySelector("div.floatingPlant");
-            plant.style.marginTop = "46vh";
-            plant.style.opacity = "0";
-            plant.style.transition = "1s ease-in-out";
-          var previewMobile = document.querySelector("div#FLPreviewMobile");
-            previewMobile.style.top = "46%";
-            previewMobile.style.opacity = "1";
-            previewMobile.style.transition = "1.2s ease";
-          var app = document.querySelector(".App");
-            app.style.backgroundColor = "#DAF6FB";
-            app.style.transition = ".5s ease";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.color = "#084D67";
-            name1.style.transition = ".5s ease";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.color = "#084D67";
-            name2.style.transition = ".5s ease";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.backgroundColor = "#084D67";
-            portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 7; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.color = "#52DCF4";
-              theNumber.style.transition = ".5s ease";
-          }
-          for (let i = 1; i < 7; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.color = "#DAF6FB";
-              thePiece.style.transition = ".5s ease";
-          }
-          var panel = document.querySelector("div.panel");
-            panel.style.backgroundColor = "#084D67";
-            panel.style.transition = ".5s ease";
-          var theNumber = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
-            if(window.innerWidth > 1200 || window.innerWidth < 420) {
-              theNumber.style.right = "-4%";
-            } else {
-              theNumber.style.right = "2%";
-            }
-        },
-        function() {
-          me.setState({menuItem: 5});
-          var previewHebron = document.querySelector("div#HebronPreview");
-            previewHebron.style.display = "block";
-          var previewHebronMobile = document.querySelector("div#HebronPreviewMobile");
-            previewHebronMobile.style.display = "block";
-          var preview = document.querySelector("div#HebronPreview");
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var plant = document.querySelector("div.floatingPlant");
-            plant.style.marginTop = "46vh";
-            plant.style.opacity = "0";
-            plant.style.transition = "1s ease-in-out";
-          var previewMobile = document.querySelector("div#HebronPreviewMobile");
-            previewMobile.style.top = "46%";
-            previewMobile.style.opacity = "1";
-            previewMobile.style.transition = "1.2s ease";
-          var app = document.querySelector(".App");
-            app.style.backgroundColor = "#F9F2DC";
-            app.style.transition = ".5s ease";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.color = "#39140E";
-            name1.style.transition = ".5s ease";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.color = "#39140E";
-            name2.style.transition = ".5s ease";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.backgroundColor = "#39140E";
-            portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 7; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.color = "#304A44";
-              theNumber.style.transition = ".5s ease";
-          }
-          for (let i = 1; i < 7; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.color = "#F9F2DC";
-              thePiece.style.transition = ".5s ease";
-          }
-          var panel = document.querySelector("div.panel");
-            panel.style.backgroundColor = "#39140E";
-            panel.style.transition = ".5s ease";
-          var theNumber = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
-            if(window.innerWidth > 1200 || window.innerWidth < 420) {
-              theNumber.style.right = "-4%";
-            } else {
-              theNumber.style.right = "2%";
-            }
         },
         function() {
           me.setState({menuItem: 6});
@@ -599,10 +396,6 @@ export default class Portfolio extends React.Component  {
         },
         function() {
           me.setState({menuItem: 7});
-          /*var preview = document.querySelector("div#GalleryPreview");
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";*/
           var plant = document.querySelector("div.floatingPlant");
             plant.style.marginTop = "46vh";
             plant.style.opacity = "0";
@@ -618,9 +411,6 @@ export default class Portfolio extends React.Component  {
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.backgroundColor = "#0408DC";
             portfolioTab.style.transition = ".5s ease";
-          /*var gallery = document.querySelector("#toGallery > p");
-            gallery.style.color = "#99FF00";
-            gallery.style.transition = ".5s ease";*/
           for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.color = "#008DD5";
@@ -1191,28 +981,28 @@ export default class Portfolio extends React.Component  {
       toNext.style.opacity = "0";
       toNext.style.transition = "1s";
     if(this.state.currentDisplay === 0){
-      this.Navigation.previewProjects[7]();
-      this.Navigation.hideNavigation();
-    }else if(this.state.currentDisplay === 1){
-      this.Navigation.previewProjects[0]();
-      this.Navigation.hideNavigation();
-    }else if(this.state.currentDisplay === 2){
-      this.Navigation.previewProjects[1]();
-      this.Navigation.hideNavigation();
-    }else if(this.state.currentDisplay === 3){
-      this.Navigation.previewProjects[2]();
-      this.Navigation.hideNavigation();
-    }else if(this.state.currentDisplay === 4){
       this.Navigation.previewProjects[3]();
       this.Navigation.hideNavigation();
+    }else if(this.state.currentDisplay === 1){
+      this.Navigation.previewProjects[0](this.Navigation.previewPieceOne);
+      this.Navigation.hideNavigation();
+    }else if(this.state.currentDisplay === 2){
+      this.Navigation.previewProjects[0](this.Navigation.previewPieceTwo);
+      this.Navigation.hideNavigation();
+    }else if(this.state.currentDisplay === 3){
+      this.Navigation.previewProjects[0](this.Navigation.previewPieceThree);
+      this.Navigation.hideNavigation();
+    }else if(this.state.currentDisplay === 4){
+      this.Navigation.previewProjects[0](this.Navigation.previewPieceFour);
+      this.Navigation.hideNavigation();
     }else if(this.state.currentDisplay === 5){
-      this.Navigation.previewProjects[4]();
+      this.Navigation.previewProjects[0](this.Navigation.previewPieceFive);
       this.Navigation.hideNavigation();
     }else if(this.state.currentDisplay === 6){
-      this.Navigation.previewProjects[5]();
+      this.Navigation.previewProjects[1]();
       this.Navigation.hideNavigation();
     } else{
-      this.Navigation.previewProjects[6]();
+      this.Navigation.previewProjects[2]();
       this.Navigation.hideNavigation();
     }
   };
@@ -1223,6 +1013,7 @@ export default class Portfolio extends React.Component  {
 
 
 componentDidMount() {
+  console.log(this.Navigation.previewPieceOne);
   var activatePortfolioHover = this.portfolioHover;
   setTimeout(function() {
     activatePortfolioHover();
@@ -1286,27 +1077,27 @@ render() {
         <p>{this.state.currentDisplay}</p>
       </div>
       <div className="panel">
-      <div className="portfolioSection" id="toThreeOhThree" onClick={()=> this.renderThreeOhThree()} onMouseEnter={()=> this.Navigation.previewProjects[0]()} onMouseLeave={()=> this.leaveP1()}>
+      <div className="portfolioSection" id="toThreeOhThree" onClick={()=> this.renderThreeOhThree()} onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceOne)} onMouseLeave={()=> this.leaveP1()}>
         <p className="portfolioNumber">1</p><p className="portfolioPiece">303 ESPORTS</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toBaziniHopp" onClick={()=> this.renderBaziniHopp()} onMouseEnter={()=> this.Navigation.previewProjects[1]()} onMouseLeave={()=> this.leaveP2()}>
+      <div className="portfolioSection" id="toBaziniHopp" onClick={()=> this.renderBaziniHopp()} onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceTwo)} onMouseLeave={()=> this.leaveP2()}>
         <p className="portfolioNumber">2</p><p className="portfolioPiece">BAZINIHOPP</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderStructure()} onMouseEnter={()=> this.Navigation.previewProjects[2]()} onMouseLeave={()=> this.leaveP3()}>
+      <div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderStructure()} onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceThree)} onMouseLeave={()=> this.leaveP3()}>
         <p className="portfolioNumber">3</p><p className="portfolioPiece">STRUCTURE ANIMATION</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toFLShotUsers" onClick={()=> this.renderFLShotUsers()} onMouseEnter={()=> this.Navigation.previewProjects[3]()} onMouseLeave={()=> this.leaveP4()}>
+      <div className="portfolioSection" id="toFLShotUsers" onClick={()=> this.renderFLShotUsers()} onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceFour)} onMouseLeave={()=> this.leaveP4()}>
         <p className="portfolioNumber">4</p><p className="portfolioPiece">FL SHOT USERS</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toHebronHarvest" onClick={()=> this.renderHebronHarvest()} onMouseEnter={()=> this.Navigation.previewProjects[4]()} onMouseLeave={()=> this.leaveP5()}>
+      <div className="portfolioSection" id="toHebronHarvest" onClick={()=> this.renderHebronHarvest()} onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceFive)} onMouseLeave={()=> this.leaveP5()}>
         <p className="portfolioNumber">5</p><p className="portfolioPiece">HEBRON HARVEST</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderWatchAConcept()} onMouseEnter={()=> this.Navigation.previewProjects[5]()} onMouseLeave={()=> this.leaveP6()}>
+      <div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderWatchAConcept()} onMouseEnter={()=> this.Navigation.previewProjects[1]()} onMouseLeave={()=> this.leaveP6()}>
         <p className="portfolioNumber">6</p><p className="portfolioPiece">WATCH: A CONCEPT</p>
         <p className="viewProject">View Project</p>
       </div>
