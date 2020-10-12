@@ -17,10 +17,10 @@ import StructureAnimation from './AnimatedStructure/architectureAnimation.mov';
 import structureMobile from './AnimatedStructure/structureMobile.png';
 import FLSFooter from './FLShotUsers/FLSFooter.png';
 import footerMobile from './FLShotUsers/footerMobile.PNG';
-/*import HHHome from './HebronHarvest/harvestVideo.mov';*/
 import HHHomePreview from './HebronHarvest/HHHomePreview.png'
 import HHMobile from './HebronHarvest/HHMobile.PNG';
 import watchNavigation from './WatchConcept/watchNavigation.mov';
+import WatchMobile from './WatchConcept/watchMobile.png';
 import mail from './email.png';
 import drib from './dribbble.png';
 import git from './github.png';
@@ -33,16 +33,6 @@ import leafThree from './leafThree.png';
 import leafFour from './leafFour.png';
 import leafFive from './leafFive.png';
 import leafSix from './leafSix.png';
-/*import architectureAnimation from './AnimatedStructure/architectureAnimation.mov';
-import greenHouseSketch from './AnimatedStructure/greenhouseSketch.jpg';
-import galleryColors from './galleryColors.png';
-import ThreePalette from './ThreeOhThree/ThreePalette.png';
-import ThreeHost from './ThreeOhThree/ThreeHost.png';
-import ThreeCompete from './ThreeOhThree/ThreeCompete.png';
-import ThreeStream from './ThreeOhThree/ThreeStream.png';
-import ThreeBuild from './ThreeOhThree/ThreeBuild.png';
-import MountainRange from './/ThreeOhThree/MountainRange.png';
-import ThreeBGAnimation from './ThreeOhThree/ThreeBGAnimation.png';*/
 
 export default class Portfolio extends React.Component  {
 
@@ -57,70 +47,6 @@ export default class Portfolio extends React.Component  {
     };
 
     this.Navigation = {
-      contentFadeOut: function() {
-            console.log(me.state.currentDisplay);
-            if(me.currentDisplay === 0){
-            var floatingPlant = document.querySelector("div.floatingPlant");
-              floatingPlant.style.opacity = "0";
-              floatingPlant.style.marginTop = "36vh";
-              floatingPlant.style.transition = "1.1s .2s ease-in-out";
-            var previewThree = document.querySelector("div#ThreeOhPreview");
-              previewThree.style.display= "block";
-            var previewThreeMobile = document.querySelector("div#ThreeOhPreviewMobile");
-              previewThreeMobile.style.display = "block";
-            var toNext = document.querySelector("div#nextPiece303");
-              toNext.style.opacity = "1";
-              toNext.style.transition = "1.1s ease";
-            };
-          }.bind(this),
-          contentFadeIn: function() {//bind function once
-            if(me.state.currentDisplay === 0){
-            var floatingPlant = document.querySelector("div.floatingPlant");
-              floatingPlant.style.opacity = "1";
-              floatingPlant.style.marginLeft = "0vw";
-              floatingPlant.style.marginTop = "0vh";
-              floatingPlant.style.transition = ".8s ease-in-out";
-            var previewThree = document.querySelector("div#ThreeOhPreview");
-              previewThree.style.display= "none";
-            var previewThreeMobile = document.querySelector("div#ThreeOhPreviewMobile");
-              previewThreeMobile.style.display = "none";
-            var toNext = document.querySelector("div#nextPiece303");
-              toNext.style.opacity = "0";
-              toNext.style.transition = "1s ease";
-            }
-          }.bind(this),
-          toNextPiece: function(event) {
-            if (me.state.currentDisplay === 0) {
-              console.log("scrolled");
-            var page = event.target;
-            if (page.scrollHeight - page.scrollTop <= (page.clientHeight+10)) {
-            var toNext = document.querySelector("div#nextPiece303");
-              toNext.style.display = "block";
-              toNext.style.bottom = "-2vh"
-              toNext.style.opacity = "1";
-              toNext.style.transition = "1s";
-            } else {
-            var toNext = document.querySelector("div#nextPiece303");
-              toNext.style.bottom = "-18vh"
-              toNext.style.opacity = "0";
-              toNext.style.transition = "1s";
-            }
-          }
-          }.bind(this),
-          viewNextEnter: function() {
-            var theContent = document.querySelector("div.floatingPlant");
-              theContent.style.opacity = "0";
-              theContent.style.transition = "1s";
-            var theNumberWatch = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
-              theNumberWatch.style.right = "-4%";
-          }.bind(this),
-          viewNextLeave: function() {
-            var theContent = document.querySelector("div.floatingPlant");
-              theContent.style.opacity = "1";
-              theContent.style.transition = "1s";
-            var theNumberWatch = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
-              theNumberWatch.style.right = "49%";
-          },
       showNavigation: function() {
         var width = window.innerWidth;
         if (width > 1200){
@@ -133,6 +59,8 @@ export default class Portfolio extends React.Component  {
         floatingPlant.style.transition = "1.1s .2s ease-in-out";
         var previewWatch = document.querySelector("div#WatchPreview");
         previewWatch.style.display = "block";
+        var previewWatchMobile = document.querySelector("div#WatchPreviewMobile");
+        previewWatchMobile.style.display = "block";
         var previewHebron = document.querySelector("div#HebronPreview");
         previewHebron.style.display = "block";
         var previewHebronMobile = document.querySelector("div#HebronPreviewMobile");
@@ -177,6 +105,8 @@ export default class Portfolio extends React.Component  {
           portfolioNav.style.transition = "1.1s ease-in-out";
           var previewWatch = document.querySelector("div#WatchPreview");
           previewWatch.style.display = "none";
+          var previewWatchMobile = document.querySelector("div#WatchPreviewMobile");
+          previewWatchMobile.style.display = "none";
           var previewHebron = document.querySelector("div#HebronPreview");
           previewHebron.style.display = "none";
           var previewHebronMobile = document.querySelector("div#HebronPreviewMobile");
@@ -250,6 +180,10 @@ export default class Portfolio extends React.Component  {
             previewP6.style.bottom = "-10vw";
             previewP6.style.opacity = "0";
             previewP6.style.transition = "1s ease";
+          var previewP6Mobile = document.querySelector("div#WatchPreviewMobile");
+            previewP6Mobile.style.top = "-20vw";
+            previewP6Mobile.style.opacity = "0";
+            previewP6Mobile.style.transition = "1s ease";
       },
       mobileScroll: function(event) {
         if(window.innerWidth< 640){
@@ -306,6 +240,7 @@ export default class Portfolio extends React.Component  {
       previewPieceThree: [3, 'div#StructurePreview', 'div#StructurePreviewMobile', '#E5EBEA', '#0B191F', '#4C5E5C', '#E5EBEA'],
       previewPieceFour: [4, 'div#FLShotsPreview', 'div#FLPreviewMobile', '#DAF6FB', '#084D67', '#52DCF4', '#DAF6FB'],
       previewPieceFive: [5, 'div#HebronPreview', 'div#HebronPreviewMobile', '#F9F2DC', '#39140E', '#304A44', '#F9F2DC'],
+      previewPieceSix: [6, 'div#WatchPreview', 'div#WatchPreviewMobile', '#E8E7E0', '#264B48', '#8DD69D', '#E8E7E0'],
       previewProjects: [function(PortfolioPieceKeys) {
         me.setState({menuItem: PortfolioPieceKeys[0]});
           var preview = document.querySelector(PortfolioPieceKeys[1]);
@@ -345,51 +280,9 @@ export default class Portfolio extends React.Component  {
           var panel = document.querySelector("div.panel");
             panel.style.transition = ".5s ease";
             panel.style.backgroundColor = PortfolioPieceKeys[4];
-          var theNumber = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
+          var theNumber = document.querySelector("div.panel > div:nth-child("+PortfolioPieceKeys[0]+") > p.portfolioNumber");
             if(window.innerWidth > 1200 || window.innerWidth < 420) {
               theNumber.style.right = "-4%";
-              } else {
-                theNumber.style.right = "2%";
-              }
-        },
-        function() {
-          me.setState({menuItem: 6});
-          var preview = document.querySelector("div#WatchPreview");
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var plant = document.querySelector("div.floatingPlant");
-            plant.style.marginTop = "46vh";
-            plant.style.opacity = "0";
-            plant.style.transition = "1s ease-in-out";
-          var app = document.querySelector(".App");
-            app.style.backgroundColor = "#E8E7E0";
-            app.style.transition = ".5s ease";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.color = "#264B48";
-            name1.style.transition = ".5s ease";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.color = "#264B48";
-            name2.style.transition = ".5s ease";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.backgroundColor = "#264B48";
-            portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 7; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.color = "#8DD69D";
-              theNumber.style.transition = ".5s ease";
-          }
-          for (let i = 1; i < 7; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.color = "#E8E7E0";
-              thePiece.style.transition = ".5s ease";
-          }
-            var panel = document.querySelector("div.panel");
-              panel.style.backgroundColor = "#264B48";
-              panel.style.transition = ".5s ease";
-            var theNumber = document.querySelector("div.panel > div:nth-child(6) > p.portfolioNumber");
-              if(window.innerWidth > 1200 || window.innerWidth < 420) {
-                theNumber.style.right = "-4%";
               } else {
                 theNumber.style.right = "2%";
               }
@@ -460,235 +353,46 @@ export default class Portfolio extends React.Component  {
             panel.style.backgroundColor = "#0408DC";
             panel.style.transition = ".5s ease";
         }],
-        nextProject: [function() {
-          var preview = document.querySelector("div#ThreeOhPreview");
+        nextProject: [function(NextPieceKeys) {
+          var nextPiece = NextPieceKeys[0];
+          var currentPiece = --nextPiece;
+          var preview = document.querySelector(NextPieceKeys[1]);
             preview.style.display = "block";
             preview.style.bottom = "30%";
             preview.style.opacity = "1";
             preview.style.transition = "1.2s ease";
-          var previewMobile = document.querySelector("div#ThreeOhPreviewMobile");
+          var previewMobile = document.querySelector(NextPieceKeys[2]);
             previewMobile.style.display = "block";
             previewMobile.style.top = "40%";
             previewMobile.style.opacity = "1";
             previewMobile.style.transition = "1.2s ease";
           var app = document.querySelector(".App");
             app.style.transition = ".5s ease";
-            app.style.backgroundColor = "#DBE6E3";
+            app.style.backgroundColor = NextPieceKeys[3];
           var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
             name1.style.transition = ".5s ease";
-            name1.style.color = "#061A1E";
+            name1.style.color = NextPieceKeys[4];
           var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
             name2.style.transition = ".5s ease";
-            name2.style.color = "#061A1E";
+            name2.style.color = NextPieceKeys[4];
           var portfolioTab = document.querySelector("div.portfolioTab");
             portfolioTab.style.transition = ".5s ease";
-            portfolioTab.style.backgroundColor = "#061A1E";
+            portfolioTab.style.backgroundColor = NextPieceKeys[4];
           for (let i = 1; i < 7; i++) {
             var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
               theNumber.style.transition = ".5s ease";
-              theNumber.style.color = "#F29121";
+              theNumber.style.color = NextPieceKeys[5];
           }
           for (let i = 1; i < 7; i++) {
             var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
               thePiece.style.transition = ".5s ease";
-              thePiece.style.color = "#ADBDB6";
+              thePiece.style.color = NextPieceKeys[6];
           }
           var panel = document.querySelector("div.panel");
             panel.style.transition = ".5s ease";
-            panel.style.backgroundColor = "#061A1E";
-          var theNumber = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
+            panel.style.backgroundColor = NextPieceKeys[4];
+          var theNumber = document.querySelector("div.panel > div:nth-child("+currentPiece+") > p.portfolioNumber");
             theNumber.style.right = "49%";
-        },
-        function() {
-          var preview = document.querySelector("div#BaziniPreview");
-            preview.style.display = "block";
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var previewMobile = document.querySelector("div#BaziniPreviewMobile");
-            previewMobile.style.display = "block";
-            previewMobile.style.top = "46%";
-            previewMobile.style.opacity = "1";
-            previewMobile.style.transition = "1.2s ease";
-          var app = document.querySelector(".App");
-            app.style.backgroundColor = "#E8ECED";
-            app.style.transition = ".5s ease";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.color = "#414C62";
-            name1.style.transition = ".5s ease";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.color = "#414C62";
-            name2.style.transition = ".5s ease";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.backgroundColor = "#414C62";
-            portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 7; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.color = "#ec7a6f";
-              theNumber.style.transition = ".5s ease";
-          }
-          for (let i = 1; i < 7; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.color = "#E8ECED";
-              thePiece.style.transition = ".5s ease";
-          }
-          var panel = document.querySelector("div.panel");
-            panel.style.backgroundColor = "#414C62";
-            panel.style.transition = ".5s ease";
-          var theNumberThree = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
-            theNumberThree.style.right = "49%";
-        },
-        function() {
-          var preview = document.querySelector("div#StructurePreview");
-            preview.style.display = "block";
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var previewMobile = document.querySelector("div#StructurePreviewMobile");
-            previewMobile.style.display = "block";
-            previewMobile.style.top = "46%";
-            previewMobile.style.opacity = "1";
-            previewMobile.style.transition = "1.2s ease";
-          var app = document.querySelector(".App");
-            app.style.backgroundColor = "#E5EBEA";
-            app.style.transition = ".5s ease";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.color = "#0B191F";
-            name1.style.transition = ".5s ease";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.color = "#0B191F";
-            name2.style.transition = ".5s ease";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.backgroundColor = "#0B191F";
-            portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 7; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.color = "#4C5E5C";
-              theNumber.style.transition = ".5s ease";
-          }
-          for (let i = 1; i < 7; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.color = "#E5EBEA";
-              thePiece.style.transition = ".5s ease";
-          }
-          var panel = document.querySelector("div.panel");
-            panel.style.backgroundColor = "#0B191F";
-            panel.style.transition = ".5s ease";
-          var theNumberBazini = document.querySelector("div.panel > div:nth-child(2) > p.portfolioNumber");
-            theNumberBazini.style.right = "49%";
-
-        },
-        function() {
-          var preview = document.querySelector("div#FLShotsPreview");
-            preview.style.display = "block";
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var previewMobile = document.querySelector("div#FLPreviewMobile");
-            previewMobile.style.display = "block";
-            previewMobile.style.top = "46%";
-            previewMobile.style.opacity = "1";
-            previewMobile.style.transition = "1.2s ease";
-          var app = document.querySelector(".App");
-            app.style.backgroundColor = "#DAF6FB";
-            app.style.transition = ".5s ease";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.color = "#084D67";
-            name1.style.transition = ".5s ease";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.color = "#084D67";
-            name2.style.transition = ".5s ease";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.backgroundColor = "#084D67";
-            portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 7; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.color = "#52DCF4";
-              theNumber.style.transition = ".5s ease";
-          }
-          for (let i = 1; i < 7; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.color = "#DAF6FB";
-              thePiece.style.transition = ".5s ease";
-          }
-          var panel = document.querySelector("div.panel");
-            panel.style.backgroundColor = "#084D67";
-            panel.style.transition = ".5s ease";
-          var theNumber = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
-            theNumber.style.right = "49%";
-        },
-        function() {
-          var preview = document.querySelector("div#HebronPreview");
-            preview.style.display = "block";
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var previewMobile = document.querySelector("div#HebronPreviewMobile");
-            previewMobile.style.display = "block";
-            previewMobile.style.top = "46%";
-            previewMobile.style.opacity = "1";
-            previewMobile.style.transition = "1.2s ease";
-          var app = document.querySelector(".App");
-            app.style.backgroundColor = "#F9F2DC";
-            app.style.transition = ".5s ease";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.color = "#39140E";
-            name1.style.transition = ".5s ease";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.color = "#39140E";
-            name2.style.transition = ".5s ease";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.backgroundColor = "#39140E";
-            portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 7; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.color = "#304A44";
-              theNumber.style.transition = ".5s ease";
-          }
-          for (let i = 1; i < 7; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.color = "#F9F2DC";
-              thePiece.style.transition = ".5s ease";
-          }
-          var panel = document.querySelector("div.panel");
-            panel.style.backgroundColor = "#39140E";
-            panel.style.transition = ".5s ease";
-          var theNumber = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
-            theNumber.style.right = "49%";
-        },
-        function() {
-          var preview = document.querySelector("div#WatchPreview");
-            preview.style.display = "block";
-            preview.style.bottom = "36%";
-            preview.style.opacity = "1";
-            preview.style.transition = "1.2s ease";
-          var app = document.querySelector(".App");
-            app.style.backgroundColor = "#E8E7E0";
-            app.style.transition = ".5s ease";
-          var name1 = document.querySelector(".nameHolder > h4:nth-child(1)");
-            name1.style.color = "#264B48";
-            name1.style.transition = ".5s ease";
-          var name2 = document.querySelector(".nameHolder > h4:nth-child(2)");
-            name2.style.color = "#264B48";
-            name2.style.transition = ".5s ease";
-          var portfolioTab = document.querySelector("div.portfolioTab");
-            portfolioTab.style.backgroundColor = "#264B48";
-            portfolioTab.style.transition = ".5s ease";
-          for (let i = 1; i < 7; i++) {
-            var theNumber = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioNumber");
-              theNumber.style.color = "#8DD69D";
-              theNumber.style.transition = ".5s ease";
-          }
-          for (let i = 1; i < 7; i++) {
-            var thePiece = document.querySelector("div.panel > div:nth-child("+i+") > p.portfolioPiece");
-              thePiece.style.color = "#E8E7E0";
-              thePiece.style.transition = ".5s ease";
-          }
-            var panel = document.querySelector("div.panel");
-              panel.style.backgroundColor = "#264B48";
-              panel.style.transition = ".5s ease";
-            var theNumber = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
-              theNumber.style.right = "49%";
         },
         function() {
           var floatingPlant = document.querySelector("div.floatingPlant");
@@ -752,202 +456,34 @@ export default class Portfolio extends React.Component  {
 
   };
 
-  renderThreeOhThree = () => {
+  renderSelectedPortfolioPiece = (PPKeys) => {
     this.Navigation.hideNavigation();
     var displayBefore = this.state.currentDisplay;
-    if(displayBefore === 1) {
+    if(displayBefore === PPKeys[0]) {
       return;
     } else {
-      this.setState({currentDisplay: 1});
-      this.setState({activeColorCodes: ["#061A1E", "#F29121", "#DBE6E3"]});
+      this.setState({currentDisplay: PPKeys[0]});
+      this.setState({activeColorCodes: [PPKeys[4], PPKeys[5], PPKeys[3]]});
     }
     setTimeout(function(){
-      var preview = document.querySelector("div#ThreeOhPreview");
+      var preview = document.querySelector(PPKeys[1]);
           preview.style.display = "none";
-      var previewMobile = document.querySelector("div#ThreeOhPreviewMobile");
+      var previewMobile = document.querySelector(PPKeys[2]);
           previewMobile.style.display = "none";
     }, 2500);
 
   };
 
-  renderBaziniHopp = () => {
-    this.Navigation.hideNavigation();
-    var displayBefore = this.state.currentDisplay;
-    if(displayBefore === 2) {
-      return;
-    } else {
-      this.setState({currentDisplay: 2});
-      this.setState({activeColorCodes: ["#414C62", "#EC7A6F"," #E8ECED"]});
-    }
-    setTimeout(function(){
-      var preview = document.querySelector("div#BaziniPreview");
-          preview.style.display = "none";
-      var previewMobile = document.querySelector("div#BaziniPreviewMobile");
-          previewMobile.style.display = "none";
-    }, 2500);
-
-  };
-
-  renderStructure = () => {
-    this.Navigation.hideNavigation();
-    var displayBefore = this.state.currentDisplay;
-    if(displayBefore === 3) {
-      return;
-    } else {
-      this.setState({currentDisplay: 3});
-      this.setState({activeColorCodes: ["#0B191F", "#4C5E5C"," #E5EBEA"]});
-    }
-    setTimeout(function(){
-      var preview = document.querySelector("div#StructurePreview");
-          preview.style.display = "none";
-      var previewMobile = document.querySelector("div#StructurePreviewMobile");
-          previewMobile.style.display = "none";
-    }, 2500);
-
-  };
-
-  renderFLShotUsers = () => {
-    this.Navigation.hideNavigation();
-    var displayBefore = this.state.currentDisplay;
-    if(displayBefore === 4) {
-      return;
-    } else {
-      this.setState({currentDisplay: 4});
-      this.setState({activeColorCodes: ["#084D67", "#52DCF4", "#DAF6FB"]});
-    }
-    setTimeout(function(){
-      var preview = document.querySelector("div#FLShotsPreview");
-          preview.style.display = "none";
-      var previewMobile = document.querySelector("div#FLPreviewMobile");
-          previewMobile.style.display = "none";
-    }, 2500);
-
-  };
-
-  renderHebronHarvest = () => {
-    this.Navigation.hideNavigation();
-    var displayBefore = this.state.currentDisplay;
-    if(displayBefore === 5) {
-      return;
-    } else {
-      this.setState({currentDisplay: 5});
-      this.setState({activeColorCodes: ["#39140E", "#304A44", "#F9F2DC"]});
-    }
-    setTimeout(function(){
-      var preview = document.querySelector("div#HebronPreview");
-          preview.style.display = "none";
-      var previewMobile = document.querySelector("div#HebronPreviewMobile");
-          previewMobile.style.display = "none";
-    }, 2500);
-
-  };
-
-  renderWatchAConcept = () => {
-    this.Navigation.hideNavigation();
-    var displayBefore = this.state.currentDisplay;
-    if(displayBefore === 6) {
-      return;
-    } else {
-      this.setState({currentDisplay: 6});
-      this.setState({activeColorCodes: ["#264B48", "#8DD69D", "#E8E7E0"]});
-    }
-    setTimeout(function(){
-      var preview = document.querySelector("div#WatchPreview");
-            preview.style.display = "none";
-    }, 2500);
-
-  };
-
-  /*renderLanding = () => {
-    this.Navigation.hideNavigation();
-    var displayBefore = this.state.currentDisplay;
-    if(displayBefore === 6) {
-      return;
-    } else {
-      this.setState({currentDisplay: 6});
-      this.setState({activeColorCodes: ["#0408DC", "#CCFA4C", "#DEF2F8"]});
-    }
-    setTimeout(function(){
-      var preview = document.querySelector("div#GalleryPreview");
-            preview.style.display = "none";
-    }, 2500);
-
-  };*/
-
-  /*leaveP6 = () => {
-    var preview = document.querySelector("div#GalleryPreview");
+  leavePortfolioSection = (PPKeys) => {
+    var preview = document.querySelector(PPKeys[1]);
     preview.style.bottom = "-10vw";
     preview.style.opacity = "0";
     preview.style.transition = "1s ease";
-    var theNumber = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
-    theNumber.style.left = "auto";
-  };*/
-  leaveP1 = () => {
-    var preview = document.querySelector("div#ThreeOhPreview");
-    preview.style.bottom = "-10vw";
-    preview.style.opacity = "0";
-    preview.style.transition = "1s ease";
-    var previewMobile = document.querySelector("div#ThreeOhPreviewMobile");
+    var previewMobile = document.querySelector(PPKeys[2]);
     previewMobile.style.top = "-20vw";
     previewMobile.style.opacity = "0";
     previewMobile.style.transition = "1s ease";
-    var theNumber = document.querySelector("div.panel > div:nth-child(1) > p.portfolioNumber");
-    theNumber.style.right = "49%";
-  };
-  leaveP2 = () => {
-    var preview = document.querySelector("div#BaziniPreview");
-    preview.style.bottom = "-10vw";
-    preview.style.opacity = "0";
-    preview.style.transition = "1s ease";
-    var previewMobile = document.querySelector("div#BaziniPreviewMobile");
-    previewMobile.style.top = "-20vw";
-    previewMobile.style.opacity = "0";
-    previewMobile.style.transition = "1s ease";
-    var theNumber = document.querySelector("div.panel > div:nth-child(2) > p.portfolioNumber");
-    theNumber.style.right = "49%";
-  };
-  leaveP3 = () => {
-    var preview = document.querySelector("div#StructurePreview");
-    preview.style.bottom = "-10vw";
-    preview.style.opacity = "0";
-    preview.style.transition = "1s ease";
-    var previewMobile = document.querySelector("div#StructurePreviewMobile");
-    previewMobile.style.top = "-20vw";
-    previewMobile.style.opacity = "0";
-    previewMobile.style.transition = "1s ease";
-    var theNumber = document.querySelector("div.panel > div:nth-child(3) > p.portfolioNumber");
-    theNumber.style.right = "49%";
-  };
-  leaveP4 = () => {
-    var preview = document.querySelector("div#FLShotsPreview");
-    preview.style.bottom = "-10vw";
-    preview.style.opacity = "0";
-    preview.style.transition = "1s ease";
-    var previewMobile = document.querySelector("div#FLPreviewMobile");
-    previewMobile.style.top = "-20vw";
-    previewMobile.style.opacity = "0";
-    previewMobile.style.transition = "1s ease";
-    var theNumber = document.querySelector("div.panel > div:nth-child(4) > p.portfolioNumber");
-    theNumber.style.right = "49%";
-  };
-  leaveP5 = () => {
-    var preview = document.querySelector("div#HebronPreview");
-    preview.style.bottom = "-10vw";
-    preview.style.opacity = "0";
-    preview.style.transition = "1s ease";
-    var previewMobile = document.querySelector("div#HebronPreviewMobile");
-    previewMobile.style.top = "-20vw";
-    previewMobile.style.opacity = "0";
-    previewMobile.style.transition = "1s ease";
-    var theNumber = document.querySelector("div.panel > div:nth-child(5) > p.portfolioNumber");
-    theNumber.style.right = "49%";
-  };
-  leaveP6 = () => {
-    var preview = document.querySelector("div#WatchPreview");
-    preview.style.bottom = "-10vw";
-    preview.style.opacity = "0";
-    preview.style.transition = "1s ease";
-    var theNumber = document.querySelector("div.panel > div:nth-child(6) > p.portfolioNumber");
+    var theNumber = document.querySelector("div.panel > div:nth-child("+PPKeys[0]+") > p.portfolioNumber");
     theNumber.style.right = "49%";
   };
 
@@ -957,7 +493,7 @@ export default class Portfolio extends React.Component  {
     menu.style.transition = "1.2s ease-in-out";
     document.querySelector("div.portfolioTab").addEventListener("mouseenter", this.Navigation.showNavigation);
     if(window.innerWidth< 640){
-      for (let i = 1; i < 16; i++) {
+      for (let i = 1; i < 17; i++) {
         var previews = document.querySelector("div.Portfolio > div:nth-of-type("+i+")");
           previews.style.opacity = "1";
           previews.style.transition = "1.6s .1s ease";
@@ -971,7 +507,7 @@ export default class Portfolio extends React.Component  {
 
   nameClicked = () => {
     document.querySelector("div.Contact").addEventListener("click", this.renderLanding);
-    document.querySelector("div.Contact").addEventListener("click", this.Navigation.previewProjects[6]);
+    document.querySelector("div.Contact").addEventListener("click", this.Navigation.previewProjects[2]);
     document.querySelector("div.Contact").addEventListener("click", this.Navigation.hidePreview);
   };
 
@@ -981,7 +517,7 @@ export default class Portfolio extends React.Component  {
       toNext.style.opacity = "0";
       toNext.style.transition = "1s";
     if(this.state.currentDisplay === 0){
-      this.Navigation.previewProjects[3]();
+      this.Navigation.previewProjects[2]();
       this.Navigation.hideNavigation();
     }else if(this.state.currentDisplay === 1){
       this.Navigation.previewProjects[0](this.Navigation.previewPieceOne);
@@ -999,10 +535,10 @@ export default class Portfolio extends React.Component  {
       this.Navigation.previewProjects[0](this.Navigation.previewPieceFive);
       this.Navigation.hideNavigation();
     }else if(this.state.currentDisplay === 6){
-      this.Navigation.previewProjects[1]();
+      this.Navigation.previewProjects[0](this.Navigation.previewPieceSix);
       this.Navigation.hideNavigation();
     } else{
-      this.Navigation.previewProjects[2]();
+      this.Navigation.previewProjects[1]();
       this.Navigation.hideNavigation();
     }
   };
@@ -1013,34 +549,30 @@ export default class Portfolio extends React.Component  {
 
 
 componentDidMount() {
+  var self = this;
   console.log(this.Navigation.previewPieceOne);
   var activatePortfolioHover = this.portfolioHover;
   setTimeout(function() {
     activatePortfolioHover();
   }, 7000);
   this.nameClicked();
-  /*document.querySelector("div.Portfolio").addEventListener('scroll', this.Navigation.toNextPiece, false);
-  document.querySelector("div#nextPiece303").addEventListener('mouseenter', this.Navigation.viewNextEnter, false);
-  document.querySelector("div#nextPiece303").addEventListener('mouseleave', this.Navigation.viewNextLeave, false);*/
-  document.querySelector("div#nextPiece303").addEventListener('mouseenter', this.Navigation.nextProject[0]);
-  document.querySelector("div#nextPieceBazini").addEventListener('mouseenter', this.Navigation.nextProject[1]);
-  document.querySelector("div#nextPieceStructure").addEventListener('mouseenter', this.Navigation.nextProject[2]);
-  document.querySelector("div#nextPieceFLShotUsers").addEventListener('mouseenter', this.Navigation.nextProject[3]);
-  document.querySelector("div#nextPieceHebron").addEventListener('mouseenter', this.Navigation.nextProject[4]);
-  document.querySelector("div#nextPieceWatch").addEventListener('mouseenter', this.Navigation.nextProject[5]);
-  document.querySelector("div#nextPieceHome").addEventListener('mouseenter', this.Navigation.nextProject[6]);
-  /*if (window.innerWidth < 640) {
-    document.querySelector(".Portfolio").addEventListener('scroll', this.Navigation.mobileScroll);
-  } else {
-    return;*/
-    /*document.querySelector(".Portfolio").addEventListener('scroll', this.Navigation.previewProjects[5]);*/
-    /*document.querySelector(".Portfolio").addEventListener('scroll', this.renderLanding);*/
-  /*}*/
-
+  document.querySelector("div#nextPieceBazini").addEventListener('mouseenter', function() {
+    self.Navigation.nextProject[0](self.Navigation.previewPieceTwo);
+  });
+  document.querySelector("div#nextPieceStructure").addEventListener('mouseenter', function() {
+    self.Navigation.nextProject[0](self.Navigation.previewPieceThree);
+  });
+  document.querySelector("div#nextPieceFLShotUsers").addEventListener('mouseenter', function() {
+    self.Navigation.nextProject[0](self.Navigation.previewPieceFour);
+  });
+  document.querySelector("div#nextPieceHebron").addEventListener('mouseenter', function() {
+    self.Navigation.nextProject[0](self.Navigation.previewPieceFive);
+  });
+  document.querySelector("div#nextPieceWatch").addEventListener('mouseenter', function() {
+    self.Navigation.nextProject[0](self.Navigation.previewPieceSix);
+  });
+  document.querySelector("div#nextPieceHome").addEventListener('mouseenter', this.Navigation.nextProject[1]);
 }
-
-  /*document.querySelector("div#nextPieceBazini").addEventListener('mouseenter', this.Navigation.showNavigation);*/
-  /*document.querySelector("div#nextPieceBazini").addEventListener('mouseenter', this.Navigation.previewProjects[1]);*/
 
 
 render() {
@@ -1077,27 +609,45 @@ render() {
         <p>{this.state.currentDisplay}</p>
       </div>
       <div className="panel">
-      <div className="portfolioSection" id="toThreeOhThree" onClick={()=> this.renderThreeOhThree()} onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceOne)} onMouseLeave={()=> this.leaveP1()}>
+      <div className="portfolioSection" id="toThreeOhThree"
+          onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceOne)}
+          onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceOne)}
+          onMouseLeave={()=> this.leavePortfolioSection(this.Navigation.previewPieceOne)}>
         <p className="portfolioNumber">1</p><p className="portfolioPiece">303 ESPORTS</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toBaziniHopp" onClick={()=> this.renderBaziniHopp()} onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceTwo)} onMouseLeave={()=> this.leaveP2()}>
+      <div className="portfolioSection" id="toBaziniHopp"
+          onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceTwo)}
+          onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceTwo)}
+          onMouseLeave={()=> this.leavePortfolioSection(this.Navigation.previewPieceTwo)}>
         <p className="portfolioNumber">2</p><p className="portfolioPiece">BAZINIHOPP</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderStructure()} onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceThree)} onMouseLeave={()=> this.leaveP3()}>
+      <div className="portfolioSection" id="toWatchAConcept"
+          onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceThree)}
+          onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceThree)}
+          onMouseLeave={()=> this.leavePortfolioSection(this.Navigation.previewPieceThree)}>
         <p className="portfolioNumber">3</p><p className="portfolioPiece">STRUCTURE ANIMATION</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toFLShotUsers" onClick={()=> this.renderFLShotUsers()} onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceFour)} onMouseLeave={()=> this.leaveP4()}>
+      <div className="portfolioSection" id="toFLShotUsers"
+          onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceFour)}
+          onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceFour)}
+          onMouseLeave={()=> this.leavePortfolioSection(this.Navigation.previewPieceFour)}>
         <p className="portfolioNumber">4</p><p className="portfolioPiece">FL SHOT USERS</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toHebronHarvest" onClick={()=> this.renderHebronHarvest()} onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceFive)} onMouseLeave={()=> this.leaveP5()}>
+      <div className="portfolioSection" id="toHebronHarvest"
+          onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceFive)}
+          onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceFive)}
+          onMouseLeave={()=> this.leavePortfolioSection(this.Navigation.previewPieceFive)}>
         <p className="portfolioNumber">5</p><p className="portfolioPiece">HEBRON HARVEST</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderWatchAConcept()} onMouseEnter={()=> this.Navigation.previewProjects[1]()} onMouseLeave={()=> this.leaveP6()}>
+      <div className="portfolioSection" id="toWatchAConcept"
+          onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceSix)}
+          onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceSix)}
+          onMouseLeave={()=> this.leavePortfolioSection(this.Navigation.previewPieceSix)}>
         <p className="portfolioNumber">6</p><p className="portfolioPiece">WATCH: A CONCEPT</p>
         <p className="viewProject">View Project</p>
       </div>
@@ -1163,27 +713,32 @@ render() {
           <source src={watchNavigation} type="video/mp4"/>
         </video>
       </div>
-      <div className="nextPiece" id="nextPiece303" onClick={()=> this.renderThreeOhThree()} onMouseLeave={()=> this.setToSelected()}>
+      <div className="previewMobile" id="WatchPreviewMobile">
+        <a href="https://dribbble.com/brooklynefinni" target="_blank" rel="noopener noreferrer">
+          <img className="WatchMobile" src={WatchMobile} alt="WatchMobile" />
+        </a>
+      </div>
+      <div className="nextPiece" id="nextPiece303" onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceOne)} onMouseLeave={()=> this.setToSelected()}>
         <p>ENTER PORTFOLIO</p>
         <p className="viewNextPiece">View 303 Esports</p>
       </div>
-      <div className="nextPiece" id="nextPieceBazini" onClick={()=> this.renderBaziniHopp()} onMouseLeave={()=> this.setToSelected()}>
+      <div className="nextPiece" id="nextPieceBazini" onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceTwo)} onMouseLeave={()=> this.setToSelected()}>
         <p>NEXT PORTFOLIO PIECE</p>
         <p className="viewNextPiece">View BaziniHopp</p>
       </div>
-      <div className="nextPiece" id="nextPieceStructure" onClick={()=> this.renderStructure()} onMouseLeave={()=> this.setToSelected()}>
+      <div className="nextPiece" id="nextPieceStructure" onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceThree)} onMouseLeave={()=> this.setToSelected()}>
         <p>NEXT PORTFOLIO PIECE</p>
         <p className="viewNextPiece">View Structure Animation</p>
       </div>
-      <div className="nextPiece" id="nextPieceFLShotUsers" onClick={()=> this.renderFLShotUsers()} onMouseLeave={()=> this.setToSelected()}>
+      <div className="nextPiece" id="nextPieceFLShotUsers" onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceFour)} onMouseLeave={()=> this.setToSelected()}>
         <p>NEXT PORTFOLIO PIECE</p>
         <p className="viewNextPiece">View FL Shot Users</p>
       </div>
-      <div className="nextPiece" id="nextPieceHebron" onClick={()=> this.renderHebronHarvest()} onMouseLeave={()=> this.setToSelected()}>
+      <div className="nextPiece" id="nextPieceHebron" onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceFive)} onMouseLeave={()=> this.setToSelected()}>
         <p>NEXT PORTFOLIO PIECE</p>
         <p className="viewNextPiece">View Hebron Harvest</p>
       </div>
-      <div className="nextPiece" id="nextPieceWatch" onClick={()=> this.renderWatchAConcept()} onMouseLeave={()=> this.setToSelected()}>
+      <div className="nextPiece" id="nextPieceWatch" onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceSix)} onMouseLeave={()=> this.setToSelected()}>
         <p>NEXT PORTFOLIO PIECE</p>
         <p className="viewNextPiece">View Watch Concept</p>
       </div>
@@ -1225,23 +780,4 @@ render() {
 
 
 };
-
-      /*<div className="portfolioSection" id="toWatchAConcept" onClick={()=> this.renderWatchAConcept()} onMouseEnter={()=> this.Navigation.previewProjects[4]()} onMouseLeave={()=> this.leaveP5()}>
-        <p className="portfolioNumber">6</p><p className="portfolioPiece">GREENHOUSE ANIMATION</p>
-        <p className="viewProject">View Project</p>
-      </div>*/
-
-      /*      { this.state.currentDisplay === 6 && <Gallery currentComp={this.state.currentDisplay}/> }*/
-
-
-      /*<div className="portfolioSection" id="toGallery" onClick={()=> this.renderLanding()} onMouseEnter={()=> this.Navigation.previewProjects[5]()} onMouseLeave={()=> this.leaveP6()}>
-        <p className="portfolioNumber">gallery</p>
-        <p className="visit">Visit</p>
-      </div>*/
-
-      /*<div className="previewDesktop" id="GalleryPreview">
-        <video className="galleryDesktop" alt="galleryDesktop" autoPlay loop muted>
-          <source src={galleryDesktop} type="video/mp4"/>
-        </video>
-      </div>*/
 

@@ -271,6 +271,11 @@ span.char9 {
     left: 6%;
   }
 }
+@media (max-width: 640px) {
+  div#WatchPreviewMobile {
+    top: 106vw;
+  }
+}
 @media (min-width: 641px) and (max-width: 869px) {
   div.previewDesktop {
     display: none;
