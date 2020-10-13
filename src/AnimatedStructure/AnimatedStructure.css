@@ -40,7 +40,7 @@ div.StructureContent {
     position: absolute;
     width: 80vw;
     height: 16vh;
-    top: -11vh;
+    top: -9vh;
     zoom: 1.2;
   }
 }
@@ -60,7 +60,7 @@ div.StructureContent > div.projectTitle > p.theTitle {
     font-size: 1.4em;
     font-weight: 300;
     text-align: left;
-    margin-top: 4vh;
+    margin-top: 2em;
     margin-left: 9.2vw;
   }
 }
@@ -80,8 +80,8 @@ div.StructureContent > div.projectTitle > p.theTitle {
   position: relative;
   width: 30%;
   height: 30%;
-  top: 7vw;
-  left: 9vw;
+  top: 8vw;
+  left: 8.2vw;
   zoom: 1.2;
  }
 }
@@ -537,7 +537,7 @@ img.baziniMobile4 {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: 26vw;
+    top: 24vw;
     height: 20vw;
     padding-bottom: 8vw;
     zoom: 1.2;
@@ -669,7 +669,7 @@ div.StructureContent div.iconDo > p.visitSite {
 }
 @media (min-width: 1301px) {
   div.StructureContent div.iconDo > p.viewDesigns {
-    top: -4vw;
+    top: -3.8vw;
     position: relative;
     opacity: 0;
   }

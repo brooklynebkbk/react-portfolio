@@ -862,6 +862,14 @@ div#WatchPreview {
     top: 3vh;
   }
 }
+@keyframes levitateLargeScreen {
+  0% {
+    top: 12vh;
+  }
+  100% {
+    top: 9vh;
+  }
+}
 @media (max-width: 1300px) {
 div.floatingPlant{
   position: absolute;
@@ -880,10 +888,9 @@ div.floatingPlant{
   width: 70vw;
   opacity: 0;
   left: 27vw;
-  top: 6vw;
-  margin-top: 6vw;
+  top: 12vw;
   zoom: .8;
-  animation: levitate 2s infinite alternate ease-in-out;
+  animation: levitateLargeScreen 2s infinite alternate ease-in-out;
 }
 }
 @media only screen and (max-width: 519px)  {
