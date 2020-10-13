@@ -27,11 +27,22 @@ div.StructureContent {
   opacity: 0;
 }
 
-div.StructureContent > div.projectTitle {
-  position: absolute;
-  width: 80vw;
-  height: 16vh;
-  top: -12vh;
+@media (max-width: 1300px) {
+  div.StructureContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -12vh;
+  }
+}
+@media (max-width: 1300px) {
+  div.StructureContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -10vh;
+    zoom: 1.2;
+  }
 }
 div.StructureContent > div.projectTitle > p.theTitle {
   font-family: 'Khand', sans-serif;
@@ -51,7 +62,17 @@ div.StructureContent > div.projectTitle > p.projectContributor {
   margin-top: 6vh;
   margin-left: 9.2vw;
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+ div.StructureContent > div.About {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  top: 12vw;
+  left: 9vw;
+  zoom: 1.2;
+ }
+}
+@media (min-width: 1021px) and (max-width: 1300px) {
  div.StructureContent > div.About {
   position: relative;
   width: 32%;
@@ -247,7 +268,17 @@ div.iconHolder > img {
   border: 1px solid #3F3D3D;
   background-color: #FAFBFA;
 }*/
-@media (min-width: 1021px) {
+@media (max-width: 1301px) {
+  div.StructureContent div.Stack {
+    position: relative;
+    height: 18vw;
+    width: 44vw;
+    top: 22vw;
+    margin: 0 auto;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px) {
   div.StructureContent div.Stack {
     position: relative;
     height: 18vw;
@@ -317,7 +348,17 @@ div.StructureContent p.aboutStack {
     zoom: .8;
   }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.Minnie > p {
+    position: relative;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    top: 1.2vw;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px) {
   div.Minnie > p {
     position: relative;
     text-align: center;
@@ -469,7 +510,18 @@ img.baziniMobile3 {
 img.baziniMobile4 {
   top: -34.4vw;
 }*/
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.StructureContent div.connectSection {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: 32vw;
+    height: 20vw;
+    padding-bottom: 10vw;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.StructureContent div.connectSection {
     position: relative;
     margin: 0 auto;
@@ -579,14 +631,32 @@ div.StructureContent div.iconDo > p.visitSite {
   position: relative;
   opacity: 0;
 }
-div.StructureContent div.iconDo > p.viewSS {
-  top: -2.5vw;
-  position: relative;
-  opacity: 0;
+@media (min-width: 1301px) {
+  div.StructureContent div.iconDo > p.viewSS {
+    top: -1.5vw;
+    position: relative;
+    opacity: 0;
+  }
 }
-div.StructureContent div.iconDo > p.viewDesigns {
-  top: -6vw;
-  position: relative;
-  opacity: 0;
+@media (max-width: 1300px) {
+  div.StructureContent div.iconDo > p.viewSS {
+    top: -2.5vw;
+    position: relative;
+    opacity: 0;
+  }
+}
+@media (min-width: 1301px) {
+  div.StructureContent div.iconDo > p.viewDesigns {
+    top: -3vw;
+    position: relative;
+    opacity: 0;
+  }
+}
+@media (max-width: 1300px) {
+  div.StructureContent div.iconDo > p.viewDesigns {
+    top: -6vw;
+    position: relative;
+    opacity: 0;
+  }
 }
 

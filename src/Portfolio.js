@@ -185,24 +185,6 @@ export default class Portfolio extends React.Component  {
             previewP6Mobile.style.opacity = "0";
             previewP6Mobile.style.transition = "1s ease";
       },
-      mobileScroll: function(event) {
-        if(window.innerWidth< 640){
-          var page = event.target;
-          if (page.scrollTop <= 40) {
-            var floatingPlant = document.querySelector("div.floatingPlant");
-              floatingPlant.style.opacity = "1";
-              floatingPlant.style.marginLeft = "0vw";
-              floatingPlant.style.marginTop = "26vh";
-              floatingPlant.style.transition = "1s ease-in-out";
-          } else {
-            var floatingPlant = document.querySelector("div.floatingPlant");
-              floatingPlant.style.opacity = "0";
-              floatingPlant.style.marginLeft = "0vw";
-              floatingPlant.style.marginTop = "0vh";
-              floatingPlant.style.transition = "1s ease-in-out";
-        }
-      }
-      }.bind(this),
       newColors: [function() {
           var circle = document.querySelector("div.contactIcons > div:nth-child(1)");
           circle.style.backgroundColor = me.state.activeColorCodes[1];
@@ -653,7 +635,9 @@ render() {
       </div>
       </div>
       </div>
-      <Contact currentDisplay={this.state.currentDisplay} colorCode={this.state.activeColorCodes} newColorsDark={this.Navigation.newColors} oldColorsBright={this.Navigation.oldColors}/>
+      <Contact currentDisplay={this.state.currentDisplay} colorCode={this.state.activeColorCodes}
+            newColorsDark={this.Navigation.newColors}
+            oldColorsBright={this.Navigation.oldColors}/>
       <div className="previewDesktop" id="ThreeOhPreview">
         <a href="https://303esports.com" target="_blank" rel="noopener noreferrer">
           <img className="ThreeHome" src={ThreeHome} alt="ThreeHome" />

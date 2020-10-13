@@ -30,14 +30,14 @@ div.landingFirstName {
 @media (min-width: 1301px) {
 div.landingFirstName {
   position: absolute;
-  font-size: 20em;
+  font-size: 19em;
   color: #1317FA;
   font-family: 'Khand', sans-serif;
   display: flex;
   flex-direction: row;
   left: -110vw;
   opacity: 1;
-  top: -29%;
+  top: -22%;
   animation: brooklyneSlide 5s forwards 1s cubic-bezier(.2,.89,.76,-0.02);
 }
 }

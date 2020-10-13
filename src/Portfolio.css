@@ -527,16 +527,31 @@ p.visit {
   width: 100%;
   top: 4em;
 }
-p.viewProject {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1em;
-  position: absolute;
-  color: #DEF2F8;
-  bottom: 3em;
-  text-align: center;
-  opacity: 0;
-  width: 100%;
-  top: 2em;
+@media (max-width: 1300px) {
+  p.viewProject {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    position: absolute;
+    color: #DEF2F8;
+    bottom: 3em;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+    top: 2em;
+  }
+}
+@media (min-width: 1300px) {
+  p.viewProject {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    position: absolute;
+    color: #DEF2F8;
+    bottom: 3em;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+    top: 3em;
+  }
 }
 div.nextPiece {
   position: fixed;
@@ -864,8 +879,8 @@ div.floatingPlant{
   height: 90vh;
   width: 70vw;
   opacity: 0;
-  left: 26vw;
-  top: 6vw;
+  left: 27vw;
+  top: 12vw;
   zoom: .8;
   animation: levitate 2s infinite alternate ease-in-out;
 }
@@ -996,141 +1011,4 @@ img.leafSix {
   top: -10vh;
   animation: moveLeafSix 2.1s infinite alternate ease-in-out;
 }
-
-/*@media (min-width: 641px) {
-  div.galleryContent{
-    position: absolute;
-    right: 0;
-    top: 62vw;
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-  }
-}
-img.galleryColors {
-  position: relative;
-  height: 19vw;
-  width: 40vw;
-  left: -15%;
-  top: 10%;
-  border: solid  1px #2C4849;
-}
-@media (min-width: 641px) {
-  div.animatedStructureGroup {
-    position: relative;
-    top: 5vw;
-    left: 39%;
-    height: 30vw;
-    width: 54.3vw;
-    overflow: hidden;
-    border-radius: 6px;
-    box-shadow: 10px 19px 92px -21px #8DA0A5;
-  }
-}
-@media (min-width: 641px) {
-  div.animatedStructureGroup > video {
-    position: relative;
-    margin-top: -6%;
-    height: 120%;
-    width: 100%;
-  }
-}
-img.greenHouseSketch {
-  position: relative;
-  height: 24vw;
-  width: 21vw;
-  left: -8%;
-  top: 50%;
-  border: solid  1px #2C4849;
-}
-img.GalleryThreePalette {
-  position: relative;
-  height: 22vw;
-  width: 44vw;
-  left: 5vw;
-  top: 10vw;
-  border: solid  1px #2C4849;
-}
-div.galleryCopy {
-  width: 58%;
-  position: relative;
-  top: 9vw;
-  left: 10vw;
-  display: flex;
-  flex-direction: column;
-}
-img.GalleryMountainRange {
-  width: 48vw;
-  height: 9vw;
-  position: relative;
-  top: -4vw;
-  left: 20vw;
-  border: solid  1px #2C4849;
-}
-div.GalleryShards {
-  position: relative;
-  top: 10%;
-  width: 68%;
-  margin: 0 auto;
-  height: 92%;
-  display: flex;
-  flex-direction: row;
-}
-div.GalleryShards > div {
-  height: 94%;
-  width: 42%;
-  justify-content: space-around;
-  background-color: #061A1E;
-  margin-left: 1.3vw;
-  margin-right: 1vw;
-}
-div.GalleryShards > div.shardsStill > img {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-div.shardsScroll {
-  background-image: url("./ThreeOhThree/ThreeBGAnimation.png");
-  position: relative;
-  height: 170%;
-  width: 40%;
-  left: 3.3vw;
-  background-size: 48.2%;
-  background-repeat: repeat-y;
-  animation: floatUp 20s infinite linear;
-  overflow: hidden;
-}
-@keyframes floatUp {
-  0% {
-    background-position: bottom;
-  }
-  100% {
-    background-position: top;
-  }
-}*/
-
-/*<div className="galleryContent">
-        <img className="galleryColors" src={galleryColors} alt="galleryColors" />
-        <div className="animatedStructureGroup">
-          <video className="architectureAnimation" alt="architectureAnimation" autoPlay loop muted>
-            <source src={architectureAnimation} type="video/mp4"/>
-          </video>
-        </div>
-        <img className="greenHouseSketch" src={greenHouseSketch} alt="greenHouseSketch" />
-        <img className="GalleryThreePalette" src={ThreePalette} alt="ThreePalette" />
-        <div className="galleryCopy">
-          <img className="ThreeHost" src={ThreeHost} alt="ThreeHost" />
-          <img className="ThreeCompete" src={ThreeCompete} alt="ThreeCompete" />
-          <img className="ThreeStream" src={ThreeStream} alt="ThreeStream" />
-          <img className="ThreeBuild" src={ThreeBuild} alt="ThreeBuild" />
-        </div>
-        <img className="GalleryMountainRange" src={MountainRange} alt="MountainRange" />
-        <div className="GalleryShards">
-          <div className="shardsStill">
-            <img className="ThreeBGAnimation" src={ThreeBGAnimation} alt="ThreeBGAnimation" />
-          </div>
-          <div className="shardsScroll">
-          </div>
-        </div>
-      </div>*/
 

@@ -12,7 +12,7 @@ export default class AnimatedStructure extends React.Component  {
 
   constructor(props){
         super(props);
-        this.contentFadeInOut = {
+          this.contentFadeInOut = {
           contentFadeOut: function() {
             if(this.props.currentComp === 3){
             var BaziniHoppDiv = document.querySelector("div.AnimatedStructure");
