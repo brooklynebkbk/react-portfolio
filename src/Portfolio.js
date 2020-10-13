@@ -340,12 +340,12 @@ export default class Portfolio extends React.Component  {
           var currentPiece = --nextPiece;
           var preview = document.querySelector(NextPieceKeys[1]);
             preview.style.display = "block";
-            preview.style.bottom = "30%";
+            preview.style.bottom = "36%";
             preview.style.opacity = "1";
             preview.style.transition = "1.2s ease";
           var previewMobile = document.querySelector(NextPieceKeys[2]);
             previewMobile.style.display = "block";
-            previewMobile.style.top = "40%";
+            previewMobile.style.top = "46%";
             previewMobile.style.opacity = "1";
             previewMobile.style.transition = "1.2s ease";
           var app = document.querySelector(".App");
@@ -538,7 +538,7 @@ componentDidMount() {
     activatePortfolioHover();
   }, 7000);
   this.nameClicked();
-  /*document.querySelector("div#nextPieceBazini").addEventListener('mouseenter', function() {
+  document.querySelector("div#nextPieceBazini").addEventListener('mouseenter', function() {
     self.Navigation.nextProject[0](self.Navigation.previewPieceTwo);
   });
   document.querySelector("div#nextPieceStructure").addEventListener('mouseenter', function() {
@@ -553,7 +553,7 @@ componentDidMount() {
   document.querySelector("div#nextPieceWatch").addEventListener('mouseenter', function() {
     self.Navigation.nextProject[0](self.Navigation.previewPieceSix);
   });
-  document.querySelector("div#nextPieceHome").addEventListener('mouseenter', this.Navigation.nextProject[1]);*/
+  document.querySelector("div#nextPieceHome").addEventListener('mouseenter', this.Navigation.nextProject[1]);
 }
 
 
@@ -714,9 +714,7 @@ render() {
         <p>NEXT PORTFOLIO PIECE</p>
         <p className="viewNextPiece">View Structure Animation</p>
       </div>
-      <div className="nextPiece" id="nextPieceFLShotUsers" onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceFour)}
-          onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceFour)}
-          onMouseLeave={()=> this.setToSelected()}>
+      <div className="nextPiece" id="nextPieceFLShotUsers" onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceFour)} onMouseLeave={()=> this.setToSelected()}>
         <p>NEXT PORTFOLIO PIECE</p>
         <p className="viewNextPiece">View FL Shot Users</p>
       </div>
