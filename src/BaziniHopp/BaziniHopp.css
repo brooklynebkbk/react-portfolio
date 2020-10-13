@@ -159,6 +159,11 @@ div.BaziniHoppContent > div.About > p {
   }
 }
 @media (min-width: 1301px) {
+  div.rebranding img:nth-child(1) {
+    left: 48vw;
+  }
+}
+@media (min-width: 1301px) {
   div.rebranding img {
     zoom: .8;
   }
@@ -186,7 +191,17 @@ div.BaziniHoppContent > div.About > p {
     zoom: .8;
   }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.rebranding  > p:nth-child(2) {
+    color: #414C62;
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    left: 13vw;
+    top: 7vw;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px) {
   div.rebranding  > p:nth-child(2) {
     color: #414C62;
     position: absolute;
@@ -253,7 +268,6 @@ img.logoWhite, img.logoDark{
 @media (min-width: 1301px) {
   div.creative > p {
     zoom: 1.2;
-    margin-top: 1em;
   }
 }
 @media (min-width: 1301px) {
@@ -282,7 +296,16 @@ img.logoWhite, img.logoDark{
     zoom: .8;
   }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.creative > p:nth-child(2) {
+    color: #414C62;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    top: -1.8vw;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.creative > p:nth-child(2) {
     color: #414C62;
     position: relative;
@@ -399,10 +422,10 @@ div.BaziniHoppContent div.FinalHome {
 }
 @media (min-width: 1301px) {
     div.BaziniHoppContent div.FinalHome{
-      top: 80vw;
-      width: 90%;
+      top: 68vw;
+      width: 80%;
       position: relative;
-      margin-left: 9%;
+      margin-left: 11%;
       zoom: .86;
     }
 }
@@ -502,7 +525,7 @@ img.baziniMobile4 {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: 26vw;
+    top: 30vw;
     zoom: 1.2;
   }
 }
