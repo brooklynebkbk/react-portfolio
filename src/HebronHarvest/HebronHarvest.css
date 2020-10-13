@@ -21,44 +21,88 @@ div.HebronContent {
   top: -100%;
   opacity: 0;
 }
-div#HarvestCopy {
-  /*bottom: 39.8vh;
-  right: 18vw;*/
+@media (min-width: 1301px) {
+  div#HarvestCopy {
+    margin-left: 2em;
+  }
 }
-div#HarvestMobileCopy {
-  /*right: 13vw;*/
+@media (min-width: 1301px) {
+  div#HarvestMobileCopy {
+    margin-left: 2em;
+  }
 }
-
-
-/*video {
-  margin-top: -1.5em;
-}*/
-
-div.HebronContent > div.projectTitle {
-  position: absolute;
-  width: 80vw;
-  height: 16vh;
-  top: -8vh;
+@media (max-width: 1300px) {
+  div.HebronContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -13vh;
+  }
 }
-div.HebronContent > div.projectTitle > p.theTitle {
-  font-family: 'Khand', sans-serif;
-  font-weight: 600;
-  color: #39140E;
-  font-size: 3.2em;
-  text-align: left;
-  margin-left: 9vw;
-  margin-top: -4vh;
+@media (min-width: 1301px) {
+  div.HebronContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -8vh;
+    zoom: 1.2;
+  }
 }
-div.HebronContent > div.projectTitle > p.projectContributor {
-  font-family: 'Oswald', sans-serif;
-  color: #39140E;
-  font-size: 1.4em;
-  font-weight: 300;
-  text-align: left;
-  margin-top: 1vh;
-  margin-left: 9.2vw;
+@media (max-width: 1300px) {
+  div.HebronContent  > div.projectTitle > p.theTitle {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    color: #39140E;
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: 9vw;
+    margin-top: -4vh;
+  }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.HebronContent  > div.projectTitle > p.theTitle {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    color: #39140E;
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: 7.4vw;
+    margin-top: -3vh;
+  }
+}
+@media (min-width: 1301px) {
+  div.HebronContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #39140E;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 7.6vw;
+  }
+}
+@media (max-width: 1300px) {
+  div.HebronContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #39140E;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 1vh;
+    margin-left: 9.2vw;
+  }
+}
+@media (min-width: 1301px) {
+ div.HebronContent > div.About {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  top: 10.8vw;
+  left: 8.2vw;
+  zoom: 1.2;
+ }
+}
+@media (min-width: 1021px) and (max-width: 1300px) {
  div.HebronContent > div.About {
   position: relative;
   width: 32%;
@@ -109,7 +153,21 @@ div.HebronContent > div.About > p {
     left: 6vw;
   }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.HebronContent div.colorScheme > p:nth-child(1) {
+    font-family: 'Khand', sans-serif;
+    font-weight: 800;
+    margin-top: 2em;
+    margin-bottom: 0;
+    color: #39140E;
+    font-size: 2.3em;
+    position: absolute;
+    left: 8vw;
+    top: -1vw;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.HebronContent div.colorScheme > p:nth-child(1) {
     font-family: 'Khand', sans-serif;
     font-weight: 800;
@@ -133,6 +191,17 @@ div.HebronContent > div.About > p {
     position: absolute;
     left: 10vw;
     top: -8vw;
+    zoom: .8;
+  }
+}
+@media (min-width: 1301px) {
+  div.HebronContent div.colorScheme > img {
+    height: 20vw;
+    width: 52vw;
+    position: absolute;
+    left: 12vw;
+    top: 16vw;
+    border: 1px solid #3F3D3D;
     zoom: .8;
   }
 }
@@ -162,7 +231,21 @@ div.HebronContent div.colorScheme > img {
     top: 66vw;
   }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.brandDevelopment p:nth-child(1) {
+    font-family: 'Khand', sans-serif;
+    font-weight: 800;
+    margin-top: 2em;
+    margin-bottom: 0;
+    color: #39140E;
+    font-size: 2.3em;
+    position: absolute;
+    left: 8.4vw;
+    top: 1vw;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.brandDevelopment p:nth-child(1) {
     font-family: 'Khand', sans-serif;
     font-weight: 800;
@@ -189,7 +272,18 @@ div.HebronContent div.colorScheme > img {
     zoom: .8;
   }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.brandDevelopment p:nth-child(2) {
+    font-family: 'Catamaran', sans-serif;
+    color: #39140E;
+    font-size: 1.9em;
+    position: relative;
+    left: 11vw;
+    top: 10vw;
+    zoom:1.1;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.brandDevelopment p:nth-child(2) {
     font-family: 'Catamaran', sans-serif;
     color: #39140E;
@@ -251,15 +345,30 @@ div.contentCreation > div.HebronHarvestVid > img {
   height: 100%;
   width: 100%;
 }*/
-div.inventory {
-  position: absolute;
-  height: 18vw;
-  width: 70vw;
-  top: 6vw;
-  left: 8vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+@media (min-width: 1301px) {
+  div.inventory {
+    position: absolute;
+    height: 18vw;
+    width: 70vw;
+    top: 6vw;
+    left: 12vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    zoom: .8;
+  }
+}
+@media (max-width: 1300px) {
+  div.inventory {
+    position: absolute;
+    height: 18vw;
+    width: 70vw;
+    top: 6vw;
+    left: 8vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 div.inventory > img {
   position: relative;
@@ -275,7 +384,17 @@ div.HebronContent div.Stack {
   top: -13vw;
   margin: 0 auto;
 }
-@media (max-width: 1020px) {
+@media (min-width: 1301px) {
+  div.HebronContent div.Stack {
+    position: relative;
+    height: 8vw;
+    width: 46vw;
+    top: -10vw;
+    margin: 0 auto;
+    zoom: 1.2;
+  }
+}
+@media (max-width: 1020px) and (max-width: 1300px){
     div.HebronContent div.Stack{
       top: 72vw;
       position: relative;
@@ -333,6 +452,15 @@ div.HebronContent div.FinalHome {
       margin-left: 9%;
     }
 }
+@media (min-width: 1301px) {
+    div.BaziniHoppContent div.FinalHome{
+      top: 4vw;
+      width: 76%;
+      position: relative;
+      margin-left: 12%;
+      zoom: .86;
+    }
+}
 div.HebronContent div.FinalHome > p {
   color: #39140E;
   position: absolute;
@@ -350,6 +478,13 @@ div.HebronContent p.finalText {
       left: 5vw;
       position: relative;
       zoom: .8;
+    }
+}
+@media (min-width: 1301px) {
+    div.BaziniHoppContent div.FinalHome > p:nth-child(2){
+      top: -1vw;
+      zoom: 1.2;
+      left: 4vw;
     }
 }
 div.HebronContent p.finalDesktop {
@@ -371,6 +506,13 @@ div.HebronContent p.finalMobile {
   font-size: 1.3em;
   left: 64.6vw;
   top: -3.5vw;
+}
+@media (min-width: 1301px) {
+    div.BaziniHoppContent div.FinalHome > p:nth-child(3){
+      top: 1.5vw;
+      zoom: -3;
+      right: 3vw;
+    }
 }
 @media (max-width: 1020px) {
     div.HebronContent div.FinalHome > p:nth-child(3){
@@ -416,7 +558,16 @@ img.mobile1 {
 img.mobile2 {
   top: 0vw;
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.HebronContent div.connectSection {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: -25vw;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.HebronContent div.connectSection {
     position: relative;
     margin: 0 auto;
@@ -522,14 +673,31 @@ div.HebronContent div.iconDo > p.visitSite {
   position: relative;
   opacity: 0;
 }
-div.HebronContent div.iconDo > p.viewSS {
-  top: -2.5vw;
-  position: relative;
-  opacity: 0;
+@media (min-width: 1301px) {
+  div.HebronContent div.iconDo > p.viewSS {
+    top: -1.4vw;
+    position: relative;
+    opacity: 0;
+  }
 }
-div.HebronContent div.iconDo > p.viewDesigns {
-  top: -6vw;
-  position: relative;
-  opacity: 0;
+@media (max-width: 1300px) {
+  div.HebronContent div.iconDo > p.viewSS {
+    top: -2.5vw;
+    position: relative;
+    opacity: 0;
+  }
 }
-
+@media (min-width: 1301px) {
+  div.HebronContent div.iconDo > p.viewDesigns {
+    top: -3.8vw;
+    position: relative;
+    opacity: 0;
+  }
+}
+@media (max-width: 1300px) {
+  div.HebronContent div.iconDo > p.viewDesigns {
+    top: -6vw;
+    position: relative;
+    opacity: 0;
+  }
+}

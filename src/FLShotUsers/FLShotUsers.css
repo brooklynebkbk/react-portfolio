@@ -158,7 +158,7 @@ div.FLShotContent div.Contribution {
 }
 @media (min-width: 1301px) {
     div.FLShotContent div.Contribution{
-      top: 22vw;
+      top: 21vw;
       width: 50%;
       position: relative;
       margin-left: 25%;
@@ -206,7 +206,7 @@ div.FLShotContent div.Stack{
 }
 @media (min-width: 1301px) {
     div.FLShotContent div.Stack{
-      top: 27vw;
+      top: 25vw;
       width: 54%;
       position: relative;
       margin-left: 0 auto;
@@ -256,7 +256,7 @@ div.FLShotContent div.FinalHome {
 }
 @media (min-width: 1301px) {
     div.FLShotContent  div.FinalHome{
-      top: 37vw;
+      top: 39vw;
       width: 80%;
       position: relative;
       margin-left: 12%;
@@ -292,7 +292,7 @@ div.FLShotContent p.finalText {
 @media (min-width: 1301px) {
     div.FLShotContent div.FinalHome > p:nth-child(2){
       top: 5vw;
-      zoom: .8;
+      zoom: 1.2;
       left: 4vw;
     }
 }
@@ -327,7 +327,7 @@ div.FLShotContent p.finalMobile {
 @media (min-width: 1301px) {
     div.FLShotContent div.FinalHome > p:nth-child(3){
       top: 1.5vw;
-      zoom: .8;
+      zoom: 1.2;
       right: 3vw;
     }
 }
@@ -388,10 +388,9 @@ img.FLMobile4 {
 @media (min-width: 1021px) and (max-width: 1300px){
   div.FLShotContent div.connectSection {
     position: relative;
-    margin: 0 auto;
     width: 90%;
-    top: -16vw;
-    left: -11vw;
+    top: -18vw;
+    left: -10vw;
   }
 }
 @media (max-width: 1020px) {
