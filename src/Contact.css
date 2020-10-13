@@ -14,7 +14,7 @@
     pointer-events: none;
   }
 }
-@media (min-width: 641px) {
+@media (min-width: 641px) and (max-width: 1300px) {
   .nameHolder {
     height: 16vh;
     width: 15vw;
@@ -22,6 +22,17 @@
     right: 0;
     top: 0;
     z-index: 10;
+  }
+}
+@media (min-width: 1301px) {
+  .nameHolder {
+    height: 16vh;
+    width: 15vw;
+    position: fixed;
+    right: 3em;
+    top: 0;
+    z-index: 10;
+    zoom: 1.1;
   }
 }
 .nameHolder:hover {
@@ -77,21 +88,26 @@ div.ContactInfo {
   z-index: 0;
   opacity: 0;
 }
-/*div.ContactInfo.contactFade {
-  opacity: 0;
-  animation: contactFadeIn 1s forwards 1 .7s ease;
+@media (min-width: 1301px) {
+  div.landingTitle {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    top: 1em;
+    width: 100%;
+    justify-content: center;
+    zoom: 1.1;
+  }
 }
-div.ContactInfo.contactFade.contactDisappear {
-  animation: contactFadeIn 1s reverse ease;
-
-}*/
-div.landingTitle {
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  top: -1em;
-  width: 100%;
-  justify-content: center;
+@media (max-width: 1300px) {
+  div.landingTitle {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    top: -1em;
+    width: 100%;
+    justify-content: center;
+  }
 }
 div.designer {
   display: flex;
@@ -112,32 +128,27 @@ p.letterTitle {
   font-weight: 600;
   padding-left: .025em;
 }
-div.contactIcons {
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  top: -4em;
-  width: 100%;
-  justify-content: center;
+@media (min-width: 1301px) {
+  div.contactIcons {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    top: -2em;
+    width: 100%;
+    justify-content: center;
+    zoom: 1.1;
+  }
 }
-
-/*@keyframes shine {
-  10% {
-    background: linear-gradient(#1317FA, #CCFA4C);
-    top: -30%;
-    left: -30%;
-    transition-property: left, top, background;
-    transition-duration: 0.7s, 0.7s, 0.15s;
-    transition-timing-function: ease;
+@media (max-width: 1300px) {
+  div.contactIcons {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    top: -4em;
+    width: 100%;
+    justify-content: center;
   }
-  100% {
-    background: linear-gradient(#CCFA4C, #1317FA);
-    top: -30%;
-    left: -30%;
-    transition-property: left, top, background;
-  }
-}*/
-
+}
 div.contactIcons > div > a {
   display: block;
   position: relative;

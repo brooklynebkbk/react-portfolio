@@ -880,7 +880,8 @@ div.floatingPlant{
   width: 70vw;
   opacity: 0;
   left: 27vw;
-  top: 12vw;
+  top: 6vw;
+  margin-top: 6vw;
   zoom: .8;
   animation: levitate 2s infinite alternate ease-in-out;
 }

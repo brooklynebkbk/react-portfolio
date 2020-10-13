@@ -40,7 +40,7 @@ div.StructureContent {
     position: absolute;
     width: 80vw;
     height: 16vh;
-    top: -10vh;
+    top: -11vh;
     zoom: 1.2;
   }
 }
@@ -53,21 +53,34 @@ div.StructureContent > div.projectTitle > p.theTitle {
   margin-left: 9vw;
   margin-top: -4vh;
 }
-div.StructureContent > div.projectTitle > p.projectContributor {
-  font-family: 'Oswald', sans-serif;
-  color: #0B191F;
-  font-size: 1.4em;
-  font-weight: 300;
-  text-align: left;
-  margin-top: 6vh;
-  margin-left: 9.2vw;
+@media (min-width: 1301px) {
+  div.StructureContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #0B191F;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 5vh;
+    margin-left: 9.2vw;
+  }
+}
+@media (max-width: 1300px) {
+  div.StructureContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #0B191F;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 6vh;
+    margin-left: 9.2vw;
+  }
 }
 @media (min-width: 1301px) {
  div.StructureContent > div.About {
   position: relative;
   width: 30%;
   height: 30%;
-  top: 12vw;
+  top: 8.5vw;
   left: 9vw;
   zoom: 1.2;
  }
@@ -268,7 +281,7 @@ div.iconHolder > img {
   border: 1px solid #3F3D3D;
   background-color: #FAFBFA;
 }*/
-@media (max-width: 1301px) {
+@media (min-width: 1301px) {
   div.StructureContent div.Stack {
     position: relative;
     height: 18vw;
@@ -278,7 +291,7 @@ div.iconHolder > img {
     zoom: 1.2;
   }
 }
-@media (min-width: 1021px) and (max-width: 1300px) {
+@media (min-width: 1081px) and (max-width: 1300px) {
   div.StructureContent div.Stack {
     position: relative;
     height: 18vw;
@@ -296,7 +309,7 @@ div.iconHolder > img {
       zoom: .8;
     }
 }
-@media (min-width: 1020px) and (max-width: 1080px){
+@media (min-width: 1021px) and (max-width: 1080px){
     div.StructureContent div.Stack{
       top: 79vw;
       width: 54%;
@@ -633,7 +646,7 @@ div.StructureContent div.iconDo > p.visitSite {
 }
 @media (min-width: 1301px) {
   div.StructureContent div.iconDo > p.viewSS {
-    top: -1.5vw;
+    top: -1.4vw;
     position: relative;
     opacity: 0;
   }
@@ -647,7 +660,7 @@ div.StructureContent div.iconDo > p.visitSite {
 }
 @media (min-width: 1301px) {
   div.StructureContent div.iconDo > p.viewDesigns {
-    top: -3vw;
+    top: -4vw;
     position: relative;
     opacity: 0;
   }
