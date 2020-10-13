@@ -158,8 +158,8 @@ div.BaziniHoppContent > div.About > p {
   }
 }
 @media (min-width: 1301px) {
-  div.rebranding img:nth-child(1) {
-    left: 48vw;
+  div.rebranding img.brandingColors {
+    left: 46vw;
   }
 }
 @media (min-width: 1301px) {
@@ -422,9 +422,9 @@ div.BaziniHoppContent div.FinalHome {
 @media (min-width: 1301px) {
     div.BaziniHoppContent div.FinalHome{
       top: 24vw;
-      width: 80%;
+      width: 76%;
       position: relative;
-      margin-left: 11%;
+      margin-left: 12%;
       zoom: .86;
     }
 }
@@ -468,6 +468,13 @@ div.BaziniHoppContent p.finalDesktop {
       left: 5vw;
     }
 }
+@media (min-width: 1301px) {
+    div.BaziniHoppContent div.FinalHome > p:nth-child(2){
+      top: 5vw;
+      zoom: .8;
+      left: 4vw;
+    }
+}
 div.BaziniHoppContent p.finalMobile {
   font-family: 'Oswald', sans-serif;
   font-size: 1.3em;
@@ -479,6 +486,13 @@ div.BaziniHoppContent p.finalMobile {
       top: -1vw;
       zoom: .8;
       right: 1vw;
+    }
+}
+@media (min-width: 1301px) {
+    div.BaziniHoppContent div.FinalHome > p:nth-child(3){
+      top: 1.5vw;
+      zoom: .8;
+      right: 3vw;
     }
 }
 div.BaziniHoppContent div.desktopFinal {
@@ -531,7 +545,7 @@ img.baziniMobile4 {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: 30vw;
+    top: 26vw;
     zoom: 1.2;
   }
 }

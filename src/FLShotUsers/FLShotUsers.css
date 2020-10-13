@@ -158,7 +158,7 @@ div.FLShotContent div.Contribution {
 }
 @media (min-width: 1301px) {
     div.FLShotContent div.Contribution{
-      top: 81vw;
+      top: 22vw;
       width: 50%;
       position: relative;
       margin-left: 25%;
@@ -206,7 +206,7 @@ div.FLShotContent div.Stack{
 }
 @media (min-width: 1301px) {
     div.FLShotContent div.Stack{
-      top: 82vw;
+      top: 27vw;
       width: 54%;
       position: relative;
       margin-left: 0 auto;
@@ -259,12 +259,12 @@ div.FLShotContent div.FinalHome {
       top: 37vw;
       width: 80%;
       position: relative;
-      margin-left: 11%;
+      margin-left: 12%;
       zoom: .86;
     }
 }
 @media (min-width: 1301px) {
-  div.BaziniHoppContent div.FinalHome > p {
+  div.FLShotContent div.FinalHome > p {
     color: #E8ECED;
     position: absolute;
     zoom: 1.2;
@@ -287,6 +287,13 @@ div.FLShotContent p.finalText {
       position: relative;
       left: 5vw;
       zoom: .8;
+    }
+}
+@media (min-width: 1301px) {
+    div.FLShotContent div.FinalHome > p:nth-child(2){
+      top: 5vw;
+      zoom: .8;
+      left: 4vw;
     }
 }
 div.FLShotContent p.finalDesktop {
@@ -317,6 +324,13 @@ div.FLShotContent p.finalMobile {
       right: 2vw;
     }
 }
+@media (min-width: 1301px) {
+    div.FLShotContent div.FinalHome > p:nth-child(3){
+      top: 1.5vw;
+      zoom: .8;
+      right: 3vw;
+    }
+}
 div.FLShotContent div.desktopFinal {
   position: absolute;
   top: 5.5vw;
@@ -342,7 +356,7 @@ div.FLShotContent div.desktopFinal > img, div.mobileFinal > img {
 div.FLShotContent div.mobileFinal {
   position: absolute;
   top: .3vw;
-  height: 119.2vw;
+  height: 119.1vw;
   width: 19vw;
   left: 64vw;
   display: flex;
@@ -366,7 +380,7 @@ img.FLMobile4 {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: -15vw;
+    top: -16vw;
     left: -11;
     zoom: 1.2;
   }
