@@ -864,10 +864,10 @@ div#WatchPreview {
 }
 @keyframes levitateLargeScreen {
   0% {
-    top: 12vh;
+    top: 16vh;
   }
   100% {
-    top: 9vh;
+    top: 12vh;
   }
 }
 @media (max-width: 1300px) {
@@ -888,7 +888,7 @@ div.floatingPlant{
   width: 70vw;
   opacity: 0;
   left: 27vw;
-  top: 12vw;
+  top: 16vw;
   zoom: .8;
   animation: levitateLargeScreen 2s infinite alternate ease-in-out;
 }

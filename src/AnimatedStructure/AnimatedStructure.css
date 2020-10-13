@@ -8,10 +8,10 @@ div.AnimatedStructure {
   overflow-y: scroll;
 }
 div#StructurePreviewCopy {
-  padding-right: 1em;
+  margin-left: 1em;
 }
 div#StructurePreviewMobileCopy {
-  padding-right: 1em;
+  margin-left: 1em;
 }
 div.ThePreviews {
   position: relative;
@@ -39,7 +39,7 @@ div.StructureContent {
     position: absolute;
     width: 80vw;
     height: 16vh;
-    top: -9.5vh;
+    top: -8vh;
     zoom: 1.2;
   }
 }
@@ -92,7 +92,7 @@ div.StructureContent {
   position: relative;
   width: 30%;
   height: 30%;
-  top: 9.4vw;
+  top: 10.4vw;
   left: 8.2vw;
   zoom: 1.2;
  }
@@ -135,7 +135,7 @@ div.StructureContent > div.About > p {
     position: relative;
     height: 18vw;
     width: 44vw;
-    top: 19vw;
+    top: 20vw;
     margin: 0 auto;
     zoom: 1.2;
   }
@@ -386,7 +386,7 @@ img.baziniMobile4 {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: 24vw;
+    top: 23vw;
     height: 20vw;
     padding-bottom: 8vw;
     zoom: 1.2;

@@ -538,7 +538,7 @@ componentDidMount() {
     activatePortfolioHover();
   }, 7000);
   this.nameClicked();
-  document.querySelector("div#nextPieceBazini").addEventListener('mouseenter', function() {
+  /*document.querySelector("div#nextPieceBazini").addEventListener('mouseenter', function() {
     self.Navigation.nextProject[0](self.Navigation.previewPieceTwo);
   });
   document.querySelector("div#nextPieceStructure").addEventListener('mouseenter', function() {
@@ -553,7 +553,7 @@ componentDidMount() {
   document.querySelector("div#nextPieceWatch").addEventListener('mouseenter', function() {
     self.Navigation.nextProject[0](self.Navigation.previewPieceSix);
   });
-  document.querySelector("div#nextPieceHome").addEventListener('mouseenter', this.Navigation.nextProject[1]);
+  document.querySelector("div#nextPieceHome").addEventListener('mouseenter', this.Navigation.nextProject[1]);*/
 }
 
 
@@ -605,7 +605,7 @@ render() {
         <p className="portfolioNumber">2</p><p className="portfolioPiece">BAZINIHOPP</p>
         <p className="viewProject">View Project</p>
       </div>
-      <div className="portfolioSection" id="toWatchAConcept"
+      <div className="portfolioSection" id="toAnimatedStructure"
           onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceThree)}
           onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceThree)}
           onMouseLeave={()=> this.leavePortfolioSection(this.Navigation.previewPieceThree)}>
@@ -714,7 +714,9 @@ render() {
         <p>NEXT PORTFOLIO PIECE</p>
         <p className="viewNextPiece">View Structure Animation</p>
       </div>
-      <div className="nextPiece" id="nextPieceFLShotUsers" onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceFour)} onMouseLeave={()=> this.setToSelected()}>
+      <div className="nextPiece" id="nextPieceFLShotUsers" onClick={()=> this.renderSelectedPortfolioPiece(this.Navigation.previewPieceFour)}
+          onMouseEnter={()=> this.Navigation.previewProjects[0](this.Navigation.previewPieceFour)}
+          onMouseLeave={()=> this.setToSelected()}>
         <p>NEXT PORTFOLIO PIECE</p>
         <p className="viewNextPiece">View FL Shot Users</p>
       </div>
