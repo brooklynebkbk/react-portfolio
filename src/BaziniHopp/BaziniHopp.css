@@ -47,7 +47,6 @@ div.BaziniHoppContent {
     zoom: 1.2;
   }
 }
-
 @media (max-width: 1300px) {
   div.BaziniHoppContent > div.projectTitle > p.theTitle {
     font-family: 'Khand', sans-serif;
@@ -422,12 +421,19 @@ div.BaziniHoppContent div.FinalHome {
 }
 @media (min-width: 1301px) {
     div.BaziniHoppContent div.FinalHome{
-      top: 68vw;
+      top: 24vw;
       width: 80%;
       position: relative;
       margin-left: 11%;
       zoom: .86;
     }
+}
+@media (min-width: 1301px) {
+  div.BaziniHoppContent div.FinalHome > p {
+    color: #E8ECED;
+    position: absolute;
+    zoom: 1.2;
+  }
 }
 div.BaziniHoppContent div.FinalHome > p {
   color: #E8ECED;

@@ -19,39 +19,88 @@ div.FLShotContent {
   top: -100%;
   opacity: 0;
 }
-div#FLShotsCopy {
-  /*bottom: 41.5vh;
-  right: 18vw;*/
+@media (min-width: 1301px) {
+  div#FLShotsCopy {
+    margin-left: 2em;
+  }
 }
-div#FLShotsMobileCopy {
-  /*right: 13vw;*/
+@media (min-width: 1301px) {
+  div#FLShotsMobileCopy {
+    margin-left: 2em;
+  }
 }
-
-div.FLShotContent > div.projectTitle {
-  position: absolute;
-  width: 80vw;
-  height: 16vh;
-  top: -8vh;
+@media (max-width: 1300px) {
+  div.FLShotContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -12vh;
+  }
 }
-div.FLShotContent > div.projectTitle > p.theTitle {
-  font-family: 'Khand', sans-serif;
-  font-weight: 600;
-  color: #084D67;
-  font-size: 3.2em;
-  text-align: left;
-  margin-left: 9vw;
-  margin-top: -4vh;
+@media (min-width: 1301px) {
+  div.FLShotContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -7vh;
+    zoom: 1.2;
+  }
 }
-div.FLShotContent > div.projectTitle > p.projectContributor {
-  font-family: 'Oswald', sans-serif;
-  color: #084D67;
-  font-size: 1.4em;
-  font-weight: 300;
-  text-align: left;
-  margin-top: 1vh;
-  margin-left: 9.2vw;
+@media (max-width: 1300px) {
+  div.FLShotContent > div.projectTitle > p.theTitle {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    color: #084D67;
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: 9vw;
+    margin-top: -4vh;
+  }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.FLShotContent > div.projectTitle > p.theTitle {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    color: #084D67;
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: 7.4vw;
+    margin-top: -3vh;
+  }
+}
+@media (min-width: 1301px) {
+  div.FLShotContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #084D67;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 7.6vw;
+  }
+}
+@media (max-width: 1300px) {
+  div.FLShotContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #084D67;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 6vh;
+    margin-left: 9.2vw;
+  }
+}
+@media (min-width: 1301px) {
+ div.FLShotContent > div.About {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  top: 10.8vw;
+  left: 8.2vw;
+  zoom: 1.2;
+ }
+}
+@media (min-width: 1021px) and (max-width: 1300px) {
  div.FLShotContent > div.About {
   position: relative;
   width: 32%;
@@ -107,6 +156,15 @@ div.FLShotContent div.Contribution {
       margin-left: 25%;
     }
 }
+@media (min-width: 1301px) {
+    div.FLShotContent div.Contribution{
+      top: 81vw;
+      width: 50%;
+      position: relative;
+      margin-left: 25%;
+      zoom: 1.2;
+    }
+}
 div.FLShotContent div.Contribution > p {
   position: relative;
   color: #084D67;
@@ -144,6 +202,15 @@ div.FLShotContent div.Stack{
       width: 54%;
       position: relative;
       margin-left: 25%;
+    }
+}
+@media (min-width: 1301px) {
+    div.FLShotContent div.Stack{
+      top: 82vw;
+      width: 54%;
+      position: relative;
+      margin-left: 0 auto;
+      zoom: 1.2;
     }
 }
 div.FLShotContent div.Stack > p {
@@ -186,6 +253,22 @@ div.FLShotContent div.FinalHome {
       position: relative;
       margin-left: 9%;
     }
+}
+@media (min-width: 1301px) {
+    div.FLShotContent  div.FinalHome{
+      top: 37vw;
+      width: 80%;
+      position: relative;
+      margin-left: 11%;
+      zoom: .86;
+    }
+}
+@media (min-width: 1301px) {
+  div.BaziniHoppContent div.FinalHome > p {
+    color: #E8ECED;
+    position: absolute;
+    zoom: 1.2;
+  }
 }
 div.FLShotContent div.FinalHome > p {
   color: #084D67;
@@ -259,7 +342,7 @@ div.FLShotContent div.desktopFinal > img, div.mobileFinal > img {
 div.FLShotContent div.mobileFinal {
   position: absolute;
   top: .3vw;
-  height: 124.4vw;
+  height: 119.2vw;
   width: 19vw;
   left: 64vw;
   display: flex;
@@ -270,15 +353,25 @@ img.FLMobile1 {
   top: 0vw;
 }
 img.FLMobile2 {
-  top: -.3vw;
+  top: -2.4vw;
 }
 img.FLMobile3 {
-  top: -2vw;
+  top: -6.1vw;
 }
 img.FLMobile4 {
-  top: -20.16vw;
+  top: -25.4vw;
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.StructureContent div.connectSection {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: -15vw;
+    left: -11;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.FLShotContent div.connectSection {
     position: relative;
     margin: 0 auto;
@@ -386,13 +479,31 @@ div.FLShotContent div.iconDo > p.visitSite {
   position: relative;
   opacity: 0;
 }
-div.FLShotContent div.iconDo > p.viewSS {
-  top: -2.5vw;
-  position: relative;
-  opacity: 0;
+@media (min-width: 1301px) {
+  div.FLShotContent div.iconDo > p.viewSS {
+    top: -1.4vw;
+    position: relative;
+    opacity: 0;
+  }
 }
-div.FLShotContent div.iconDo > p.viewDesigns {
-  top: -6vw;
-  position: relative;
-  opacity: 0;
+@media (max-width: 1300px) {
+  div.FLShotContent div.iconDo > p.viewSS {
+    top: -2.5vw;
+    position: relative;
+    opacity: 0;
+  }
+}
+@media (min-width: 1301px) {
+  div.FLShotContent div.iconDo > p.viewDesigns {
+    top: -3.8vw;
+    position: relative;
+    opacity: 0;
+  }
+}
+@media (max-width: 1300px) {
+  div.FLShotContent div.iconDo > p.viewDesigns {
+    top: -6vw;
+    position: relative;
+    opacity: 0;
+  }
 }
