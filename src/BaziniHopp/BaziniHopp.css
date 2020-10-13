@@ -7,13 +7,17 @@ div.BaziniHopp {
   width: 100vw;
   overflow-y: scroll;
 }
-div#BaziniPreviewCopy {
-  /*bottom: 39.8vh;
-  right: 18vw;*/
+@media (min-width: 1301px) {
+  div#BaziniPreviewCopy {
+    margin-left: 2em;
+  }
 }
-div#BaziniPreviewMobileCopy {
-  /*right: 13vw;*/
+@media (min-width: 1301px) {
+  div#BaziniPreviewMobileCopy {
+    margin-left: 2em;
+  }
 }
+
 div.ThePreviews {
   position: relative;
   height: 100%;
@@ -26,32 +30,79 @@ div.BaziniHoppContent {
   top: -100%;
   opacity: 0;
 }
+@media (max-width: 1300px) {
+  div.BaziniHoppContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -12vh;
+  }
+}
+@media (min-width: 1301px) {
+  div.BaziniHoppContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -7vh;
+    zoom: 1.2;
+  }
+}
 
-div.BaziniHoppContent > div.projectTitle {
-  position: absolute;
-  width: 80vw;
-  height: 16vh;
-  top: -12vh;
+@media (max-width: 1300px) {
+  div.BaziniHoppContent > div.projectTitle > p.theTitle {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    color: #414C62;
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: 9vw;
+    margin-top: -4vh;
+  }
 }
-div.BaziniHoppContent > div.projectTitle > p.theTitle {
-  font-family: 'Khand', sans-serif;
-  font-weight: 600;
-  color: #414C62;
-  font-size: 3.2em;
-  text-align: left;
-  margin-left: 9vw;
-  margin-top: -4vh;
+@media (min-width: 1301px) {
+  div.BaziniHoppContent > div.projectTitle > p.theTitle {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    color: #414C62;
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: 7.4vw;
+    margin-top: -3vh;
+  }
 }
-div.BaziniHoppContent > div.projectTitle > p.projectContributor {
-  font-family: 'Oswald', sans-serif;
-  color: #414C62;
-  font-size: 1.4em;
-  font-weight: 300;
-  text-align: left;
-  margin-top: 6vh;
-  margin-left: 9.2vw;
+@media (min-width: 1301px) {
+  div.BaziniHoppContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #414C62;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 7.6vw;
+  }
 }
-@media (min-width: 1021px) {
+@media (max-width: 1300px) {
+  div.BaziniHoppContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #414C62;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 6vh;
+    margin-left: 9.2vw;
+  }
+}
+@media (min-width: 1301px) {
+ div.BaziniHoppContent > div.About {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  top: 10.8vw;
+  left: 8.2vw;
+  zoom: 1.2;
+ }
+}
+@media (min-width: 1021px) and (max-width: 1300px) {
  div.BaziniHoppContent > div.About {
   position: relative;
   width: 32%;
@@ -100,6 +151,16 @@ div.BaziniHoppContent > div.About > p {
     position: relative;
     height: 50vw;
     top: 68vw;
+  }
+}
+@media (min-width: 1301px) {
+  div.rebranding  > p {
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1301px) {
+  div.rebranding img {
+    zoom: .8;
   }
 }
 @media (min-width: 1021px) {
@@ -189,6 +250,17 @@ img.logoWhite, img.logoDark{
     top: 70vw;
   }
 }
+@media (min-width: 1301px) {
+  div.creative > p {
+    zoom: 1.2;
+    margin-top: 1em;
+  }
+}
+@media (min-width: 1301px) {
+  div.creative img {
+    zoom: .8;
+  }
+}
 @media (min-width: 1021px) {
   div.creative > p:nth-child(1) {
     color: #414C62;
@@ -247,7 +319,17 @@ div.iconHolder > img {
   border: 1px solid #3F3D3D;
   background-color: #FAFBFA;
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.BaziniHoppContent div.Stack {
+    position: relative;
+    height: 18vw;
+    width: 46vw;
+    top: 18vw;
+    margin: 0 auto;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1081px) and (max-width: 1300px){
   div.BaziniHoppContent div.Stack {
     position: relative;
     height: 18vw;
@@ -313,6 +395,15 @@ div.BaziniHoppContent div.FinalHome {
       width: 90%;
       position: relative;
       margin-left: 9%;
+    }
+}
+@media (min-width: 1301px) {
+    div.BaziniHoppContent div.FinalHome{
+      top: 80vw;
+      width: 90%;
+      position: relative;
+      margin-left: 9%;
+      zoom: .86;
     }
 }
 div.BaziniHoppContent div.FinalHome > p {
@@ -398,15 +489,24 @@ img.baziniMobile1 {
   top: 0vw;
 }
 img.baziniMobile2 {
-  top: -11.3vw;
+  top: -12.03vw;
 }
 img.baziniMobile3 {
-  top: -16.3vw;
+  top: -17.4vw;
 }
 img.baziniMobile4 {
-  top: -34.4vw;
+  top: -36.6vw;
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.BaziniHoppContent div.connectSection {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: 26vw;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.BaziniHoppContent div.connectSection {
     position: relative;
     margin: 0 auto;
@@ -512,14 +612,32 @@ div.BaziniHoppContent div.iconDo > p.visitSite {
   position: relative;
   opacity: 0;
 }
-div.BaziniHoppContent div.iconDo > p.viewSS {
-  top: -2.5vw;
-  position: relative;
-  opacity: 0;
+@media (min-width: 1301px) {
+  div.BaziniHoppContent div.iconDo > p.viewSS {
+    top: -1.4vw;
+    position: relative;
+    opacity: 0;
+  }
 }
-div.BaziniHoppContent div.iconDo > p.viewDesigns {
-  top: -6vw;
-  position: relative;
-  opacity: 0;
+@media (max-width: 1300px) {
+  div.BaziniHoppContent div.iconDo > p.viewSS {
+    top: -2.5vw;
+    position: relative;
+    opacity: 0;
+  }
+}
+@media (min-width: 1301px) {
+  div.BaziniHoppContent div.iconDo > p.viewDesigns {
+    top: -3.8vw;
+    position: relative;
+    opacity: 0;
+  }
+}
+@media (max-width: 1300px) {
+  div.BaziniHoppContent div.iconDo > p.viewDesigns {
+    top: -6vw;
+    position: relative;
+    opacity: 0;
+  }
 }
 

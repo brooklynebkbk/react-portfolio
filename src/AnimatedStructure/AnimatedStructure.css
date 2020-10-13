@@ -29,7 +29,6 @@ div.StructureContent {
   top: -100%;
   opacity: 0;
 }
-
 @media (max-width: 1300px) {
   div.StructureContent > div.projectTitle {
     position: absolute;
