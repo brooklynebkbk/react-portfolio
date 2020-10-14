@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './WatchAConcept.css';
 import './../Portfolio.css';
 import watchNavigation from './watchNavigation.mov';
+import watchMobile from './watchMobile.png';
 import handy from './handy.png';
 import WatchPalette from './WatchPalette.png';
 import web from './../email.png';
@@ -157,6 +158,9 @@ render() {
           <video className="watchNavigation" alt="watchNavigation" autoPlay loop muted>
             <source src={watchNavigation} type="video/mp4"/>
           </video>
+        </div>
+        <div className="previewMobileCopy" id="WatchMobileCopy">
+          <img className="watchMobile" src={watchMobile} alt="watchMobile" />
         </div>
       </div>
       <div className="WatchContent">

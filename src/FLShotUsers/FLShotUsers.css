@@ -291,7 +291,7 @@ div.FLShotContent p.finalText {
 }
 @media (min-width: 1301px) {
     div.FLShotContent div.FinalHome > p:nth-child(2){
-      top: 5vw;
+      top: 1vw;
       zoom: 1.2;
       left: 4vw;
     }
@@ -328,7 +328,7 @@ div.FLShotContent p.finalMobile {
     div.FLShotContent div.FinalHome > p:nth-child(3){
       top: 1.5vw;
       zoom: 1.2;
-      right: 3vw;
+      right: 5vw;
     }
 }
 div.FLShotContent div.desktopFinal {
@@ -376,7 +376,7 @@ img.FLMobile4 {
   top: -25.4vw;
 }
 @media (min-width: 1301px) {
-  div.StructureContent div.connectSection {
+  div.FLShotContent div.connectSection {
     position: relative;
     margin: 0 auto;
     width: 90%;

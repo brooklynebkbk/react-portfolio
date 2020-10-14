@@ -7,9 +7,15 @@ div.WatchAConcept {
   width: 100vw;
   overflow-y: scroll;
 }
-div#WatchPreviewCopy {
-  /*bottom: 39.8vh;
-  right: 18vw;*/
+@media (min-width: 1301px) {
+  div#WatchPreviewCopy {
+    margin-left: 2em;
+  }
+}
+@media (min-width: 1301px) {
+  div#WatchMobileCopy {
+    margin-left: 2em;
+  }
 }
 div.ThePreviews {
   position: relative;
@@ -23,32 +29,78 @@ div.WatchContent {
   top: -100%;
   opacity: 0;
 }
-
-div.WatchContent > div.projectTitle {
-  position: absolute;
-  width: 80vw;
-  height: 16vh;
-  top: -8vh;
+@media (max-width: 1300px) {
+  div.WatchContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -12vh;
+  }
 }
-div.WatchContent > div.projectTitle > p.theTitle {
-  font-family: 'Khand', sans-serif;
-  font-weight: 600;
-  color: #264B48;
-  font-size: 3.2em;
-  text-align: left;
-  margin-left: 9vw;
-  margin-top: -4vh;
+@media (min-width: 1301px) {
+  div.WatchContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -7vh;
+    zoom: 1.2;
+  }
 }
-div.WatchContent > div.projectTitle > p.projectContributor {
-  font-family: 'Oswald', sans-serif;
-  color: #264B48;
-  font-size: 1.4em;
-  font-weight: 300;
-  text-align: left;
-  margin-top: 1vh;
-  margin-left: 9.2vw;
+@media (max-width: 1300px) {
+  div.WatchContent > div.projectTitle > p.theTitle {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    color: #264B48;
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: 9vw;
+    margin-top: -4vh;
+  }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.WatchContent > div.projectTitle > p.theTitle {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    color: #264B48;
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: 7.4vw;
+    margin-top: -3vh;
+  }
+}
+@media (min-width: 1301px) {
+  div.WatchContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #264B48;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 7.6vw;
+  }
+}
+@media (max-width: 1300px) {
+  div.WatchContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #264B48;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 6vh;
+    margin-left: 9.2vw;
+  }
+}
+@media (min-width: 1301px) {
+ div.WatchContent > div.About {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  top: 10.8vw;
+  left: 8.2vw;
+  zoom: 1.2;
+ }
+}
+@media (min-width: 1021px) and (max-width: 1300px) {
  div.WatchContent > div.About {
   position: relative;
   width: 32%;
@@ -87,8 +139,16 @@ div.WatchContent > div.About > p {
           <img className="handy" src={handy} alt="handy" />
           <img className="WatchPalette" src={WatchPalette} alt="WatchPalette" />
         </div>*/
-
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.palette {
+    position: relative;
+    height: 44vw;
+    width: 90%;
+    top: 12vw;
+    left: 8vw;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.palette {
     position: relative;
     height: 44vw;
@@ -106,7 +166,20 @@ div.WatchContent > div.About > p {
     left: 6vw;
   }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.palette > p:nth-child(1) {
+    font-family: 'Khand', sans-serif;
+    font-weight: 800;
+    margin-top: 2em;
+    margin-bottom: 0;
+    color: #264B48;
+    font-size: 2.3em;
+    position: absolute;
+    left: 8vw;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.palette > p:nth-child(1) {
     font-family: 'Khand', sans-serif;
     font-weight: 800;
@@ -130,7 +203,19 @@ div.WatchContent > div.About > p {
     zoom: .8;
   }
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.palette > p:nth-child(2) {
+    margin-top: 1vh;
+    font-family: 'Oswald', sans-serif;
+    color: #264B48;
+    font-size: 1.3em;
+    position: absolute;
+    left: 8vw;
+    top: 8vw;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.palette > p:nth-child(2) {
     margin-top: 1vh;
     font-family: 'Oswald', sans-serif;
@@ -153,24 +238,60 @@ div.WatchContent > div.About > p {
     zoom: .8;
   }
 }
-div.palette > img:nth-child(3) {
-  position: absolute;
-  height: 24vw;
-  width: 50vw;
-  left: 6vw;
-  top: 15vw;
-  border: solid  1px #2C4849;
+@media (min-width: 1301px) {
+  div.palette > img:nth-child(3) {
+    position: absolute;
+    height: 24vw;
+    width: 50vw;
+    left: 16vw;
+    top: 16vw;
+    border: solid  1px #2C4849;
+    zoom: .8;
+  }
 }
-div.palette > img:nth-child(4) {
-  position: absolute;
-  height: 24vw;
-  width: 24vw;
-  left: 62vw;
-  top: 24vw;
-  border: solid  1px #2C4849;
+@media (max-width: 1300px) {
+  div.palette > img:nth-child(3) {
+    position: absolute;
+    height: 24vw;
+    width: 50vw;
+    left: 6vw;
+    top: 15vw;
+    border: solid  1px #2C4849;
+  }
 }
-@media (min-width: 1021px) {
-  div.WatchContent div.Stack{
+@media (min-width: 1301px) {
+  div.palette > img:nth-child(4) {
+    position: absolute;
+    height: 24vw;
+    width: 24vw;
+    left: 65vw;
+    top: 27vw;
+    border: solid  1px #2C4849;
+    zoom: .8;
+  }
+}
+@media (max-width: 1300px) {
+  div.palette > img:nth-child(4) {
+    position: absolute;
+    height: 24vw;
+    width: 24vw;
+    left: 62vw;
+    top: 24vw;
+    border: solid  1px #2C4849;
+  }
+}
+@media (min-width: 1301px) {
+  div.WatchContent div.Stack {
+    position: relative;
+    height: 36vw;
+    width: 46vw;
+    top: 18vw;
+    margin: 0 auto;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1081px) and (max-width: 1300px){
+  div.WatchContent div.Stack {
     position: relative;
     height: 36vw;
     width: 46vw;
@@ -211,7 +332,18 @@ div.WatchContent p.aboutStack {
   font-size: 1.3em;
   top: 1.8vw;
 }
-@media (min-width: 1021px) {
+@media (min-width: 1301px) {
+  div.BaziniHoppContent div.connectSection {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: 10vw;
+    zoom: 1.2;
+    height: 6vw;
+    padding-bottom: 10vw;
+  }
+}
+@media (min-width: 1021px) and (max-width: 1300px){
   div.WatchContent div.connectSection {
     position: relative;
     margin: 0 auto;
@@ -317,13 +449,31 @@ div.WatchContent div.iconDo > p.visitSite {
   position: relative;
   opacity: 0;
 }
-div.WatchContent div.iconDo > p.viewSS {
-  top: -10.5vw;
-  position: relative;
-  opacity: 0;
+@media (min-width: 1301px) {
+  div.WatchContent div.iconDo > p.viewSS {
+    top: -1.4vw;
+    position: relative;
+    opacity: 0;
+  }
 }
-div.WatchContent div.iconDo > p.viewDesigns {
-  top: -14vw;
-  position: relative;
-  opacity: 0;
+@media (max-width: 1300px) {
+  div.WatchContent div.iconDo > p.viewSS {
+    top: -2.5vw;
+    position: relative;
+    opacity: 0;
+  }
+}
+@media (min-width: 1301px) {
+  div.WatchContent div.iconDo > p.viewDesigns {
+    top: -3.8vw;
+    position: relative;
+    opacity: 0;
+  }
+}
+@media (max-width: 1300px) {
+  div.WatchContent div.iconDo > p.viewDesigns {
+    top: -6vw;
+    position: relative;
+    opacity: 0;
+  }
 }

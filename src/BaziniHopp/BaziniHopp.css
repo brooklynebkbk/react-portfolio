@@ -470,7 +470,7 @@ div.BaziniHoppContent p.finalDesktop {
 }
 @media (min-width: 1301px) {
     div.BaziniHoppContent div.FinalHome > p:nth-child(2){
-      top: 5vw;
+      top: 10vw;
       zoom: 1.2;
       left: 4vw;
     }
@@ -492,7 +492,7 @@ div.BaziniHoppContent p.finalMobile {
     div.BaziniHoppContent div.FinalHome > p:nth-child(3){
       top: 1.5vw;
       zoom: 1.2;
-      right: -2vw;
+      right: 2vw;
     }
 }
 div.BaziniHoppContent div.desktopFinal {
@@ -545,7 +545,7 @@ img.baziniMobile4 {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: 23vw;
+    top: 19vw;
     zoom: 1.2;
   }
 }

@@ -162,8 +162,8 @@ div.HebronContent > div.About > p {
     color: #39140E;
     font-size: 2.3em;
     position: absolute;
-    left: 8vw;
-    top: -1vw;
+    left: 10vw;
+    top: 1vw;
     zoom: 1.2;
   }
 }
@@ -199,8 +199,8 @@ div.HebronContent > div.About > p {
     height: 20vw;
     width: 52vw;
     position: absolute;
-    left: 12vw;
-    top: 16vw;
+    left: 18vw;
+    top: 18vw;
     border: 1px solid #3F3D3D;
     zoom: .8;
   }
@@ -240,8 +240,8 @@ div.HebronContent div.colorScheme > img {
     color: #39140E;
     font-size: 2.3em;
     position: absolute;
-    left: 8.4vw;
-    top: 1vw;
+    left: 10vw;
+    top: 2vw;
     zoom: 1.2;
   }
 }
@@ -278,8 +278,8 @@ div.HebronContent div.colorScheme > img {
     color: #39140E;
     font-size: 1.9em;
     position: relative;
-    left: 11vw;
-    top: 10vw;
+    left: 13vw;
+    top: 11vw;
     zoom:1.1;
   }
 }
@@ -350,8 +350,8 @@ div.contentCreation > div.HebronHarvestVid > img {
     position: absolute;
     height: 18vw;
     width: 70vw;
-    top: 6vw;
-    left: 12vw;
+    top: 7vw;
+    left: 20vw;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -453,7 +453,7 @@ div.HebronContent div.FinalHome {
     }
 }
 @media (min-width: 1301px) {
-    div.BaziniHoppContent div.FinalHome{
+    div.HebronContent div.FinalHome{
       top: 4vw;
       width: 76%;
       position: relative;
@@ -481,8 +481,8 @@ div.HebronContent p.finalText {
     }
 }
 @media (min-width: 1301px) {
-    div.BaziniHoppContent div.FinalHome > p:nth-child(2){
-      top: -1vw;
+    div.HebronContent div.FinalHome > p:nth-child(2){
+      top: 1vw;
       zoom: 1.2;
       left: 4vw;
     }
@@ -508,10 +508,10 @@ div.HebronContent p.finalMobile {
   top: -3.5vw;
 }
 @media (min-width: 1301px) {
-    div.BaziniHoppContent div.FinalHome > p:nth-child(3){
+    div.HebronContent div.FinalHome > p:nth-child(3){
       top: 1.5vw;
       zoom: -3;
-      right: 3vw;
+      right: 5vw;
     }
 }
 @media (max-width: 1020px) {
@@ -563,7 +563,7 @@ img.mobile2 {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: -25vw;
+    top: -23vw;
     zoom: 1.2;
   }
 }
