@@ -43,7 +43,7 @@ div.BaziniHoppContent {
     position: absolute;
     width: 80vw;
     height: 16vh;
-    top: -7vh;
+    top: -6vh;
     zoom: 1.2;
   }
 }
@@ -96,7 +96,7 @@ div.BaziniHoppContent {
   position: relative;
   width: 30%;
   height: 30%;
-  top: 10.8vw;
+  top: 13vw;
   left: 8.2vw;
   zoom: 1.2;
  }
@@ -346,7 +346,7 @@ div.iconHolder > img {
     position: relative;
     height: 18vw;
     width: 46vw;
-    top: 18vw;
+    top: 17vw;
     margin: 0 auto;
     zoom: 1.2;
   }
@@ -421,7 +421,7 @@ div.BaziniHoppContent div.FinalHome {
 }
 @media (min-width: 1301px) {
     div.BaziniHoppContent div.FinalHome{
-      top: 24vw;
+      top: 22vw;
       width: 76%;
       position: relative;
       margin-left: 12%;
@@ -432,7 +432,7 @@ div.BaziniHoppContent div.FinalHome {
   div.BaziniHoppContent div.FinalHome > p {
     color: #E8ECED;
     position: absolute;
-    zoom: 1.2;
+    zoom: 1.4;
   }
 }
 div.BaziniHoppContent div.FinalHome > p {
@@ -455,6 +455,12 @@ div.BaziniHoppContent p.finalText {
       left: 5vw;
     }
 }
+@media (min-width: 1301px) {
+    div.BaziniHoppContent div.FinalHome > p:nth-child(1){
+      position: relative;
+      left: 3vw;
+    }
+}
 div.BaziniHoppContent p.finalDesktop {
   font-family: 'Oswald', sans-serif;
   font-size: 1.3em;
@@ -471,8 +477,7 @@ div.BaziniHoppContent p.finalDesktop {
 @media (min-width: 1301px) {
     div.BaziniHoppContent div.FinalHome > p:nth-child(2){
       top: 4vw;
-      zoom: 1.2;
-      left: 4vw;
+      left: 3.2vw;
     }
 }
 div.BaziniHoppContent p.finalMobile {
@@ -490,9 +495,8 @@ div.BaziniHoppContent p.finalMobile {
 }
 @media (min-width: 1301px) {
     div.BaziniHoppContent div.FinalHome > p:nth-child(3){
-      top: 1.5vw;
-      zoom: 1.2;
-      right: 8vw;
+      top: .5vw;
+      left: 46vw;
     }
 }
 div.BaziniHoppContent div.desktopFinal {
@@ -545,8 +549,10 @@ img.baziniMobile4 {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: 23vw;
+    top: 20vw;
     zoom: 1.2;
+    height: 10vw;
+    padding-bottom: 10vw;
   }
 }
 @media (min-width: 1021px) and (max-width: 1300px){

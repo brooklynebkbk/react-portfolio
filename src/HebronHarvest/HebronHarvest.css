@@ -44,7 +44,7 @@ div.HebronContent {
     position: absolute;
     width: 80vw;
     height: 16vh;
-    top: -8vh;
+    top: -6vh;
     zoom: 1.2;
   }
 }
@@ -97,7 +97,7 @@ div.HebronContent {
   position: relative;
   width: 30%;
   height: 30%;
-  top: 10.8vw;
+  top: 12vw;
   left: 8.2vw;
   zoom: 1.2;
  }
@@ -162,8 +162,8 @@ div.HebronContent > div.About > p {
     color: #39140E;
     font-size: 2.3em;
     position: absolute;
-    left: 10vw;
-    top: 1vw;
+    left: 19.5vw;
+    top: 3vw;
     zoom: 1.2;
   }
 }
@@ -199,19 +199,21 @@ div.HebronContent > div.About > p {
     height: 20vw;
     width: 52vw;
     position: absolute;
-    left: 26vw;
-    top: 26vw;
+    left: 29vw;
+    top: 18vw;
     border: 1px solid #3F3D3D;
     zoom: .8;
   }
 }
-div.HebronContent div.colorScheme > img {
-  height: 20vw;
-  width: 52vw;
-  position: absolute;
-  left: 8vw;
-  top: 10vw;
-  border: 1px solid #3F3D3D;
+@media (max-width: 1300px) {
+  div.HebronContent div.colorScheme > img {
+    height: 20vw;
+    width: 52vw;
+    position: absolute;
+    left: 8vw;
+    top: 10vw;
+    border: 1px solid #3F3D3D;
+  }
 }
 @media (min-width: 1021px) {
   div.brandDevelopment {
@@ -240,8 +242,8 @@ div.HebronContent div.colorScheme > img {
     color: #39140E;
     font-size: 2.3em;
     position: absolute;
-    left: 10vw;
-    top: 2vw;
+    left: 16vw;
+    top: 3vw;
     zoom: 1.2;
   }
 }
@@ -278,7 +280,7 @@ div.HebronContent div.colorScheme > img {
     color: #39140E;
     font-size: 1.9em;
     position: relative;
-    left: 13vw;
+    left: 7.8vw;
     top: 11vw;
     zoom:1.1;
   }
@@ -389,7 +391,7 @@ div.HebronContent div.Stack {
     position: relative;
     height: 8vw;
     width: 46vw;
-    top: -10vw;
+    top: -12vw;
     margin: 0 auto;
     zoom: 1.2;
   }
@@ -454,10 +456,10 @@ div.HebronContent div.FinalHome {
 }
 @media (min-width: 1301px) {
     div.HebronContent div.FinalHome{
-      top: 4vw;
+      top: 0vw;
       width: 76%;
       position: relative;
-      margin-left: 12%;
+      margin-left: 13%;
       zoom: .86;
     }
 }
@@ -481,10 +483,18 @@ div.HebronContent p.finalText {
     }
 }
 @media (min-width: 1301px) {
+    div.HebronContent div.FinalHome > p:nth-child(1){
+      top: -6vw;
+      left: 3vw;
+      position: relative;
+      zoom: 1.4;
+    }
+}
+@media (min-width: 1301px) {
     div.HebronContent div.FinalHome > p:nth-child(2){
-      top: -1vw;
-      zoom: 1.2;
-      left: 4vw;
+      top: -1.3vw;
+      zoom: 1.4;
+      left: 3.2vw;
     }
 }
 div.HebronContent p.finalDesktop {
@@ -509,9 +519,9 @@ div.HebronContent p.finalMobile {
 }
 @media (min-width: 1301px) {
     div.HebronContent div.FinalHome > p:nth-child(3){
-      top: -1.5vw;
-      zoom: 1.2;
-      right: 8vw;
+      top: -2.6vw;
+      zoom: 1.4;
+      left: 46vw;
     }
 }
 @media (max-width: 1020px) {

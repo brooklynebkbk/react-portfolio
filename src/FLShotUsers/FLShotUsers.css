@@ -42,7 +42,7 @@ div.FLShotContent {
     position: absolute;
     width: 80vw;
     height: 16vh;
-    top: -7vh;
+    top: -6vh;
     zoom: 1.2;
   }
 }
@@ -95,7 +95,7 @@ div.FLShotContent {
   position: relative;
   width: 30%;
   height: 30%;
-  top: 10.8vw;
+  top: 12vw;
   left: 8.2vw;
   zoom: 1.2;
  }
@@ -206,7 +206,7 @@ div.FLShotContent div.Stack{
 }
 @media (min-width: 1301px) {
     div.FLShotContent div.Stack{
-      top: 25vw;
+      top: 24vw;
       width: 54%;
       position: relative;
       margin-left: 0 auto;
@@ -256,19 +256,12 @@ div.FLShotContent div.FinalHome {
 }
 @media (min-width: 1301px) {
     div.FLShotContent  div.FinalHome{
-      top: 39vw;
+      top: 40vw;
       width: 80%;
       position: relative;
-      margin-left: 12%;
+      margin-left: 13%;
       zoom: .86;
     }
-}
-@media (min-width: 1301px) {
-  div.FLShotContent div.FinalHome > p {
-    color: #E8ECED;
-    position: absolute;
-    zoom: 1.2;
-  }
 }
 div.FLShotContent div.FinalHome > p {
   color: #084D67;
@@ -290,10 +283,18 @@ div.FLShotContent p.finalText {
     }
 }
 @media (min-width: 1301px) {
+    div.FLShotContent div.FinalHome > p:nth-child(1){
+      top: -5.5vw;
+      position: relative;
+      left: 3vw;
+      zoom: 1.4;
+    }
+}
+@media (min-width: 1301px) {
     div.FLShotContent div.FinalHome > p:nth-child(2){
-      top: -1vw;
-      zoom: 1.2;
-      left: 4vw;
+      top: -1.2vw;
+      zoom: 1.4;
+      left: 3.2vw;
     }
 }
 div.FLShotContent p.finalDesktop {
@@ -326,9 +327,9 @@ div.FLShotContent p.finalMobile {
 }
 @media (min-width: 1301px) {
     div.FLShotContent div.FinalHome > p:nth-child(3){
-      top: -4vw;
-      zoom: 1.2;
-      right: 8vw;
+      top: -4.5vw;
+      zoom: 1.4;
+      left: 46vw;
     }
 }
 div.FLShotContent div.desktopFinal {
@@ -380,8 +381,8 @@ img.FLMobile4 {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: -13vw;
-    left: -11vw;
+    top: -6vw;
+    left: -8vw;
     zoom: 1.2;
   }
 }
