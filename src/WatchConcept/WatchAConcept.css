@@ -144,7 +144,7 @@ div.WatchContent > div.About > p {
     position: relative;
     height: 44vw;
     width: 90%;
-    top: 12vw;
+    top: 13vw;
     left: 8vw;
   }
 }
@@ -171,6 +171,7 @@ div.WatchContent > div.About > p {
     font-family: 'Khand', sans-serif;
     font-weight: 800;
     margin-top: 2em;
+    top: 1vw;
     margin-bottom: 0;
     color: #264B48;
     font-size: 2.3em;
@@ -244,7 +245,7 @@ div.WatchContent > div.About > p {
     height: 24vw;
     width: 50vw;
     left: 16vw;
-    top: 16vw;
+    top: 17.4vw;
     border: solid  1px #2C4849;
     zoom: .8;
   }
@@ -264,10 +265,10 @@ div.WatchContent > div.About > p {
     position: absolute;
     height: 24vw;
     width: 24vw;
-    left: 65vw;
-    top: 27vw;
+    left: 75vw;
+    top: 29vw;
     border: solid  1px #2C4849;
-    zoom: .8;
+    zoom: .78;
   }
 }
 @media (max-width: 1300px) {
@@ -285,7 +286,7 @@ div.WatchContent > div.About > p {
     position: relative;
     height: 36vw;
     width: 46vw;
-    top: 18vw;
+    top: 17vw;
     margin: 0 auto;
     zoom: 1.2;
   }
@@ -337,7 +338,7 @@ div.WatchContent p.aboutStack {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: 10vw;
+    top: 11vw;
     zoom: 1.2;
     height: 6vw;
     padding-bottom: 10vw;
@@ -363,7 +364,7 @@ div.WatchContent div.connectIcons {
   position: relative;
   margin: 0 auto;
   display: flex;
-  top: -8vw;
+  top: 0vw;
   width: 100%;
   justify-content: center;
 }
@@ -445,7 +446,7 @@ img.git {
   }
 }
 div.WatchContent div.iconDo > p.visitSite {
-  top: -7vw;
+  top: 1vw;
   position: relative;
   opacity: 0;
 }

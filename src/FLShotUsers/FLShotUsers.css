@@ -291,7 +291,7 @@ div.FLShotContent p.finalText {
 }
 @media (min-width: 1301px) {
     div.FLShotContent div.FinalHome > p:nth-child(2){
-      top: 1vw;
+      top: -1vw;
       zoom: 1.2;
       left: 4vw;
     }
@@ -326,9 +326,9 @@ div.FLShotContent p.finalMobile {
 }
 @media (min-width: 1301px) {
     div.FLShotContent div.FinalHome > p:nth-child(3){
-      top: 1.5vw;
+      top: -4vw;
       zoom: 1.2;
-      right: 5vw;
+      right: 8vw;
     }
 }
 div.FLShotContent div.desktopFinal {
@@ -380,8 +380,8 @@ img.FLMobile4 {
     position: relative;
     margin: 0 auto;
     width: 90%;
-    top: -16vw;
-    left: -11;
+    top: -13vw;
+    left: -11vw;
     zoom: 1.2;
   }
 }
