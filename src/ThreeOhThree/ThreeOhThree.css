@@ -12,6 +12,16 @@ div.ThePreviews {
   height: 100%;
   width: 100%;
 }
+@media (min-width: 1301px) {
+  div#ThreeOhPreviewCopy {
+    margin-left: 2em;
+  }
+}
+@media (min-width: 1301px) {
+  div#ThreeOhPreviewMobileCopy {
+    margin-left: 2em;
+  }
+}
 div.ThreeOhThreeContent {
   position: relative;
   height: 100%;
@@ -25,11 +35,22 @@ div.ThreeOhThreeContent {
       flex-direction: column;
     }
 }
-div.ThreeOhThreeContent > div.projectTitle {
-  position: absolute;
-  width: 80vw;
-  height: 16vw;
-  top: -4.2vw;
+@media (max-width: 1300px) {
+  div.ThreeOhThreeContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -12vh;
+  }
+}
+@media (min-width: 1301px) {
+  div.ThreeOhThreeContent > div.projectTitle {
+    position: absolute;
+    width: 80vw;
+    height: 16vh;
+    top: -7vh;
+    zoom: 1.2;
+  }
 }
 @media (min-width: 1021px) and (max-width: 1199px) {
   div.ThreeOhThreeContent > div.projectTitle {
@@ -38,16 +59,29 @@ div.ThreeOhThreeContent > div.projectTitle {
   height: 16vw;
   top: -5.2vw;
   zoom: .8;
+  }
 }
+@media (max-width: 1300px) {
+  div.ThreeOhThreeContent > div.projectTitle > p.theTitle {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    color: #061A1E;
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: 9vw;
+    margin-top: -4vh;
+  }
 }
-div.ThreeOhThreeContent > div.projectTitle > p.theTitle {
-  font-family: 'Khand', sans-serif;
-  font-weight: 600;
-  color: #061A1E;
-  font-size: 3.2em;
-  text-align: left;
-  margin-left: 9vw;
-  margin-top: -2.2vw;
+@media (min-width: 1301px) {
+  div.ThreeOhThreeContent > div.projectTitle > p.theTitle {
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+    color: #061A1E;
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: 7.4vw;
+    margin-top: -3vh;
+  }
 }
 @media (max-width: 1020px) {
     p.theTitle {
@@ -55,14 +89,46 @@ div.ThreeOhThreeContent > div.projectTitle > p.theTitle {
       zoom: .8;
     }
 }
-div.ThreeOhThreeContent > div.projectTitle > p.projectContributor {
-  font-family: 'Oswald', sans-serif;
-  color: #061A1E;
-  font-size: 1.4em;
-  font-weight: 300;
-  text-align: left;
-  margin-top: .5vw;
-  margin-left: 9.2vw;
+@media (min-width: 1301px) {
+  div.ThreeOhThreeContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #061A1E;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 7.6vw;
+  }
+}
+@media (max-width: 1300px) {
+  div.ThreeOhThreeContent > div.projectTitle > p.projectContributor {
+    font-family: 'Oswald', sans-serif;
+    color: #061A1E;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 6vh;
+    margin-left: 9.2vw;
+  }
+}
+@media (min-width: 1301px) {
+ div.ThreeOhThreeContent > div.About {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  top: 10.8vw;
+  left: 8.2vw;
+  zoom: 1.2;
+ }
+}
+@media (min-width: 1021px) and (max-width: 1300px) {
+ div.ThreeOhThreeContent > div.About {
+  position: relative;
+  width: 32%;
+  height: 30%;
+  top: 10.5vw;
+  left: 9vw;
+ }
 }
 @media (max-width: 1020px) {
     p.projectContributor{
@@ -78,15 +144,6 @@ div.ThreeOhThreeMedia {
 div.ThreeOhThreeMedia > img{
   width: 30em;
   opacity: 1;
-}
-@media (min-width: 1021px) {
- div.ThreeOhThreeContent > div.About {
-  position: relative;
-  width: 32%;
-  height: 30%;
-  top: 10.5vw;
-  left: 9vw;
- }
 }
 @media (max-width: 1020px) {
     div.About{
@@ -119,6 +176,15 @@ div.Layout {
   top: 40%;
   margin-left: 9%;
 }
+@media (min-width: 1301px) {
+    div.Layout{
+      top: 90vw;
+      width: 96%;
+      position: relative;
+      margin: 0 auto;
+      zoom: .8;
+    }
+}
 @media (max-width: 1020px) {
     div.Layout{
       top: 80vw;
@@ -135,6 +201,11 @@ div.Layout > p {
     div.Layout > p {
       margin-left: 3%;
       top: 1vw;
+    }
+}
+@media (min-width: 1301px) {
+    div.Layout > p {
+      zoom: 1.4;
     }
 }
 div.Layout > p.wireFrameText {
@@ -250,6 +321,16 @@ div.Text {
       margin-right: auto;
     }
 }
+@media (min-width: 1301px) {
+    div.Text{
+      top: 44vw;
+      width: 90%;
+      position: relative;
+      margin-left: 21%;
+      margin-right: auto;
+      zoom: .8;
+    }
+}
 div.Text > p {
   color: #061A1E;
 }
@@ -257,6 +338,11 @@ div.Text > p {
     div.Text > p {
       margin-top: -1vw;
       margin-left: 0vw;
+    }
+}
+@media (min-width: 1301px) {
+    div.Text > p {
+      zoom: 1.4;
     }
 }
 div.Text > p.typefaceText {
@@ -364,9 +450,25 @@ div.Colors {
       margin-left: 4%;
     }
 }
+@media (min-width: 1301px){
+    div.Colors{
+      top: 265vw;
+      width: 86%;
+      position: relative;
+      margin-left: 10%;
+      zoom:.8;
+    }
+}
 div.Colors > p {
   color: #061A1E;
   position: absolute;
+}
+@media (min-width: 1301px) {
+  div.Colors > p {
+    color: #061A1E;
+    position: absolute;
+    zoom: 1.4;
+  }
 }
 p.colorScheme {
   font-family: 'Khand', sans-serif;
@@ -432,9 +534,26 @@ div.Assets {
       margin-left: 3%;
     }
 }
+@media (min-width: 1301px) {
+    div.Assets{
+      top: 286vw;
+      width: 94%;
+      position: relative;
+      margin-left: 6%;
+      height: 200%;
+      zoom: .8;
+    }
+}
 div.Assets > p {
   color: #061A1E;
   position: absolute;
+}
+@media (min-width: 1301px) {
+  div.Assets > p {
+    color: #061A1E;
+    position: absolute;
+    zoom: 1.4;
+  }
 }
 @media (max-width: 1080px) {
     div.Assets > p:nth-child(1){
@@ -558,6 +677,25 @@ div.illustration > img {
       margin-left: 25%;
     }
 }
+@media (min-width: 1301px) {
+  div.StructureContent div.Stack {
+    position: relative;
+    height: 18vw;
+    width: 44vw;
+    top: 46vw;
+    margin: 0 auto;
+    zoom: 1.2;
+  }
+}
+@media (min-width: 1081px) and (max-width: 1300px) {
+  div.StructureContent div.Stack {
+    position: relative;
+    height: 18vw;
+    width: 46vw;
+    top: 45vw;
+    margin: 0 auto;
+  }
+}
 .ThreeOhThreeContent div.Stack > p {
   position: relative;
   color: #061A1E;
@@ -582,6 +720,15 @@ div.illustration > img {
   position: relative;
   top: 49vw;
   height: 170vw;
+}
+@media (min-width: 1301px) {
+    .ThreeOhThreeContent div.FinalHome{
+      top: 54vw;
+      width: 76%;
+      position: relative;
+      margin-left: 12%;
+      zoom: .86;
+    }
 }
 @media (max-width: 1020px) {
     .ThreeOhThreeContent div.FinalHome{
@@ -627,6 +774,13 @@ div.illustration > img {
       top: -3vw;
     }
 }
+@media (min-width: 1301px) {
+    .ThreeOhThreeContent div.FinalHome > p:nth-child(2){
+      top: -1vw;
+      zoom: 1.2;
+      left: 4vw;
+    }
+}
 .ThreeOhThreeContent p.finalMobile {
   font-family: 'Oswald', sans-serif;
   font-size: 1.3em;
@@ -636,6 +790,13 @@ div.illustration > img {
 @media (max-width: 1020px) {
     .ThreeOhThreeContent div.FinalHome > p:nth-child(3){
       top: -8vw;
+    }
+}
+@media (min-width: 1301px) {
+    .ThreeOhThreeContent div.FinalHome > p:nth-child(3){
+      top: -1.5vw;
+      zoom: 1.2;
+      right: 8vw;
     }
 }
 .ThreeOhThreeContent div.desktopFinal {
@@ -705,6 +866,17 @@ div.ThreeOhThreeContent div.connectSection {
   width: 90%;
   top: 54vw;
   left: -12vw;
+}
+@media (min-width: 1301px) {
+  div.ThreeOhThreeContent div.connectSection {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    top: 60vw;
+    left: -12vw;
+    zoom: 1.2;
+    padding-bottom: 10vw;
+  }
 }
 div.ThreeOhThreeContent div.connectIcons {
   position: relative;
