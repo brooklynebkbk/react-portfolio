@@ -34,7 +34,7 @@ div.WatchContent {
     position: absolute;
     width: 80vw;
     height: 16vh;
-    top: -12vh;
+    top: -13vh;
   }
 }
 @media (min-width: 1301px) {
@@ -360,6 +360,8 @@ div.WatchContent p.aboutStack {
     margin: 0 auto;
     width: 90%;
     top: 96vw;
+    height: 10vw;
+    padding-bottom: 30vw;
   }
 }
 div.WatchContent div.connectIcons {

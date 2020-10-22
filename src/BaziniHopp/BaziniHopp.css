@@ -35,7 +35,7 @@ div.BaziniHoppContent {
     position: absolute;
     width: 80vw;
     height: 16vh;
-    top: -12vh;
+    top: -13vh;
   }
 }
 @media (min-width: 1301px) {
@@ -552,10 +552,10 @@ img.baziniMobile4 {
     top: 20vw;
     zoom: 1.2;
     height: 10vw;
-    padding-bottom: 10vw;
+    padding-bottom: 20vw;
   }
 }
-@media (min-width: 1021px) and (max-width: 1300px){
+@media (min-width: 1201px) and (max-width: 1300px){
   div.BaziniHoppContent div.connectSection {
     position: relative;
     margin: 0 auto;
@@ -563,12 +563,14 @@ img.baziniMobile4 {
     top: 26vw;
   }
 }
-@media (max-width: 1020px) {
+@media (max-width: 1200px) {
   div.BaziniHoppContent div.connectSection {
     position: relative;
     margin: 0 auto;
     width: 90%;
     top: 86vw;
+    height: 10vw;
+    padding-bottom: 20vw;
   }
 }
 div.BaziniHoppContent div.connectIcons {
